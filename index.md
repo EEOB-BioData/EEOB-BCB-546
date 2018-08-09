@@ -6,7 +6,7 @@ navigation: 1
 icon: <i class='fa fa-home'></i>
 ---
 
-# Computational Sills For Biological Data
+# Computational Skills For Biological Data
 
 ## EEOB/BCB 546X - Fall 2018 - Iowa State University
 
