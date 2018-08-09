@@ -1,37 +1,41 @@
-## Welcome to GitHub Pages
+# EEOB/BCB 546X Course Website
 
-You can use the [editor on GitHub](https://github.com/EEOB-BioData/EEOB-BCB-546X/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This repository hosts the website for the graduate course "Computational Skills for Biological Data". This is a static site built by Jekyll and based on the [Millidocs Theme](https://github.com/alexander-heimbuch/millidocs).
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Editing and Building the Site
 
-### Markdown
+To edit this site, you must first clone this repository
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+git clone git@github.com:EEOB-BioData/EEOB-BCB-546X.git
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Then, change directories to `EEOB-BCB-546X`.
 
-### Jekyll Themes
+```
+cd EEOB-BCB-546X
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/EEOB-BioData/EEOB-BCB-546X/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+To build the site, you must have [Jekyll installed](https://jekyllrb.com/docs/installation/). If you have Jekyll, you can install the Millidocs bundle:
 
-### Support or Contact
+    $ bundle
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Or install it yourself as:
+
+    $ gem install millidocs
+
+Now you should be able to serve the website on your local machine using Jekyll:
+
+```
+jekyll serve
+```
+
+This will generate the whole site so that you can view it on your own machine at `http://127.0.0.1:4000/`.
+
+Now if you make changes, you will be able to preview them before pushing the source to the remote host on GitHub.
+
+### Directory Structure and Making Edits
+
+Most of the files in the site directory determine the style and layout of the pages. This Jekyll theme only supports page, which are all composed in Markdown and should be located in the top directory. 
+
+Additionally, there is a directory called `slides`, which is where we can post the lecture slides. We can simply link to these slides using their relative paths: `[today's lecture slides](slides/today_lecture.html)`.

@@ -1,1 +1,15 @@
-theme: jekyll-theme-minimal
+title: EEOB/BCB 546X
+description: MY description
+url: "https://eeob-biodata.github.io/EEOB-BCB-546X"
+theme: millidocs
+
+markdown: kramdown
+kramdown:
+syntax_highlighter_opts:
+  disable : true
+
+exclude:
+- Gemfile
+- Gemfile.lock
+- README.md
+
