@@ -2,7 +2,7 @@
 layout: page
 title: EEOB/BCB 546X - Software
 sidebar: Software
-navigation: 4
+navigation: 3
 icon: <i class='fa fa-laptop'></i> 
 ---
 
