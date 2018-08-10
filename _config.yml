@@ -1,7 +1,7 @@
 title: EEOB/BCB 546X
 description: Content for EEOB/BCB 546X - Computational Sills for Biological Data, a graduate-level course taught at Iowa State University.
 url: "https://eeob-biodata.github.io/EEOB-BCB-546X"
-theme: millidocs
+remote_theme: alexander-heimbuch/millidocs
 
 markdown: kramdown
 kramdown:
@@ -13,4 +13,3 @@ exclude:
 - Gemfile.lock
 - README.md
 
-remote_theme: alexander-heimbuch/millidocs
