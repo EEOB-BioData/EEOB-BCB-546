@@ -22,5 +22,5 @@ A Unix environment can be emulated using the “​Git Bash​” program, by pa
 
 ## Slack
 
-All course communication will be conducted via slack. You should have gotten an invitation to join the course slack team called **BioDataSkills** (if not, please contact one of the instructors). Please be sure to check slack regularly for course updates. It is recommended that you download the slack desktop app ([https://slack.com/downloads](https://slack.com/downloads)), which makes it easier to stay on top of messages. 
+All course communication will be conducted via slack. You should have gotten an invitation to join the course slack team called **BioDataSkills** (if not, please contact one of the instructors). Please be sure to check slack regularly for course updates. It is recommended that you download the Slack desktop app ([https://slack.com/downloads](https://slack.com/downloads)), which makes it easier to stay on top of messages. 
 
