@@ -8,6 +8,8 @@ navigation: 5
 
 # EEOB/BCB 546X Reading Material
 
+## Course Textbook
+
 The reference and textbook primarily used in the course is [*Bioinformatics Data Skills*](http://shop.oreilly.com/product/0636920030157.do) by [Vince Buffalo](http://www.vincebuffalo.com/). 
 
 ## Additional Resources
