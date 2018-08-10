@@ -22,4 +22,6 @@ The reference and textbook primarily used in the course is [*Bioinformatics Data
 
 * [Software Carpentry](https://software-carpentry.org/)
 * [Data Carpentry](https://datacarpentry.org/)
+* [Pro Git](https://git-scm.com/book/en/v2)
+* [Try GitHub](https://try.github.io/)
 
