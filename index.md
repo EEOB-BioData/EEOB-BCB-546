@@ -15,7 +15,7 @@ competent with command-line data processing and analysis. This course will devel
 Topics will include UNIX commands, scripting in R and Python, version control using Git and GitHub, use of high performance computing clusters, and writing effective data-management plans. These topics
 will be taught using a combination of lectures and computational exercises.
 
-<a href="#"><button type="button" class="btn btn-primary">Course Syllabus</button></a>
+<a href="https://github.com/EEOB-BioData/BCB546X-Fall2018/blob/master/documents/BCB546X_Syllabus_f2018.pdf"><button type="button" class="btn btn-primary">Course Syllabus</button></a>
 
 ### Fall 2018 Time and Location
 
