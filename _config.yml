@@ -13,3 +13,4 @@ exclude:
 - Gemfile.lock
 - README.md
 
+remote_theme: alexander-heimbuch/millidocs
