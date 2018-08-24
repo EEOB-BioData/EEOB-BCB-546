@@ -6,7 +6,7 @@ navigation: 3
 icon: <i class='fa fa-laptop'></i> 
 ---
 
-# EEOB/BCB 546X Installation Guide
+# EEOB/BCB 546X Software Guide
 
 ## Unix
 
