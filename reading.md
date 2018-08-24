@@ -17,6 +17,7 @@ The reference and textbook primarily used in the course is [*Bioinformatics Data
 ### Books and Articles
 
 * [Practical Computing for Biologists](http://practicalcomputing.org/) by S. Haddock and C. Dunn
+* [Bioinformatics Program Using Python](http://shop.oreilly.com/product/9780596154516.do) by M. Model
 
 ### Tutorials and Online Resources
 
@@ -24,4 +25,6 @@ The reference and textbook primarily used in the course is [*Bioinformatics Data
 * [Data Carpentry](https://datacarpentry.org/)
 * [Pro Git](https://git-scm.com/book/en/v2)
 * [Try GitHub](https://try.github.io/)
+* [vi/vim Cheat Sheet](http://www.viemu.com/vi-vim-cheat-sheet.gif)
+* [BioPython](https://biopython.org/)
 
