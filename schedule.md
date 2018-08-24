@@ -25,4 +25,4 @@ The 2018 repository can be found at: [https://github.com/EEOB-BioData/BCB546X-Fa
 ### Week 1
 
 * Lecture 1: Introduction to Unix [[slides](slides/Week1_Lecture1.pdf)]
-* Lecture 2: Delving more deeply into UNIX [[slides](slides/lecture_25Aug-MBH.html)]
+* Lecture 2: Delving more deeply into UNIX [[slides](slides/lecture_24Aug-MBH.html)]
