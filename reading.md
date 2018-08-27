@@ -27,4 +27,5 @@ The reference and textbook primarily used in the course is [*Bioinformatics Data
 * [Try GitHub](https://try.github.io/)
 * [vi/vim Cheat Sheet](http://www.viemu.com/vi-vim-cheat-sheet.gif)
 * [BioPython](https://biopython.org/)
+* [Professional Skills for Data Science](http://www.stat.wisc.edu/network-skills)
 
