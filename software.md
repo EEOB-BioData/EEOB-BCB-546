@@ -41,6 +41,15 @@ We highly recommend that you use an advanced text editor for this course and you
 * [Atom](https://atom.io/) (Unix, Mac OS X, Windows)
 * [BBEdit](https://www.barebones.com/products/bbedit/) (Mac OS X)
 
+For Markdown, you might like to use an application that will render the Markdown as HTML so you can see
+the formatted document. There are several nice Markdown editors available (and you can also get plug-ins
+for Sublime Text and Atom that can do this). 
+
+* [MacDown](https://macdown.uranusjr.com/) (for Mac OS X only)
+* [MarkdownPad](http://markdownpad.com/) (for Windows only)
+* [typora](https://typora.io/) (free while in beta, for all OS)
+* [StackEdit](https://stackedit.io/) (an in-browser editor)
+
 ## Slack
 
 All course communication will be conducted via slack. You should have gotten an invitation to join the course slack team called **BioDataSkills** (if not, please contact one of the instructors). Please be sure to check slack regularly for course updates. It is recommended that you download the Slack desktop app ([https://slack.com/downloads](https://slack.com/downloads)), which makes it easier to stay on top of messages. 
