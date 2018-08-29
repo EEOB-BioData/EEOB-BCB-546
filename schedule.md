@@ -18,6 +18,8 @@ All of the files used for in-class activities and assignments are published onli
 
 The 2018 repository can be found at: [https://github.com/EEOB-BioData/BCB546X-Fall2018](https://github.com/EEOB-BioData/BCB546X-Fall2018). 
 
+You will also need to access the files associated with the course textbook _Bioinformatics Data Skills_ by Vince Buffalo. This repostitory can be found here: [https://github.com/vsbuffalo/bds-files](https://github.com/vsbuffalo/bds-files).
+
 
 ## In Class Activities
 
