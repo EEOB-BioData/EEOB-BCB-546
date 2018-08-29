@@ -23,12 +23,21 @@ You will also need to access the files associated with the course textbook _Bioi
 
 ## In Class Activities
 
+<!-- <A href="#week-2"><button type="button" class="btn btn-primary">Scroll to Current Week</button></A> -->
+
+### Current Week 
+<!-- I think it'd be good to have the current week on top, so when starting a new week, please move 
+the previous week to the end and label it with the appropriate number -->
+
+August 29-32
+
+* Lecture 3: Delving more deeply into UNIX, cont. [[slides](slides/lecture_24Aug-MBH.html)], Introduction to HPC [[slides](slides/lecture_29Aug-MBH.html)]
+
 
 ### Week 1
+
+August 22-24
 
 * Lecture 1: Introduction to Unix [[slides](slides/Week1_Lecture1.pdf)]
 * Lecture 2: Delving more deeply into UNIX [[slides](slides/lecture_24Aug-MBH.html)]
 
-### Week 2
-
-* Lecture 3: Delving more deeply into UNIX, cont. [[slides](slides/lecture_24Aug-MBH.html)], Introduction to HPC [[slides](slides/lecture_29Aug-MBH.html)]
