@@ -22,7 +22,7 @@ A Unix environment can be emulated using the “​Git Bash​” program, by pa
 
 ## HPC-Class
 
-Much of the work you will do for this class will be executed on the course cluster. To log on to this resource, you need to be on campus or use the ISU VPN. To set up the VPN, follow the instructions on the [ISU HPC site](https://www.hpc.iastate.edu/guides/classroom-hpc-cluster/access-and-login).
+Much of the work you will do for this class will be executed on the course cluster: [HPC-Class](https://www.hpc.iastate.edu/guides/classroom-hpc-cluster). To log on to this resource, you need to be on campus or use the ISU VPN. To set up the VPN, follow the instructions on the [ISU HPC site](https://www.hpc.iastate.edu/guides/classroom-hpc-cluster/access-and-login).
 
 To get to your account on the cluster, open your terminal (Unix) or Git-Bash (Windows) and type the following in the command line, but be sure to replace `your_ISU_NETID` with your actual ISU NETID:
 
@@ -30,7 +30,10 @@ To get to your account on the cluster, open your terminal (Unix) or Git-Bash (Wi
 ssh your_ISU_NETID@hpc-class.its.iastate.edu
 ```
 
-After you execute this command, you will be prompted to input your ISU NETID password. IF you enter the correct password, you will then be in your home directory on the remote machine.
+After you execute this command, you will be prompted to input your ISU NETID password. IF you enter the correct password, you will then be in your home directory on the head node of the remote machine.
+
+HPC-Class is a cluster that uses a SLURM scheduler. So to run an analysis on this cluster, you must
+submit your job using a SLURM script. There is a script generator that you can use to create this file: [HPC-Class SLURM Script Generator](https://www.hpc.iastate.edu/guides/classroom-hpc-cluster/slurm-job-script-generator).
 
 ## Text Editors 
 
