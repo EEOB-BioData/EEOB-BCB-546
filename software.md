@@ -50,6 +50,7 @@ for Sublime Text and Atom that can do this).
 
 * [MacDown](https://macdown.uranusjr.com/) (for Mac OS X only)
 * [MarkdownPad](http://markdownpad.com/) (for Windows only)
+* [REMARKABLE](https://remarkableapp.github.io/) (for Windows and Linux)
 * [typora](https://typora.io/) (free while in beta, for all OS)
 * [StackEdit](https://stackedit.io/) (an in-browser editor)
 
