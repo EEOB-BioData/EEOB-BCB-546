@@ -755,7 +755,7 @@ $ cat example2.bed
 ```
 $ sort -k1,1 -k2,2n example2.bed
 
-$ gsort -k1,1V -k2,2n example2.bed
+$ sort -k1,1V -k2,2n example2.bed
 ```
 
 --
@@ -765,7 +765,7 @@ $ gsort -k1,1V -k2,2n example2.bed
 ```
 $ sort -k1,1 -k4,4n -S2G Mus_musculus.GRCm38.75_chr1_random.gtf
 
-$ gsort -k1,1 -k4,4n --parallel 4 Mus_musculus.GRCm38.75_chr1_random.gtf
+$ sort -k1,1 -k4,4n --parallel 4 Mus_musculus.GRCm38.75_chr1_random.gtf
 ```
 ---
 
@@ -904,7 +904,7 @@ $ join -1 1 -2 1 example_sorted.bed example_lengths_alt.txt | wc -l
 * The GNU `join` option `-a` allows us to include these "unpairable" lines in our output file:
 
 ```
-$ gjoin -1 1 -2 1 -a 1 example_sorted.bed example_lengths_alt.txt
+$ join -1 1 -2 1 -a 1 example_sorted.bed example_lengths_alt.txt
 ```
 ---
 
