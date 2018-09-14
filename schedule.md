@@ -29,9 +29,10 @@ You will also need to access the files associated with the course textbook _Bioi
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move 
 the previous week to the end and label it with the appropriate number -->
 
-September 5-7
+September 12-14
 
-* Lecture 4: Unix Data Skills [[slides](slides/lecture_5-Sep-MBH.html)]
+* Lecture 4: Unix Data Skills [[slides](slides/lecture_5-Sep-MBH.html)], (continued)
+* Lecture 5: Introduction to Version Control using Git [[slides](slides/lecture_14Sep-TAH.html)]
 
 ### Week 1
 
@@ -46,3 +47,8 @@ August 29-31
 
 * Lecture 3: Delving more deeply into UNIX, cont. [[slides](slides/lecture_24Aug-MBH.html)], Introduction to HPC [[slides](slides/lecture_29Aug-MBH.html)]
 
+### Week 3 
+
+September 5-7
+
+* Lecture 4: Unix Data Skills [[slides](slides/lecture_5-Sep-MBH.html)]
