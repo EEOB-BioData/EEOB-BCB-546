@@ -33,6 +33,7 @@ September 12-14
 
 * Lecture 4: Unix Data Skills [[slides](slides/lecture_5-Sep-MBH.html)], (continued)
 * Lecture 5: Introduction to Version Control using Git [[slides](slides/lecture_14Sep-TAH.html)]
+	* To experiment more with the features of Git and GitHub, try the [Git/Markdown Exercise](https://github.com/EEOB-BioData/Git-Markdown-Exercise)
 
 ### Week 1
 
