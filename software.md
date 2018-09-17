@@ -54,6 +54,53 @@ for Sublime Text and Atom that can do this).
 * [typora](https://typora.io/) (free while in beta, for all OS)
 * [StackEdit](https://stackedit.io/) (an in-browser editor)
 
+## Programming Environments
+
+For the parts of the course when we are working on programming in R or in Python, we will require that you have a few things installed.
+
+### R
+
+You can work with R by writing text files or by using an IDE (interactive development environment). We recommend using an IDE (RStudio), which requires that you first install R.
+
+* [Download R](http://www.cran.r-project.org/)
+* [RStudio Desktop](https://www.rstudio.com/products/rstudio/download/) -- this is a well-designed IDE for working with R
+
+### Python
+
+It is helpful for us all to use the same Python environment. We recommend using the all-in-one Python installer [Anaconda](http://continuum.io/downloads.html). We will also be using Python 3 for this class. Anaconda will install most of the packages we will need.
+
+The following install instructions are from the [Data Carpentry lesson on Python](http://www.datacarpentry.org/python-ecology-lesson/).
+
+#### Windows
+
+* Download and install [Anaconda](https://www.anaconda.com/download/#windows)
+* Download the default Python 3 installer. Use all of the defaults for installation and **make sure to check "Make Anaconda the default Python"**.
+
+#### Mac OS X
+
+* Download and install [Anaconda](https://www.anaconda.com/download/#macos)
+* Download the default Python 3 installer. Use all of the defaults for installation.
+
+#### Linux
+
+1. Download the default [Python 3](https://www.anaconda.com/download/#linux) installer.
+2. Open a terminal window.
+3. Type
+```
+bash Anaconda-
+```
+and then press tab. The name of the file you just downloaded should appear.
+4. Press enter. You will follow the text-only prompts. When there is a colon at the bottom of the screen press the down arrow to move down through the text. Type yes and press enter to approve the license. Press enter to approve the default location for the files. Type yes and press enter to add Anaconda to your PATH (this makes the Anaconda distribution the default Python).
+
+#### Update
+
+After downloading and installing Anaconda, it is helpful to update the packages. Do this in your terminal window.
+
+```
+conda update --all
+```
+
+
 ## Slack
 
 All course communication will be conducted via slack. You should have gotten an invitation to join the course slack team called **BioDataSkills** (if not, please contact one of the instructors). Please be sure to check slack regularly for course updates. It is recommended that you download the Slack desktop app ([https://slack.com/downloads](https://slack.com/downloads)), which makes it easier to stay on top of messages. 

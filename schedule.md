@@ -29,11 +29,11 @@ You will also need to access the files associated with the course textbook _Bioi
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move 
 the previous week to the end and label it with the appropriate number -->
 
-September 12-14
+September 19-21
 
-* Lecture 4: Unix Data Skills [[slides](slides/lecture_5-Sep-MBH.html)], (continued)
-* Lecture 5: Introduction to Version Control using Git [[slides](slides/lecture_14Sep-TAH.html)]
-	* To experiment more with the features of Git and GitHub, try the [Git/Markdown Exercise](https://github.com/EEOB-BioData/Git-Markdown-Exercise)
+* Lecture 6: Version Control using Git (continued)
+* Lecture 7: Introduction to R 
+	* Please see the [Software page](software#r) for instructions on installing software for the R lessons.
 
 ### Week 1
 
@@ -53,3 +53,12 @@ August 29-31
 September 5-7
 
 * Lecture 4: Unix Data Skills [[slides](slides/lecture_5-Sep-MBH.html)]
+
+### Week 4
+
+September 12-14
+
+* Lecture 4: Unix Data Skills [[slides](slides/lecture_5-Sep-MBH.html)], (continued)
+* Lecture 5: Introduction to Version Control using Git [[slides](slides/lecture_14Sep-TAH.html)]
+	* To experiment more with the features of Git and GitHub, try the [Git/Markdown Exercise](https://github.com/EEOB-BioData/Git-Markdown-Exercise)
+
