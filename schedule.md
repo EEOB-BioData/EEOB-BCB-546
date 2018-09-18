@@ -31,7 +31,7 @@ the previous week to the end and label it with the appropriate number -->
 
 September 19-21
 
-* Lecture 6: Version Control using Git (continued)
+* Lecture 6: More Fun with Git [[slides](slides/lecture_19Sep-TAH.html)]
 * Lecture 7: Introduction to R 
 	* Please see the [Software page](software#r) for instructions on installing software for the R lessons.
 
