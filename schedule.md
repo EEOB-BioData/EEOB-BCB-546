@@ -32,7 +32,7 @@ the previous week to the end and label it with the appropriate number -->
 September 19-21
 
 * Lecture 6: More Fun with Git [[slides](slides/lecture_19Sep-TAH.html)]
-* Lecture 7: Introduction to R 
+* Lecture 7: Introduction to R [website](https://eeob-biodata.github.io/BCB546X-R/) 
 	* Please see the [Software page](software#r) for instructions on installing software for the R lessons.
 
 ### Week 1
