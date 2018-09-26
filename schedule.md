@@ -30,8 +30,8 @@ You will also need to access the files associated with the course textbook _Bioi
 the previous week to the end and label it with the appropriate number -->
 
 September 26-28
-* Lecture 8: R Data Structures [website](https://eeob-biodata.github.io/BCB546X-R/)
-* Lecture 9: Data Import [website](https://eeob-biodata.github.io/BCB546X-R/)
+* Lecture 8: R Data Structures [[website]](https://eeob-biodata.github.io/BCB546X-R/)
+* Lecture 9: Data Import [[website]](https://eeob-biodata.github.io/BCB546X-R/)
 
 ### Week 1
 
@@ -65,7 +65,7 @@ September 12-14
 September 19-21
 
 * Lecture 6: More Fun with Git [[slides](slides/lecture_19Sep-TAH.html)]
-* Lecture 7: Introduction to R [website](https://eeob-biodata.github.io/BCB546X-R/) 
+* Lecture 7: Introduction to R [[website]](https://eeob-biodata.github.io/BCB546X-R/) 
 	* Please see the [Software page](software#r) for instructions on installing software for the R lessons.
 
 
