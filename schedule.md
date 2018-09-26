@@ -29,11 +29,9 @@ You will also need to access the files associated with the course textbook _Bioi
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move 
 the previous week to the end and label it with the appropriate number -->
 
-September 19-21
-
-* Lecture 6: More Fun with Git [[slides](slides/lecture_19Sep-TAH.html)]
-* Lecture 7: Introduction to R [website](https://eeob-biodata.github.io/BCB546X-R/) 
-	* Please see the [Software page](software#r) for instructions on installing software for the R lessons.
+September 26-28
+* Lecture 8: R Data Structures [website](https://eeob-biodata.github.io/BCB546X-R/)
+* Lecture 9: Data Import [website](https://eeob-biodata.github.io/BCB546X-R/)
 
 ### Week 1
 
@@ -61,4 +59,13 @@ September 12-14
 * Lecture 4: Unix Data Skills [[slides](slides/lecture_5-Sep-MBH.html)], (continued)
 * Lecture 5: Introduction to Version Control using Git [[slides](slides/lecture_14Sep-TAH.html)]
 	* To experiment more with the features of Git and GitHub, try the [Git/Markdown Exercise](https://github.com/EEOB-BioData/Git-Markdown-Exercise)
+
+### Week 5
+
+September 19-21
+
+* Lecture 6: More Fun with Git [[slides](slides/lecture_19Sep-TAH.html)]
+* Lecture 7: Introduction to R [website](https://eeob-biodata.github.io/BCB546X-R/) 
+	* Please see the [Software page](software#r) for instructions on installing software for the R lessons.
+
 
