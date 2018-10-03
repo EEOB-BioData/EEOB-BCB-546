@@ -29,9 +29,9 @@ You will also need to access the files associated with the course textbook _Bioi
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move 
 the previous week to the end and label it with the appropriate number -->
 
-September 26-28
-* Lecture 8: R Data Structures [[website]](https://eeob-biodata.github.io/BCB546X-R/)
-* Lecture 9: Data Import [[website]](https://eeob-biodata.github.io/BCB546X-R/)
+October 3-5
+* Lecture 10: Data Transformation with `dplyr` [[website]](https://eeob-biodata.github.io/BCB546X-R/)
+* Lecture 11: Data Visualization with `ggplot2` [[website]](https://eeob-biodata.github.io/BCB546X-R/)
 
 ### Week 1
 
@@ -68,4 +68,10 @@ September 19-21
 * Lecture 7: Introduction to R [[website]](https://eeob-biodata.github.io/BCB546X-R/) 
 	* Please see the [Software page](software#r) for instructions on installing software for the R lessons.
 
+### Week 6
 
+September 26-28
+* Lecture 8: R Data Structures [[website]](https://eeob-biodata.github.io/BCB546X-R/)
+	* [[In-class examples](slides/examples_26Sep-DVL.html)]
+* Lecture 9: Data Import [[website]](https://eeob-biodata.github.io/BCB546X-R/)
+	* [[In-class examples](slides/examples_28Sep-DVL.html)]
