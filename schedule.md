@@ -29,9 +29,9 @@ You will also need to access the files associated with the course textbook _Bioi
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move 
 the previous week to the end and label it with the appropriate number -->
 
-October 3-5
-* Lecture 10: Data Transformation with `dplyr` [[website]](https://eeob-biodata.github.io/BCB546X-R/)
-* Lecture 11: Data Visualization with `ggplot2` [[website]](https://eeob-biodata.github.io/BCB546X-R/)
+October 10-12
+* Lecture 12: More R [[website]](https://eeob-biodata.github.io/BCB546X-R/)
+* Lecture 13: Genomic Ranges in R
 
 ### Week 1
 
@@ -75,3 +75,11 @@ September 26-28
 	* [[In-class examples](slides/examples_26Sep-DVL.html)]
 * Lecture 9: Data Import [[website]](https://eeob-biodata.github.io/BCB546X-R/)
 	* [[In-class examples](slides/examples_28Sep-DVL.html)]
+
+### Week 7
+
+October 3-5
+* Lecture 10: Data Transformation with `dplyr` [[website]](https://eeob-biodata.github.io/BCB546X-R/)
+* Lecture 11: Data Visualization with `ggplot2` [[website]](https://eeob-biodata.github.io/BCB546X-R/)
+
+
