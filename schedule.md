@@ -29,9 +29,9 @@ You will also need to access the files associated with the course textbook _Bioi
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move 
 the previous week to the end and label it with the appropriate number -->
 
-September 5-7
-
-* Lecture 4: Unix Data Skills [[slides](slides/lecture_5-Sep-MBH.html)]
+October 10-12
+* Lecture 12: More R [[website]](https://eeob-biodata.github.io/BCB546X-R/)
+* Lecture 13: Genomic Ranges in R
 
 ### Week 1
 
@@ -45,4 +45,41 @@ August 22-24
 August 29-31
 
 * Lecture 3: Delving more deeply into UNIX, cont. [[slides](slides/lecture_24Aug-MBH.html)], Introduction to HPC [[slides](slides/lecture_29Aug-MBH.html)]
+
+### Week 3 
+
+September 5-7
+
+* Lecture 4: Unix Data Skills [[slides](slides/lecture_5-Sep-MBH.html)]
+
+### Week 4
+
+September 12-14
+
+* Lecture 4: Unix Data Skills [[slides](slides/lecture_5-Sep-MBH.html)], (continued)
+* Lecture 5: Introduction to Version Control using Git [[slides](slides/lecture_14Sep-TAH.html)]
+	* To experiment more with the features of Git and GitHub, try the [Git/Markdown Exercise](https://github.com/EEOB-BioData/Git-Markdown-Exercise)
+
+### Week 5
+
+September 19-21
+
+* Lecture 6: More Fun with Git [[slides](slides/lecture_19Sep-TAH.html)]
+* Lecture 7: Introduction to R [[website]](https://eeob-biodata.github.io/BCB546X-R/) 
+	* Please see the [Software page](software#r) for instructions on installing software for the R lessons.
+
+### Week 6
+
+September 26-28
+* Lecture 8: R Data Structures [[website]](https://eeob-biodata.github.io/BCB546X-R/)
+	* [[In-class examples](slides/examples_26Sep-DVL.html)]
+* Lecture 9: Data Import [[website]](https://eeob-biodata.github.io/BCB546X-R/)
+	* [[In-class examples](slides/examples_28Sep-DVL.html)]
+
+### Week 7
+
+October 3-5
+* Lecture 10: Data Transformation with `dplyr` [[website]](https://eeob-biodata.github.io/BCB546X-R/)
+* Lecture 11: Data Visualization with `ggplot2` [[website]](https://eeob-biodata.github.io/BCB546X-R/)
+
 
