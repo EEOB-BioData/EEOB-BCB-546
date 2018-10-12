@@ -30,8 +30,9 @@ You will also need to access the files associated with the course textbook _Bioi
 the previous week to the end and label it with the appropriate number -->
 
 October 10-12
+
 * Lecture 12: More R [[website]](https://eeob-biodata.github.io/BCB546X-R/)
-* Lecture 13: Genomic Ranges in R
+* Lecture 13: Genomic Ranges in R [[slides](slides/lecture_13Oct-MBH.html)]
 
 ### Week 1
 
