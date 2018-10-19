@@ -32,6 +32,7 @@ the previous week to the end and label it with the appropriate number -->
 October 15-19
 
 * Lecture 14: Introduction to Python [[website]](https://eeob-biodata.github.io/BCB546X-python/)
+* Lecture 15: Introduction to Python Datatypes and Packages [[website]](https://eeob-biodata.github.io/BCB546X-python/02-datatypes/)
 
 ### Week 1
 
