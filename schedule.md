@@ -30,7 +30,10 @@ the previous week to the end and label it with the appropriate number -->
 
 October 24-26
 
-* Lectures 16 & 17: Working With Pandas DataFrames in Python [[website]](https://eeob-biodata.github.io/BCB546X-python/03-starting-with-data/)
+* Lecture 16: Working With Pandas DataFrames in Python [[website]](https://eeob-biodata.github.io/BCB546X-python/03-starting-with-data/)
+* Lecture 17:
+	* Summarizing DataFrames [website](https://eeob-biodata.github.io/BCB546X-python//03-starting-with-data/#quicksumm)
+	* Indexing, Slicing, Subsetting, and Iterating DataFrames in Python [website](https://eeob-biodata.github.io/BCB546X-python//04-more-dataframes/)
 
 ### Week 1
 
