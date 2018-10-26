@@ -32,8 +32,8 @@ October 24-26
 
 * Lecture 16: Working With Pandas DataFrames in Python [[website]](https://eeob-biodata.github.io/BCB546X-python/03-starting-with-data/)
 * Lecture 17:
-	* Summarizing DataFrames [website](https://eeob-biodata.github.io/BCB546X-python//03-starting-with-data/#quicksumm)
-	* Indexing, Slicing, Subsetting, and Iterating DataFrames in Python [website](https://eeob-biodata.github.io/BCB546X-python//04-more-dataframes/)
+	* Summarizing DataFrames [[website]](https://eeob-biodata.github.io/BCB546X-python//03-starting-with-data/#quicksumm)
+	* Indexing, Slicing, Subsetting, and Iterating DataFrames in Python [[website]](https://eeob-biodata.github.io/BCB546X-python//04-more-dataframes/)
 
 ### Week 1
 
