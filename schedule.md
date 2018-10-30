@@ -28,12 +28,11 @@ You will also need to access the files associated with the course textbook _Bioi
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move 
 the previous week to the end and label it with the appropriate number -->
 
-October 24-26
+October 31 - November 2
 
-* Lecture 16: Working With Pandas DataFrames in Python [[website]](https://eeob-biodata.github.io/BCB546X-python/03-starting-with-data/)
-* Lecture 17:
-	* Summarizing DataFrames [[website]](https://eeob-biodata.github.io/BCB546X-python//03-starting-with-data/#quicksumm)
-	* Indexing, Slicing, Subsetting, and Iterating DataFrames in Python [[website]](https://eeob-biodata.github.io/BCB546X-python//04-more-dataframes/)
+* Lecture 18:
+	* Changing Values in a DataFrame [[website]](https://eeob-biodata.github.io/BCB546X-python/04-more-dataframes/#changingvals)
+	* Visualizing Data in Python [[website]](https://eeob-biodata.github.io/BCB546X-python/05-seaborn-viz/)
 
 ### Week 1
 
@@ -97,4 +96,13 @@ October 15-19
 
 * Lecture 14: Introduction to Python [[website]](https://eeob-biodata.github.io/BCB546X-python/)
 * Lecture 15: Introduction to Python Datatypes and Packages [[website]](https://eeob-biodata.github.io/BCB546X-python/02-datatypes/)
+
+### Week 10
+
+October 24-26
+
+* Lecture 16: Working With Pandas DataFrames in Python [[website]](https://eeob-biodata.github.io/BCB546X-python/03-starting-with-data/)
+* Lecture 17:
+	* Summarizing DataFrames [[website]](https://eeob-biodata.github.io/BCB546X-python/03-starting-with-data/#quicksumm)
+	* Indexing, Slicing, Subsetting, and Iterating DataFrames in Python [[website]](https://eeob-biodata.github.io/BCB546X-python/04-more-dataframes/)
 
