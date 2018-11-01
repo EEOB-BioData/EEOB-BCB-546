@@ -14,16 +14,17 @@ GitHub repository.
 All of the material required for grading must be submitted on the [course Canvas page](https://canvas.iastate.edu/courses/52516). 
 
 ### Assignment #1: Unix:
-* The UNIX Assignment is available through the course GitHub repository in the [`UNIX_Assignment`](https://github.com/EEOB-BioData/BCB546X-Fall2018/tree/master/assignments/UNIX_Assignment) folder in the course GitHub repository (in the `assignments` folder).
+* The UNIX Assignment is available through the course GitHub repository in the [`UNIX_Assignment`](https://github.com/EEOB-BioData/BCB546X-Fall2018/tree/master/assignments/UNIX_Assignment) folder (in the `assignments` folder).
 * The assignment is due via submission in Canvas by 5pm on September 21st
 
 ### Assignment 2: R
-* The R Assignment is available through the course GitHub repository in the [`R_Assignment`](https://github.com/EEOB-BioData/BCB546X-Fall2018/tree/master/assignments/R_Assignment) folder in the course GitHub repository (in the `assignments` folder).
+* The R Assignment is available through the course GitHub repository in the [`R_Assignment`](https://github.com/EEOB-BioData/BCB546X-Fall2018/tree/master/assignments/R_Assignment) folder (in the `assignments` folder).
 * The assignment is due by 9am on October 12.  See instructions for submission within the assignment.
 
 ### Assignment 3: Python
 
-TBA
+* The Python Assignment is available on the course GitHub repository in the [`Python_Assignment`](https://github.com/EEOB-BioData/BCB546X-Fall2018/tree/master/assignments/Python_Assignment) folder (in the `assignments` folder).
+* The assignment is due via submission in Canvas by the end of the day on November 16.
 
 ## Assignment 4: Data Management Plans
 
