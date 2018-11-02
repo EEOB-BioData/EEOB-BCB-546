@@ -33,6 +33,8 @@ October 31 - November 2
 * Lecture 18:
 	* Changing Values in a DataFrame [[website]](https://eeob-biodata.github.io/BCB546X-python/04-more-dataframes/#changingvals)
 	* Visualizing Data in Python [[website]](https://eeob-biodata.github.io/BCB546X-python/05-seaborn-viz/)
+* Lecture 19: Visualizing Data in Python, continued [[website]](https://eeob-biodata.github.io/BCB546X-python/05-seaborn-viz/)
+
 
 ### Week 1
 
