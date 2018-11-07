@@ -28,13 +28,9 @@ You will also need to access the files associated with the course textbook _Bioi
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move 
 the previous week to the end and label it with the appropriate number -->
 
-October 31 - November 2
+November 7 - 9
 
-* Lecture 18:
-	* Changing Values in a DataFrame [[website]](https://eeob-biodata.github.io/BCB546X-python/04-more-dataframes/#changingvals)
-	* Visualizing Data in Python [[website]](https://eeob-biodata.github.io/BCB546X-python/05-seaborn-viz/)
-* Lecture 19: Visualizing Data in Python, continued [[website]](https://eeob-biodata.github.io/BCB546X-python/05-seaborn-viz/)
-
+* Lecture 20: Introduction to BioPython [[slides]](slides/biopython_lecture-2018-11-07.pdf)
 
 ### Week 1
 
@@ -107,4 +103,13 @@ October 24-26
 * Lecture 17:
 	* Summarizing DataFrames [[website]](https://eeob-biodata.github.io/BCB546X-python/03-starting-with-data/#quicksumm)
 	* Indexing, Slicing, Subsetting, and Iterating DataFrames in Python [[website]](https://eeob-biodata.github.io/BCB546X-python/04-more-dataframes/)
+
+### Week 11
+
+October 31 - November 2
+
+* Lecture 18:
+	* Changing Values in a DataFrame [[website]](https://eeob-biodata.github.io/BCB546X-python/04-more-dataframes/#changingvals)
+	* Visualizing Data in Python [[website]](https://eeob-biodata.github.io/BCB546X-python/05-seaborn-viz/)
+* Lecture 19: Visualizing Data in Python, continued [[website]](https://eeob-biodata.github.io/BCB546X-python/05-seaborn-viz/)
 
