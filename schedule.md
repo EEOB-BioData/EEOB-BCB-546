@@ -30,7 +30,8 @@ the previous week to the end and label it with the appropriate number -->
 
 November 7 - 9
 
-* Lectures 20 & 21: Introduction to BioPython [[slides]](slides/biopython_lecture-2018-11-07.pdf)
+* Lecture 20: Introduction to BioPython [[slides]](slides/biopython_lecture-2018-11-07.pdf)
+* Lecture 21: More BioPython [[slides]](slides/biopython_lecture_2018-11-09.pdf)
 
 ### Week 1
 
