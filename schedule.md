@@ -30,7 +30,7 @@ the previous week to the end and label it with the appropriate number -->
 
 November 14 - 16
 
-* Lecture 22: Sequence & Alignment Data [[slides]](slides/lecture_14Nov-mbh.html)
+* Lecture 22: Sequence & Alignment Data [[slides]](slides/lecture_14Nov-MBH.html)
 
 
 ### Week 1
