@@ -28,10 +28,10 @@ You will also need to access the files associated with the course textbook _Bioi
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move 
 the previous week to the end and label it with the appropriate number -->
 
-November 7 - 9
+November 14 - 16
 
-* Lecture 20: Introduction to BioPython [[slides]](slides/biopython_lecture-2018-11-07.pdf)
-* Lecture 21: More BioPython [[slides]](slides/biopython_lecture_2018-11-09.pdf)
+* Lecture 22: Sequence & Alignment Data [[slides]](slides/lecture_14Nov-mbh.html)
+
 
 ### Week 1
 
@@ -114,3 +114,9 @@ October 31 - November 2
 	* Visualizing Data in Python [[website]](https://eeob-biodata.github.io/BCB546X-python/05-seaborn-viz/)
 * Lecture 19: Visualizing Data in Python, continued [[website]](https://eeob-biodata.github.io/BCB546X-python/05-seaborn-viz/)
 
+### Week 12
+
+November 7 - 9
+
+* Lecture 20: Introduction to BioPython [[slides]](slides/biopython_lecture-2018-11-07.pdf)
+* Lecture 21: More BioPython [[slides]](slides/biopython_lecture_2018-11-09.pdf)
