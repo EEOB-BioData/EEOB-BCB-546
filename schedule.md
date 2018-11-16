@@ -31,7 +31,7 @@ the previous week to the end and label it with the appropriate number -->
 November 14-16
 
 * Lecture 22: Sequence & Alignment Data [[lecture slides](slides/lecture_14Nov-MBH.html)]
-* Lecture 23:
+* Lecture 23: Shell Scripting, Writing Pipelines, and Parallelizing Tasks [[website](https://data-skills.github.io/unix-and-bash/03-bash-scripts/index.html)]
 
 
 ### Week 1
