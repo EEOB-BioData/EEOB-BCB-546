@@ -28,7 +28,8 @@ All of the material required for grading must be submitted on the [course Canvas
 
 ## Assignment 4: Data Management Plans
 
-TBA
+* The instructions for the DMP assignment are available on the course GitHub repository in the [`DMP_Assignment`](https://github.com/EEOB-BioData/BCB546X-Fall2018/tree/master/assignments/DMP_Assignment) folder (in the `assignments` folder).
+* The assignment is due via submission in Canvas by the end of the day on December 3.
 
 ## Final Group Project
 
