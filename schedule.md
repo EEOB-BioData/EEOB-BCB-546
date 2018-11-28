@@ -28,10 +28,9 @@ You will also need to access the files associated with the course textbook _Bioi
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move 
 the previous week to the end and label it with the appropriate number -->
 
-November 14-16
+November 28-30
 
-* Lecture 22: Sequence & Alignment Data [[lecture slides](slides/lecture_14Nov-MBH.html)]
-* Lecture 23: Shell Scripting, Writing Pipelines, and Parallelizing Tasks [[website](https://data-skills.github.io/unix-and-bash/03-bash-scripts/index.html)]
+* Lecture 24: Data Management plans & LaTeX [[lecture slides on Overleaf](https://www.overleaf.com/read/jztkfbfjrhnf)]
 
 
 ### Week 1
@@ -121,3 +120,11 @@ November 7 - 9
 
 * Lecture 20: Introduction to BioPython [[slides]](slides/biopython_lecture-2018-11-07.pdf)
 * Lecture 21: More BioPython [[slides]](slides/biopython_lecture_2018-11-09.pdf)
+
+### Week 13
+
+November 14-16
+
+* Lecture 22: Sequence & Alignment Data [[lecture slides](slides/lecture_14Nov-MBH.html)]
+* Lecture 23: Shell Scripting, Writing Pipelines, and Parallelizing Tasks [[website](https://data-skills.github.io/unix-and-bash/03-bash-scripts/index.html)]
+
