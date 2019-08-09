@@ -6,33 +6,20 @@ navigation: 4
 icon: <i class='fa fa-check-circle'></i> 
 ---
 
-# Fall 2018 EEOB/BCB 546X Assignments
+# Fall 2019 EEOB/BCB 546X Assignments
 
 Your grade for this course is based on four assignments and a final project. Details for each assignment and links to files will be posted here over the course of the semester.
-Instructions and data files for each assignment will be added to the [`assignments`](https://github.com/EEOB-BioData/BCB546X-Fall2018/tree/master/assignments) folder in the course
+Instructions and data files for each assignment will be added to the [`assignments`](https://github.com/EEOB-BioData/BCB546X-Fall2019/tree/master/assignments) folder in the course
 GitHub repository. 
-All of the material required for grading must be submitted on the [course Canvas page](https://canvas.iastate.edu/courses/52516). 
+All of the material required for grading must be submitted on the [course Canvas page](). 
 
 ### Assignment #1: Unix:
-* The UNIX Assignment is available through the course GitHub repository in the [`UNIX_Assignment`](https://github.com/EEOB-BioData/BCB546X-Fall2018/tree/master/assignments/UNIX_Assignment) folder (in the `assignments` folder).
-* The assignment is due via submission in Canvas by 5pm on September 21st
+
 
 ### Assignment 2: R
-* The R Assignment is available through the course GitHub repository in the [`R_Assignment`](https://github.com/EEOB-BioData/BCB546X-Fall2018/tree/master/assignments/R_Assignment) folder (in the `assignments` folder).
-* The assignment is due by 9am on October 12.  See instructions for submission within the assignment.
 
-### Assignment 3: Python
+### Assignment 3: Data Management Plans
 
-* The Python Assignment is available on the course GitHub repository in the [`Python_Assignment`](https://github.com/EEOB-BioData/BCB546X-Fall2018/tree/master/assignments/Python_Assignment) folder (in the `assignments` folder).
-* The assignment is due via submission in Canvas by the end of the day on November 16.
-
-## Assignment 4: Data Management Plans
-
-* The instructions for the DMP assignment are available on the course GitHub repository in the [`DMP_Assignment`](https://github.com/EEOB-BioData/BCB546X-Fall2018/tree/master/assignments/DMP_Assignment) folder (in the `assignments` folder).
-* The assignment is due via submission in Canvas by the end of the day on December 3.
+### Assignment 4: Python
 
 ## Final Group Project
-
-The information and details for the final project can be found in the [`Final_Project`](https://github.com/EEOB-BioData/BCB546X-Fall2018/tree/master/assignments/Final_Project) folder in the course GitHub repository.
-
-* The deadline for forming groups is **September 28, 2018**. When you have formed your group, _post your group name and list of members_ on the Slack `#final-project` channel. 
