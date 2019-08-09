@@ -27,7 +27,7 @@ Or install it yourself as:
 Now you should be able to serve the website on your local machine using Jekyll:
 
 ```
-jekyll serve
+bundle exec jekyll serve
 ```
 
 This will generate the whole site so that you can view it on your own machine at `http://127.0.0.1:4000/`.
