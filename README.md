@@ -39,3 +39,35 @@ Now if you make changes, you will be able to preview them before pushing the sou
 Most of the files in the site directory determine the style and layout of the pages. This Jekyll theme only supports page, which are all composed in Markdown and should be located in the top directory. 
 
 Additionally, there is a directory called `slides`, which is where we can post the lecture slides. We can simply link to these slides using their relative paths: `[today's lecture slides](slides/today_lecture.html)`.
+
+## Updating for a New Semester
+
+When starting a new semester, it's necessary to make changes to the site. Here are the steps:
+
+* create a new GitHub repository for the course data files and documents, the format for naming this is `BCB546X-FallYEAR`
+* create a new syllabus and place it in the repository above
+* update the GitHub and Canvas links in `_includes/navigation.html`
+* update the year in `_includes/sidebar.html`
+* remove previous year's content in:
+	* `index.md`
+	* `schedule.md`
+	* `assignments.md`
+* correct the link to the syllabus on `index.md`
+* update the link to the schedule on `schedule.md`
+
+### New Look
+
+It is typically good to give the site a new look for each semester. This can be achieved by changing the theme (a lot of work) or changing the colors of the current theme (little work). Here are the colors we have used:
+
+#### Fall 2018 Green Theme
+
+* `_sass/milligram.scss` button background color `#047900`
+* `_sass/variables.scss` navigation background color `#C9E0C4`
+* `assets/css/docs.scss` link color `#047900`
+
+#### Fall 2019 Blue Theme
+
+* `_sass/milligram.scss` button background color `#006878`
+* `_sass/variables.scss` navigation background color `#AAD4E6`
+* `assets/css/docs.scss` link color `#006878`
+
