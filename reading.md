@@ -12,6 +12,10 @@ navigation: 5
 
 The reference and textbook primarily used in the course is [*Bioinformatics Data Skills*](http://shop.oreilly.com/product/0636920030157.do) by [Vince Buffalo](http://www.vincebuffalo.com/). 
 
+We will also use exercises and chapters from [*Computing Skills for Biologists: A Toolbox*](https://computingskillsforbiologists.com) by Stefano Allesina and Madlen Wilmes. 
+
+Both books are available as eBooks from the ISU library, see the syllabus for links. 
+
 ## Additional Resources
 
 ### Books and Articles
