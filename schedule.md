@@ -30,7 +30,7 @@ the previous week to the end and label it with the appropriate number -->
 
 August 28-30
 
-* Lecture 1: Introduction to Unix [[slides](slides/Week1_Lecture1.pdf)]
+* Lecture 1: Introduction to Unix [[slides](slides/Week1_Lecture1.pdf)] [[UNIX_exercise](slides/Unix_Exercise_1.pdf)]
 
 
 
