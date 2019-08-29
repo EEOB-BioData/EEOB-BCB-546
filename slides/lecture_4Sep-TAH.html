@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="keywords" content="Git & GitHub" />
     <meta name="description" content="Lecture introducing version control using Git." />
-    <title>BCB 546X -- 14 Sep 2018</title>
+    <title>BCB 546X -- 4 Sep 2019</title>
     <style>
       @import url(https://fonts.googleapis.com/css?family=Droid+Serif);
       @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
@@ -109,15 +109,15 @@ Passwords are not always secure and can be annoying to type.
 
 --
 
-* When you generate a key, you create two things: a public key and a private key.
+* When you generate a key, you create two things: a public key and a private key. 
 
 --
 
-* You place the public key on any server and then unlock it by connecting to it with a client that already has the private key.
+* You place the public key on any server and then unlock it by connecting to it with a client that already has the private key. 
 
 --
 
-* When the two match up, the system unlocks without the need for a password.
+* When the two match up, the system unlocks without the need for a password. We can see how to do this on `hpc-class`.
 
 --
 
@@ -341,7 +341,7 @@ Let me show you a little animation...
 # Version Control
 
 ### A version control system improves organization and collaboration
-<div style="text-align:center"><img src="https://raw.githubusercontent.com/EEOB-BioData/BCB546X-Spring2017/master/Week_2/images/gource_screen.png" alt="gource" style="width: 500px;" /></div>
+<div style="text-align:center"><img src="images/gource_screen.png" alt="gource" style="width: 500px;" /></div>
 
 --
 
@@ -351,9 +351,9 @@ Imagine a project with many more collaborators...
 
 # Version Control
 
-A snapshot of [RevBayes](https://github.com/revbayes/revbayes): 28 contributors; 40,250 files; 5,137,427 lines of code
+A snapshot of [RevBayes](https://github.com/revbayes/revbayes) project repository: 38 contributors; 59,082 files; 7,845,886 lines of code (as of August 2019)
 
-<div style="text-align:center"><img src="https://raw.githubusercontent.com/EEOB-BioData/BCB546X-Spring2017/master/Week_2/images/gource_screen-rb.png" alt="gource" style="width: 440px;" /></div>
+<div style="text-align:center"><img src="images/gource_screen-rb.png" alt="gource" style="width: 640px;" /></div>
 
 ???
 gource --start-date 2017-11-01 -s 0.1
@@ -509,25 +509,25 @@ to use Git to collaborate on MS Word documents.)
 
 ## Demo: Clone a Repository
 
-You become familiar with the concepts by using Git. We will start by cloning [ipyrad](https://github.com/dereneaton/ipyrad).
+You become familiar with the concepts by using Git. We will start by cloning [PyRanges](https://github.com/biocore-NTNU/pyranges).
 
-ipyrad is a python program for interactive assembly and analysis of RAD-seq data sets
+PyRanges is a python tool for efficient comparison of genomic intervals [(Bakken Stovner & Sætrom, _Bioinformatics_, in press)](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btz615/5543103)
 
 --
 
-Start by going to [https://github.com/dereneaton/ipyrad](https://github.com/dereneaton/ipyrad) to get the URL.
+Start by going to [https://github.com/biocore-NTNU/pyranges](https://github.com/dereneaton/ipyrad) to get the URL.
 
 --
 
 ```
-$ git clone git@github.com:dereneaton/ipyrad.git
-Cloning into 'ipyrad'...
-remote: Counting objects: 11341, done.
-remote: Compressing objects: 100% (304/304), done.
-remote: Total 11341 (delta 199), reused 0 (delta 0), pack-reused 11037
-Receiving objects: 100% (11341/11341), 70.75 MiB | 5.91 MiB/s, done.
-Resolving deltas: 100% (8275/8275), done.
-Checking connectivity... done.
+$ git clone git@github.com:biocore-ntnu/pyranges.git
+Cloning into 'pyranges'...
+remote: Enumerating objects: 837, done.
+remote: Counting objects: 100% (837/837), done.
+remote: Compressing objects: 100% (398/398), done.
+remote: Total 3393 (delta 680), reused 563 (delta 423), pack-reused 2556
+Receiving objects: 100% (3393/3393), 6.08 MiB | 4.31 MiB/s, done.
+Resolving deltas: 100% (2572/2572), done.
 ```
 
 Note that using the url `git@github...` instead of `https://github...` uses SSH 
@@ -604,15 +604,15 @@ $ git branch
 Change to a different branch
 
 ```
-$ git checkout h5step7
+$ git checkout test_ray
 ```
 
 --
 
-Pull to update from `h5step7`
+Pull to update from `test_ray`
 
 ```
-$ git pull origin h5step7
+$ git pull origin test_ray
 ```
 
 ---
@@ -625,7 +625,7 @@ $ git pull origin h5step7
 
 --
 
-* You can only clone the repository and make changes locally
+* You can clone the repository and make changes locally, but you cannot push your changes
 
 --
 
@@ -654,7 +654,7 @@ so that everyone will have easy access to it).
 
 --
 
-But first, let's tell Git who you are
+But first, let's tell Git who you are (replace the text in quotes with your own name and email)
 
 ```
 $ git config --global user.name "Ada Lovelace"
