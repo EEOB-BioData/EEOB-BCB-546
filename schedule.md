@@ -31,6 +31,7 @@ the previous week to the end and label it with the appropriate number -->
 September 4-6
 
 * Lecture 3: Introduction to version control using Git [[slides](slides/lecture_4Sep-TAH.html)]
+	* Be sure to have a [GitHub account](https://github.com/) before class.
 * Lecture 4: More fun with Git [[slides](slides/lecture_6Sep-TAH.html)]
 
 
