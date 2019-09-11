@@ -28,19 +28,22 @@ You will also need to access the files associated with the course textbook _Bioi
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move 
 the previous week to the end and label it with the appropriate number -->
 
-September 4-6
+<u>September 11-13</u>
+
+* Lecture 5: Introduction to High Performance Computing [[slides](slides/lecture_11Sept-MBH.html)] [[HPC_Exercise](slides/HPC_Exercise.pdf)]
+
+
+### Previous Weeks 
+
+<u>August 28-30</u>
+
+* Lecture 1: Introduction to Unix [[slides](slides/Week1_Lecture1.pdf)] [[UNIX_exercise](slides/Unix_Exercise_1.pdf)]
+* Lecture 2: Buffalo Chapter 3, UNIX [[slides](slides/lecture_30Aug-MBH.html)]
+
+<u>September 4-6</u>
 
 * Lecture 3: Introduction to version control using Git [[slides](slides/lecture_4Sep-TAH.html)]
 	* Be sure to have a [GitHub account](https://github.com/) before class.
 * Lecture 4: More fun with Git [[slides](slides/lecture_6Sep-TAH.html)]
 
-
-### Previous Weeks 
-
-August 28-30
-
-* Lecture 1: Introduction to Unix [[slides](slides/Week1_Lecture1.pdf)] [[UNIX_exercise](slides/Unix_Exercise_1.pdf)]
-* Lecture 2: Buffalo Chapter 3, UNIX [[slides](slides/lecture_30Aug-MBH.html)]
-
-### New Line here
 
