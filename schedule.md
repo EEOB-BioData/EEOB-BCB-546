@@ -31,6 +31,7 @@ the previous week to the end and label it with the appropriate number -->
 <u>September 11-13</u>
 
 * Lecture 5: Introduction to High Performance Computing [[slides](slides/lecture_11Sept-MBH.html)] [[HPC_Exercise](slides/HPC_Exercise.pdf)]
+* Lecture 6: Buffalo Chapter 7: Advanced UNIX [[slides](slides/lecture_13-Sept-MBH.html)]
 
 
 ### Previous Weeks 
