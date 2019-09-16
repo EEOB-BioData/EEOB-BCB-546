@@ -39,7 +39,7 @@ the previous week to the end and label it with the appropriate number -->
 <u>August 28-30</u>
 
 * Lecture 1: Introduction to Unix [[slides](slides/Week1_Lecture1.pdf)] [[UNIX_exercise](slides/Unix_Exercise_1.pdf)]
-* Lecture 2: Buffalo Chapter 3, UNIX [[slides](slides/lecture_30Aug-MBH.html)]
+* Lecture 2: Buffalo Chapter 3, UNIX [[slides](slides/lecture_30Aug-MBH.html)] [[pdf of slides](slides/Chapter3_slides.pdf)]
 
 <u>September 4-6</u>
 
