@@ -28,9 +28,9 @@ You will also need to access the files associated with the course textbook _Bioi
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move 
 the previous week to the end and label it with the appropriate number -->
 
-<u>September 18-20</u>
+<u>September 25-27</u>
 
-* Lecture 7: Buffalo Chapter 7: Advanced UNIX [[slides](slides/lecture_13-Sept-MBH.html)] [[pdf of slides](slides/Chapter7_slides.pdf)]
+* Lecture 7 continued: Buffalo Chapter 7: Advanced UNIX [[slides](slides/lecture_13-Sept-MBH.html)] [[pdf of slides](slides/Chapter7_slides.pdf)]
 
 
 ### Previous Weeks 
@@ -50,5 +50,9 @@ the previous week to the end and label it with the appropriate number -->
 
 * Lecture 5: Introduction to High Performance Computing [[slides](slides/lecture_11Sept-MBH.html)] [[pdf of slides](slides/HPC_slides.pdf)] [[HPC_Exercise](slides/HPC_Exercise.pdf)]
 * Lecture 6: Buffalo Chapter 7: Advanced UNIX [[slides](slides/lecture_13-Sept-MBH.html)] [[pdf of slides](slides/Chapter7_slides.pdf)]
+
+<u>September 18-20</u>
+
+* Lecture 7: Buffalo Chapter 7: Advanced UNIX [[slides](slides/lecture_13-Sept-MBH.html)] [[pdf of slides](slides/Chapter7_slides.pdf)]
 
 
