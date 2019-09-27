@@ -30,8 +30,8 @@ the previous week to the end and label it with the appropriate number -->
 
 <u>September 25-27</u>
 
-* Lecture 7 continued: Buffalo Chapter 7: Advanced UNIX [[slides](slides/lecture_13-Sept-MBH.html)] [[pdf of slides](slides/Chapter7_slides.pdf)]
-
+* Lecture 9: Buffalo Chapter 7 (cont.): Advanced UNIX [[slides](slides/lecture_13-Sept-MBH.html)] [[pdf of slides](slides/Chapter7_slides.pdf)]
+* Lecture 10: Introduction to R and RStudio and R Markdown. [[link](https://eeob-biodata.github.io/BCB546X-R/)]
 
 ### Previous Weeks 
 
@@ -54,5 +54,5 @@ the previous week to the end and label it with the appropriate number -->
 <u>September 18-20</u>
 
 * Lecture 7: Buffalo Chapter 7: Advanced UNIX [[slides](slides/lecture_13-Sept-MBH.html)] [[pdf of slides](slides/Chapter7_slides.pdf)]
-
+* Lecture 8: Buffalo Chapter 7: Advanced UNIX [[slides](slides/lecture_13-Sept-MBH.html)] [[pdf of slides](slides/Chapter7_slides.pdf)]
 
