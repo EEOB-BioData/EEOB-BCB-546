@@ -26,3 +26,5 @@ All of the material required for grading must be submitted on the [course Canvas
 ### Assignment 4: Python
 
 ## Final Group Project
+* The Final Group Project is available through the course GitHub repository in the [`Final_Project`](https://github.com/EEOB-BioData/BCB546X-Fall2019/tree/master/assignments/Final_Project) folder (in the `assignments` folder).
+* The assignment is due via submission in Canvas by 5pm on December 11th
