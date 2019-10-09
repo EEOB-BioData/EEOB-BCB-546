@@ -28,10 +28,10 @@ You will also need to access the files associated with the course textbook _Bioi
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move 
 the previous week to the end and label it with the appropriate number -->
 
-<u>October 2-4</u>
+<u>October 9-11</u>
 
-* Lecture 11: Data structures [[link](https://eeob-biodata.github.io/BCB546X-R/)]
-* Lecture 12: Data subsetting and data import [[link](https://eeob-biodata.github.io/BCB546X-R/)]
+* Lecture 13: Data transformation [[link](https://eeob-biodata.github.io/BCB546X-R/)]
+* Lecture 14: Data visualization [[link](https://eeob-biodata.github.io/BCB546X-R/)]
 
 ### Previous Weeks 
 
@@ -60,4 +60,9 @@ the previous week to the end and label it with the appropriate number -->
 
 * Lecture 9: Buffalo Chapter 7 (cont.): Advanced UNIX [[slides](slides/lecture_13-Sept-MBH.html)] [[pdf of slides](slides/Chapter7_slides.pdf)]
 * Lecture 10: Introduction to R and RStudio and R Markdown. [[link](https://eeob-biodata.github.io/BCB546X-R/)]
+
+<u>October 2-4</u>
+
+* Lecture 11: Data structures [[link](https://eeob-biodata.github.io/BCB546X-R/)]
+* Lecture 12: Data subsetting and data import [[link](https://eeob-biodata.github.io/BCB546X-R/)]
 
