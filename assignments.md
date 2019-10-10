@@ -18,8 +18,11 @@ All of the material required for grading must be submitted on the [course Canvas
 * The assignment is due via submission in Canvas by 5pm on September 27th
 
 ### Assignment 2: R
-* The R Assignment is available through the course GitHub repository in the [`R_Assignment`](https://github.com/EEOB-BioData/BCB546X-Fall2019/tree/master/assignments/R_Assignment).
-* The assignment is due for peer review by 1pm on Wednesday, October 16. The final version of the assignment is due via submission in Canvas by 1pm on Monday, October 21st.
+* The R Assignment is available through the course GitHub repository in the [`R_Assignment`](https://github.com/EEOB-BioData/BCB546X-Fall2019/tree/master/assignments/R_Assignment).  
+* There are three deadlines for this assignment:
+  - Email your url link to the GitHub (public) repository you have created by 1pm on Wednesday, October 16.  
+  - Push your review to the forked repository and submit a Pull request by 1pm on Friday, October 18.  
+  - Submit a link to the final version of your assignment in Canvas by 1pm on Monday, October 21.  
 
 ### Assignment 3: Data Management Plans
 
