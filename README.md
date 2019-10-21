@@ -34,6 +34,28 @@ This will generate the whole site so that you can view it on your own machine at
 
 Now if you make changes, you will be able to preview them before pushing the source to the remote host on GitHub.
 
+### Troubleshooting
+
+If you get errors when running `bundle exec jekyll serve` this may be because you need to update installed gems or Gemfile snapshot. To do this first update your gems in the Gemfile:
+
+```
+bundle update
+```
+
+Then install any missing gems:
+
+```
+bundle install
+```
+
+You should be able to serve the site now:
+
+```
+bundle exec jekyll serve
+```
+
+
+
 ### Directory Structure and Making Edits
 
 Most of the files in the site directory determine the style and layout of the pages. This Jekyll theme only supports page, which are all composed in Markdown and should be located in the top directory. 
