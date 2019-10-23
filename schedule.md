@@ -30,7 +30,7 @@ the previous week to the end and label it with the appropriate number -->
 
 <u>October 23-25</u>
 
-* Lecture 16: Data Management Plans and LaTeX [[slides](https://www.overleaf.com/read/tvdjnkyvznrk)]
+* Lecture 16: Data Management Plans and LaTeX [[slides on Overleaf](https://www.overleaf.com/read/tvdjnkyvznrk)][[slides PDF](https://github.com/EEOB-BioData/EEOB-BCB-546X/blob/master/slides/lecture_23Oct_TAH.pdf)]
 
 
 ### Previous Weeks 
