@@ -38,7 +38,7 @@ the previous week to the end and label it with the appropriate number -->
 
 * Lecture 16: Data Management Plans and LaTeX [[slides on Overleaf](https://www.overleaf.com/read/tvdjnkyvznrk)][[slides PDF](https://github.com/EEOB-BioData/EEOB-BCB-546X/blob/master/slides/lecture_23Oct_TAH.pdf)]
 * Lecture 17: Getting Started with Python [[Python Homepage](https://eeob-biodata.github.io/BCB546X-python/)]
-	* Before we start _you must_ have Python installed. Please go to the [installation instructions](https://eeob-biodata.github.io/EEOB-BCB-546X/software#python) to find out how to install Anaconda.
+	* Before we start _you must_ have Python installed. Please go to the [installation instructions](software#python) to find out how to install Anaconda.
 	* [Introduction to Python Lesson](https://eeob-biodata.github.io/BCB546X-python/)
 
 
