@@ -28,9 +28,9 @@ You will also need to access the files associated with the course textbook _Bioi
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move 
 the previous week to the end and label it with the appropriate number -->
 
-<u>October 16-18</u>
+<u>October 23-25</u>
 
-* Lecture 15: Genomic Ranges [[slides](slides/lecture_18Oct-MBH.html)]
+* Lecture 16: Data Management Plans and LaTeX [[slides](https://www.overleaf.com/read/tvdjnkyvznrk)]
 
 
 ### Previous Weeks 
@@ -70,4 +70,8 @@ the previous week to the end and label it with the appropriate number -->
 
 * Lecture 13: Data transformation [[link](https://eeob-biodata.github.io/BCB546X-R/)]
 * Lecture 14: Data visualization [[link](https://eeob-biodata.github.io/BCB546X-R/)]
+
+<u>October 16-18</u>
+
+* Lecture 15: Genomic Ranges [[slides](slides/lecture_18Oct-MBH.html)]
 
