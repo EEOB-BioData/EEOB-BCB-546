@@ -28,18 +28,10 @@ You will also need to access the files associated with the course textbook _Bioi
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move 
 the previous week to the end and label it with the appropriate number -->
 
-<!-- <u>October 30-November 1 (Joëlle Barido-Sottani)</u>
+<u>November 6-8</u>
 
-* Lecture 18: [Introduction to Python Datatypes and Packages](https://eeob-biodata.github.io/BCB546X-python/02-datatypes/)
-* Lecture 19: [Working With Pandas DataFrames in Python](https://eeob-biodata.github.io/BCB546X-python/03-starting-with-data/)
- -->
-
-<u>October 23-25</u>
-
-* Lecture 16: Data Management Plans and LaTeX [[slides on Overleaf](https://www.overleaf.com/read/tvdjnkyvznrk)][[slides PDF](https://github.com/EEOB-BioData/EEOB-BCB-546X/blob/master/slides/lecture_23Oct_TAH.pdf)]
-* Lecture 17: Getting Started with Python [[Python Homepage](https://eeob-biodata.github.io/BCB546X-python/)]
-	* Before we start _you must_ have Python installed. Please go to the [installation instructions](software#python) to find out how to install Anaconda.
-	* [Introduction to Python Lesson](https://eeob-biodata.github.io/BCB546X-python/)
+* Lecture 20: [Working With Pandas DataFrames in Python, continued](https://eeob-biodata.github.io/BCB546X-python/03-starting-with-data/)
+* Lecture 21: [Indexing, Slicing, Subsetting, and Iterating DataFrames in Python](https://eeob-biodata.github.io/BCB546X-python/04-more-dataframes/)
 
 
 ### Previous Weeks 
@@ -83,4 +75,17 @@ the previous week to the end and label it with the appropriate number -->
 <u>October 16-18</u>
 
 * Lecture 15: Genomic Ranges [[slides](slides/lecture_18Oct-MBH.html)]
+
+<u>October 23-25</u>
+
+* Lecture 16: Data Management Plans and LaTeX [[slides on Overleaf](https://www.overleaf.com/read/tvdjnkyvznrk)][[slides PDF](https://github.com/EEOB-BioData/EEOB-BCB-546X/blob/master/slides/lecture_23Oct_TAH.pdf)]
+* Lecture 17: Getting Started with Python [[Python Homepage](https://eeob-biodata.github.io/BCB546X-python/)]
+	* Before we start _you must_ have Python installed. Please go to the [installation instructions](software#python) to find out how to install Anaconda.
+	* [Introduction to Python Lesson](https://eeob-biodata.github.io/BCB546X-python/)
+
+<u>October 30-November 1 (Joëlle Barido-Sottani)</u>
+
+* Lecture 18: [Introduction to Python Datatypes and Packages](https://eeob-biodata.github.io/BCB546X-python/02-datatypes/)
+* Lecture 19: [Working With Pandas DataFrames in Python](https://eeob-biodata.github.io/BCB546X-python/03-starting-with-data/)
+
 
