@@ -32,7 +32,7 @@ All of the material required for grading must be submitted on the [course Canvas
 ### Assignment 4: Python
 
 * The instructions for the DMP assignment are available on the course GitHub repository in the [`Python_Assignment`](https://github.com/EEOB-BioData/BCB546X-Fall2019/tree/master/assignments/Python_Assignment) folder (in the `assignments` folder).
-* The assignment is due via submission in Canvas by the end of the day on November 22, 2019 
+* The assignment is due via submission in Canvas by the end of the day on November 27, 2019 
 
 ## Final Group Project
 * The Final Group Project is available through the course GitHub repository in the [`Final_Project`](https://github.com/EEOB-BioData/BCB546X-Fall2019/tree/master/assignments/Final_Project) folder (in the `assignments` folder).
