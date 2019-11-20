@@ -28,10 +28,9 @@ You will also need to access the files associated with the course textbook _Bioi
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move 
 the previous week to the end and label it with the appropriate number -->
 
-<u>November 13-15</u>
+<u>November 20-22</u>
 
-* Lecture 22: [Visualizing Data in Python](https://eeob-biodata.github.io/BCB546X-python/05-seaborn-viz/)
-* Lecture 23: [Introduction to Biopython](https://eeob-biodata.github.io/BCB546X-python/06-biopython/)
+* Lecture 24: [Introduction to Biopython, continued](https://eeob-biodata.github.io/BCB546X-python/06-biopython/)
 
 
 ### Previous Weeks 
@@ -92,5 +91,11 @@ the previous week to the end and label it with the appropriate number -->
 
 * Lecture 20: [Working With Pandas DataFrames in Python, continued](https://eeob-biodata.github.io/BCB546X-python/03-starting-with-data/)
 * Lecture 21: [Indexing, Slicing, Subsetting, and Iterating DataFrames in Python](https://eeob-biodata.github.io/BCB546X-python/04-more-dataframes/)
+
+<u>November 13-15</u>
+
+* Lecture 22: [Visualizing Data in Python](https://eeob-biodata.github.io/BCB546X-python/05-seaborn-viz/)
+* Lecture 23: [Introduction to Biopython](https://eeob-biodata.github.io/BCB546X-python/06-biopython/)
+
 
 
