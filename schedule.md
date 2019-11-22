@@ -32,6 +32,8 @@ the previous week to the end and label it with the appropriate number -->
 
 * Lecture 24: [Introduction to Biopython, continued](https://eeob-biodata.github.io/BCB546X-python/06-biopython/)
 
+* Lecture 25: Sequence & Alignment Data: [[slides](slides/lecture_22Nov-MBH.html)]
+
 
 ### Previous Weeks 
 
