@@ -28,11 +28,11 @@ You will also need to access the files associated with the course textbook _Bioi
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move 
 the previous week to the end and label it with the appropriate number -->
 
-<u>November 20-22</u>
+<u>December 4-6</u>
 
-* Lecture 24: [Introduction to Biopython, continued](https://eeob-biodata.github.io/BCB546X-python/06-biopython/)
+* Lecture 26: [Shell Scripting](https://data-skills.github.io/unix-and-bash/03-bash-scripts/index.html)
 
-* Lecture 25: Sequence & Alignment Data: [[slides](slides/lecture_14Nov-MBH.html)]
+* Lecture 27: 
 
 
 ### Previous Weeks 
@@ -98,6 +98,11 @@ the previous week to the end and label it with the appropriate number -->
 
 * Lecture 22: [Visualizing Data in Python](https://eeob-biodata.github.io/BCB546X-python/05-seaborn-viz/)
 * Lecture 23: [Introduction to Biopython](https://eeob-biodata.github.io/BCB546X-python/06-biopython/)
+
+<u>November 20-22</u>
+
+* Lecture 24: [Introduction to Biopython, continued](https://eeob-biodata.github.io/BCB546X-python/06-biopython/)
+* Lecture 25: Sequence & Alignment Data: [[slides](slides/lecture_14Nov-MBH.html)]
 
 
 
