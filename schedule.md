@@ -30,9 +30,8 @@ the previous week to the end and label it with the appropriate number -->
 
 <u>December 4-6</u>
 
-* Lecture 26: [Shell Scripting](https://data-skills.github.io/unix-and-bash/03-bash-scripts/index.html)
-
-* Lecture 27: 
+* Lecture 26: [Shell Scripting](https://data-skills.github.io/unix-and-bash/03-bash-scripts/index.html)  
+* Lecture 27: [Shell Scripting](https://data-skills.github.io/unix-and-bash/03-bash-scripts/index.html)  
 
 
 ### Previous Weeks 
