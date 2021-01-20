@@ -1,5 +1,7 @@
 # EEOB/BCB 546 Course Website
 
+Website URL: [https://eeob-biodata.github.io/EEOB-BCB-546](https://eeob-biodata.github.io/EEOB-BCB-546)
+
 This repository hosts the website for the graduate course "Computational Skills for Biological Data". This is a static site built by Jekyll and based on the [Millidocs Theme](https://github.com/alexander-heimbuch/millidocs).
 
 ## Editing and Building the Site
@@ -7,13 +9,13 @@ This repository hosts the website for the graduate course "Computational Skills 
 To edit this site, you must first clone this repository
 
 ```
-git clone git@github.com:EEOB-BioData/EEOB-BCB-546X.git
+git clone git@github.com:EEOB-BioData/EEOB-BCB-546.git
 ```
 
-Then, change directories to `EEOB-BCB-546X`.
+Then, change directories to `EEOB-BCB-546`.
 
 ```
-cd EEOB-BCB-546X
+cd EEOB-BCB-546
 ```
 
 To build the site, you must have [Jekyll installed](https://jekyllrb.com/docs/installation/). If you have Jekyll, you can install the Millidocs bundle:
@@ -102,4 +104,5 @@ It is typically good to give the site a new look for each semester. This can be 
 * `_sass/milligram.scss` button background color `#5B3582`
 * `_sass/variables.scss` navigation background color `#BBACC1`
 * `assets/css/docs.scss` link color `#5B3582`
+* note that this semester will also include details for the virtual format that may need to be removed when updated for an in-person semester
 
