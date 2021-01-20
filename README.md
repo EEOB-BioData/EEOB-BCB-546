@@ -97,3 +97,9 @@ It is typically good to give the site a new look for each semester. This can be 
 * `_sass/variables.scss` navigation background color `#AAD4E6`
 * `assets/css/docs.scss` link color `#006878`
 
+#### Spring 2021 Purple Theme
+
+* `_sass/milligram.scss` button background color `#5B3582`
+* `_sass/variables.scss` navigation background color `#BBACC1`
+* `assets/css/docs.scss` link color `#5B3582`
+
