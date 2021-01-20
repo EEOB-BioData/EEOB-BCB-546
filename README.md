@@ -1,4 +1,4 @@
-# EEOB/BCB 546X Course Website
+# EEOB/BCB 546 Course Website
 
 This repository hosts the website for the graduate course "Computational Skills for Biological Data". This is a static site built by Jekyll and based on the [Millidocs Theme](https://github.com/alexander-heimbuch/millidocs).
 
@@ -66,7 +66,7 @@ Additionally, there is a directory called `slides`, which is where we can post t
 
 When starting a new semester, it's necessary to make changes to the site. Here are the steps:
 
-* create a new GitHub repository for the course data files and documents, the format for naming this is `BCB546X-FallYEAR`
+* create a new GitHub repository for the course data files and documents, the format for naming this is `BCB546-FallYEAR`
 * create a new syllabus and place it in the repository above
 * update the GitHub and Canvas links in `_includes/navigation.html`
 * update the year in `_includes/sidebar.html`
@@ -76,6 +76,10 @@ When starting a new semester, it's necessary to make changes to the site. Here a
 	* `assignments.md`
 * correct the link to the syllabus on `index.md`
 * update the link to the schedule on `schedule.md`
+
+### Website Troubleshooting
+
+With annual updates to jekyll and the theme, it may help to pull the `millidocs.gemspec` file from the [theme repository](https://github.com/alexander-heimbuch/millidocs/blob/master/millidocs.gemspec).
 
 ### New Look
 

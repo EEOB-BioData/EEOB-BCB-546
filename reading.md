@@ -1,6 +1,6 @@
 ---
 layout: page
-title: EEOB/BCB 546X - Reading Material
+title: EEOB/BCB 546 - Reading Material
 sidebar: Reading Material
 icon: <i class='fa fa-book'></i>
 navigation: 5

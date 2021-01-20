@@ -1,6 +1,6 @@
 ---
 layout: page
-title: EEOB/BCB 546X at ISU
+title: EEOB/BCB 546 at ISU
 sidebar: Home
 navigation: 1
 icon: <i class='fa fa-home'></i>
@@ -8,7 +8,7 @@ icon: <i class='fa fa-home'></i>
 
 # Computational Skills For Biological Data
 
-## EEOB/BCB 546X at Iowa State University
+## EEOB/BCB 546 at Iowa State University
 
 With the advent of big data across a number of sub-disciplines within biology, there is an increasing need for biologists to be comfortable and
 competent with command-line data processing and analysis. This course will develop basic skills necessary for biologists working with big data sets.
@@ -17,9 +17,9 @@ will be taught using a combination of lectures and computational exercises.
 
 <a href="https://github.com/EEOB-BioData/BCB546X-Fall2019/raw/master/documents/BCB546X-F2019_syllabus.pdf"><button type="button" class="btn btn-primary">Course Syllabus</button></a>
 
-### Fall 2019 Time and Location
+### Spring 2021 Time and Location
 
-Wednesday and Friday, 1:10-2:30 PM in 30/32 Bessey Hall (plus Monday 1:00-2:30 for additional lab hours in 334 Bessey Hall)
+Wednesday and Friday, 1:10-2:30 PM VIRTUAL 
 
 
 ### Instructors

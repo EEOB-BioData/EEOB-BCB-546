@@ -1,12 +1,12 @@
 ---
 layout: page
-title: EEOB/BCB 546X - Software
+title: EEOB/BCB 546 - Software
 sidebar: Software
 navigation: 3
 icon: <i class='fa fa-laptop'></i> 
 ---
 
-# EEOB/BCB 546X Software Guide
+# EEOB/BCB 546 Software Guide
 
 ## Unix
 

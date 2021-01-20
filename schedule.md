@@ -1,6 +1,6 @@
 ---
 layout: page
-title: EEOB/BCB 546X - Schedule
+title: EEOB/BCB 546 - Schedule
 sidebar: Schedule
 navigation: 2
 icon: <i class='fa fa-calendar'></i> 
