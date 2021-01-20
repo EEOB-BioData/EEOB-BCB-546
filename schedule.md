@@ -28,10 +28,10 @@ You will also need to access the files associated with the course textbook _Bioi
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move 
 the previous week to the end and label it with the appropriate number -->
 
-<u>January 27-29</u>
+<u>January 27-29</u> 
 
-* Lecture 26: Introductions  
-* Lecture 27: Unix  
+* Synchronous Session, Jan 27: Introductions [<a href="https://canvas.iastate.edu/courses/79905/pages/zoom-sessions">live 1:10 PM to 2:30 PM</a>]
+* Synchronous Session, Jan 29: Unix  
 
 
 ### Previous Weeks 
