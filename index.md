@@ -19,7 +19,7 @@ will be taught using a combination of lectures and computational exercises.
 
 ### Spring 2021 Time and Location
 
-Wednesday and Friday, 1:10-2:30 PM VIRTUAL 
+Wednesday and Friday, 1:10-2:30 PM VIRTUAL (Zoom links will _only_ be announced on Canvas)
 
 
 ### Instructors

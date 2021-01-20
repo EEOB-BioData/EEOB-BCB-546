@@ -1,6 +1,6 @@
 title: EEOB/BCB 546
 description: Content for EEOB/BCB 546 - Computational Skills for Biological Data, a graduate-level course taught at Iowa State University.
-url: "https://eeob-biodata.github.io/EEOB-BCB-546X"
+url: "https://eeob-biodata.github.io/EEOB-BCB-546"
 remote_theme: alexander-heimbuch/millidocs
 
 markdown: kramdown
