@@ -101,8 +101,8 @@ It is typically good to give the site a new look for each semester. This can be 
 
 #### Spring 2021 Purple Theme
 
-* `_sass/milligram.scss` button background color `#5B3582`
+* `_sass/milligram.scss` button background color `#633A8E`
 * `_sass/variables.scss` navigation background color `#BBACC1`
-* `assets/css/docs.scss` link color `#5B3582`
+* `assets/css/docs.scss` link color `#633A8E`
 * note that this semester will also include details for the virtual format that may need to be removed when updated for an in-person semester
 
