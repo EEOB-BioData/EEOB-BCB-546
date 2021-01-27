@@ -30,7 +30,8 @@ the previous week to the end and label it with the appropriate number -->
 
 <u>January 27-29</u> 
 
-* Synchronous Session, Jan 27: Introductions [<a href="https://canvas.iastate.edu/courses/79905/pages/zoom-sessions">live 1:10 PM to 2:30 PM</a>]
+* Synchronous Session, Jan 27: Introductions [<a href="https://canvas.iastate.edu/courses/79905/pages/zoom-sessions">live 1:10 PM to 2:30 PM</a>], 
+	* Lecture 1: Introduction to Unix [[slides](slides/Week1_Lecture1.pdf)] [[UNIX_exercise](slides/Unix_Exercise_1.pdf)]
 * Synchronous Session, Jan 29: Unix  
 
 
