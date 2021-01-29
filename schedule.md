@@ -23,6 +23,7 @@ You will also need to access the files associated with the course textbook _Bioi
 
 ## In Class Activities
 
+For recorded content, please see the [Course Videos](https://canvas.iastate.edu/courses/79905/modules/461498) module on Canvas.
 
 ### Current Week 
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move 
