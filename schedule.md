@@ -23,7 +23,8 @@ You will also need to access the files associated with the course textbook _Bioi
 
 ## In Class Activities
 
-For recorded content, please see the [Course Videos](https://canvas.iastate.edu/courses/79905/modules/461498) module on Canvas.
+* Zoom sessions: live 1:10 PM to 2:30 PM on Zoom (link via the [Zoom Sessions page](https://canvas.iastate.edu/courses/79905/pages/zoom-sessions) on Canvas).
+* Recorded content: see the [Course Videos](https://canvas.iastate.edu/courses/79905/modules/461498) module on Canvas.
 
 ### Current Week 
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move 
@@ -31,10 +32,8 @@ the previous week to the end and label it with the appropriate number -->
 
 <u>January 27-29</u> 
 
-* Synchronous Session, Jan 27: Introductions [<a href="https://canvas.iastate.edu/courses/79905/pages/zoom-sessions">live 1:10 PM to 2:30 PM</a>], 
-	* Lecture 1: Introduction to Course [[slides](slides/Week1_Lecture1.pdf)] [[UNIX_exercise](slides/Unix_Exercise_1.pdf)]
-* Synchronous Session, Jan 29: Intro. to Unix  
-	* Lecture 2: VB, Chapter 3: Remedial Unix [[slides](slides/lecture_29Jan-MBH.html)]
+* Synchronous Session, Jan 27: Lecture 1: Introduction to Course [[slides](slides/Week1_Lecture1.pdf)] [[UNIX_exercise](slides/Unix_Exercise_1.pdf)]
+* Synchronous Session, Jan 29: Lecture 2: VB, Chapter 3: Remedial Unix [[slides](slides/lecture_29Jan-MBH.html)]
 
 
 ### Previous Weeks 
