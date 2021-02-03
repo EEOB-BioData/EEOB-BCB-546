@@ -211,7 +211,7 @@ Copy the entire contents of this file and add it to your GitHub account.
 
 # Authentication with a SSH key
 
-Add your new ssh key to your GitHub account by going to [_SSH and GPG keys_](https://github.com/settings/profile/keys) in your profile Settings.
+Add your new ssh key to your GitHub account by going to [_SSH and GPG keys_](https://github.com/settings/keys) in your account Settings.
 
 <div style="text-align:center"><img src="https://codenvy.com/docs-version/5.0.1/docs/assets/imgs/Clipboard6.jpg" style="width: 740px;" /></div>
 
@@ -368,7 +368,7 @@ gource --start-date 2017-11-01 -s 0.1
 
 --
 
-* The most common in biology are Git and SVN (and historically CVS).
+* The most common in biology are Git (and historically SVN and CVS).
 
 * There are [many others](https://en.wikipedia.org/wiki/Comparison_of_version_control_software)
 
@@ -415,7 +415,7 @@ effecting others' work.
 
 Snapshots are called _commits_ 
 
-<div style="text-align:center"><img src="https://git-scm.com/book/en/v2/book/01-introduction/images/snapshots.png" alt="gource" width="700" /></div>
+<div style="text-align:center"><img src="https://git-scm.com/book/en/v2/images/snapshots.png" alt="gource" width="700" /></div>
 
 (image source [https://git-scm.com](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics))
 
@@ -425,7 +425,7 @@ Snapshots are called _commits_
 
 ## Almost every interaction with Git happens locally
 
-<div style="text-align:center"><img src="https://git-scm.com/book/en/v2/book/01-introduction/images/areas.png" alt="gource" width="650" /></div>
+<div style="text-align:center"><img src="https://git-scm.com/book/en/v2/images/areas.png" alt="gource" width="650" /></div>
 
 (image source [https://git-scm.com](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics))
 
@@ -440,7 +440,7 @@ Also, allows for collaboration and back-up.
 
 --
 
-<div style="text-align:center"><img src="https://2.bp.blogspot.com/-w2Z0FGVzygM/WBoAt2kuuCI/AAAAAAAABtU/voWHlUobfl8jB5-5NuSZD0BlN3A9jdMtgCLcB/s1600/basic-remote-workflow.png" alt="Drawing" width="415" /></div>
+<div style="text-align:center"><img src="https://www.git-tower.com/learn/git/ebook/en/command-line/remote-repositories/introduction/basic-remote-workflow.png" alt="Drawing" width="415" /></div>
 
 (image source [https://www.git-tower.com](https://www.git-tower.com/learn/git/ebook/en/command-line/remote-repositories/introduction))
 
@@ -454,7 +454,7 @@ Also, allows for collaboration and back-up.
 
 --
 
-* You can set up your own server and host all of your repositories privately using [Gitolite](https://github.com/sitaramc/gitolite/) or [Gitosis](https://git-scm.com/book/no-nb/v1/Git-on-the-Server-Gitosis) (not recommended)
+* You can set up your own server and host all of your repositories privately using [Gitolite](https://github.com/sitaramc/gitolite/) or [Gitosis](https://wiki.archlinux.org/index.php/gitosis) (not recommended)
 
 --
 
@@ -466,18 +466,19 @@ Also, allows for collaboration and back-up.
 
 ## Remote Git repository hosting services
 
-### Web-based Git hosts
+### [Web-based Git hosts](https://www.git-tower.com/blog/git-hosting-services-compared/)
 
 --
 
-* [GitHub](https://github.com/) <img src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" alt="Drawing" width="35" />: free public repositories & paid private repositories (private repos are [free for academics](https://education.github.com/partners/schools)), with repositories over 1 GB discouraged and file size limited to 100 MB
+* [GitHub](https://github.com/) <img src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" alt="Drawing" width="35" />: free public repositories & paid private repositories (private repos are [free for academics](https://education.github.com/students)), with repositories over 1 GB discouraged and file size limited to 100 MB
 
 --
 
 * [Bitbucket](https://bitbucket.org/) <img src="http://image.flaticon.com/icons/png/512/37/37104.png" alt="Drawing" width="25" />: unlimited free public & free private repositories, limited at 1-2 GB/repo (register with your *.edu* email to get unlimited collaborators on private repositories) 
 --
 
-* [GitLab](https://about.gitlab.com/) <img src="https://maxcdn.icons8.com/Share/icon/color/Logos//gitlab1600.png" alt="Drawing" width="25" />: unlimited free public & free private repositories with no limits on collaborators, but limited at 10 GB/repo 
+* [GitLab](https://about.gitlab.com/) <img src="https://maxcdn.icons8.com/Share/icon/color/Logos//gitlab1600.png" alt="Drawing" width="25" />: unlimited free public & free private repositories with no limits on collaborators, but limited at 10 GB/repo
+ 
 
 ???
 
@@ -511,25 +512,25 @@ to use Git to collaborate on MS Word documents.)
 
 ## Demo: Clone a Repository
 
-You become familiar with the concepts by using Git. We will start by cloning [PyRanges](https://github.com/biocore-NTNU/pyranges).
+You become familiar with the concepts by using Git. We will start by cloning [ggplot2](https://github.com/tidyverse/ggplot2/).
 
-PyRanges is a python tool for efficient comparison of genomic intervals [(Bakken Stovner & Sætrom, _Bioinformatics_, in press)](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btz615/5543103)
+ggplot2 is an R package that provides a rich and powerful set of tools for data visualization ([H. Wickham. ggplot2: Elegant Graphics for Data Analysis. Springer-Verlag New York, 2016](https://ggplot2.tidyverse.org/authors.html)). 
 
 --
 
-Start by going to [https://github.com/biocore-NTNU/pyranges](https://github.com/dereneaton/ipyrad) to get the URL.
+Start by going to [https://github.com/tidyverse/ggplot2](https://github.com/tidyverse/ggplot2) to get the URL.
 
 --
 
 ```
-$ git clone git@github.com:biocore-ntnu/pyranges.git
-Cloning into 'pyranges'...
-remote: Enumerating objects: 837, done.
-remote: Counting objects: 100% (837/837), done.
-remote: Compressing objects: 100% (398/398), done.
-remote: Total 3393 (delta 680), reused 563 (delta 423), pack-reused 2556
-Receiving objects: 100% (3393/3393), 6.08 MiB | 4.31 MiB/s, done.
-Resolving deltas: 100% (2572/2572), done.
+$git clone git@github.com:tidyverse/ggplot2.git
+Cloning into 'ggplot2'...
+remote: Enumerating objects: 142, done.
+remote: Counting objects: 100% (142/142), done.
+remote: Compressing objects: 100% (96/96), done.
+remote: Total 58600 (delta 66), reused 100 (delta 46), pack-reused 58458
+Receiving objects: 100% (58600/58600), 484.07 MiB | 3.03 MiB/s, done.
+Resolving deltas: 100% (42795/42795), done.
 ```
 
 Note that using the url `git@github...` instead of `https://github...` uses SSH 
@@ -552,7 +553,7 @@ if you haven't configured your key yet, this may not work.
 ### Some helpful commands for this cloned repository
 
 
-**Always** `pull` from the repository before doing anything with the contents
+**Always** `pull` from the repository before doing anything with the contents (note that `master` refers to the branch name, which may be different depending on the repo)
 
 ```
 $ git pull origin master
@@ -579,7 +580,7 @@ $ git log
 Compare the `diff`erences a file you have modified and the last commit
 
 ```
-$ git diff README.rst
+$ git diff README.md
 ```
 
 ---
@@ -591,7 +592,7 @@ $ git diff README.rst
 Replace a file you modified with the most recent commit using `checkout`
 
 ```
-$ git checkout README.rst
+$ git checkout README.md
 ```
 
 --
@@ -606,15 +607,15 @@ $ git branch
 Change to a different branch
 
 ```
-$ git checkout test_ray
+$ git checkout color-sub
 ```
 
 --
 
-Pull to update from `test_ray`
+Pull to update from `color-sub`
 
 ```
-$ git pull origin test_ray
+$ git pull origin color-sub
 ```
 
 ---
@@ -631,7 +632,7 @@ $ git pull origin test_ray
 
 --
 
-* You can **_fork_** their repository and develop it independently
+* You can **_fork_** their repository and develop it independently (be sure to check their license and _always_ give attribution)
 
 --
 
@@ -724,7 +725,7 @@ $ git remote add origin git@github.com:username/repo-name.git
 Push your snapshot to the remote
 
 ```
-$ git push -u origin master
+$ git push -u origin main
 ```
 
 ---
