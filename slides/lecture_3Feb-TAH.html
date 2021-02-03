@@ -364,7 +364,7 @@ gource --start-date 2017-11-01 -s 0.1
 
 --
 
-* The most common in biology are Git (and historically SVN and CVS).
+* The most common in biology is Git (and historically SVN and CVS).
 
 * There are [many others](https://en.wikipedia.org/wiki/Comparison_of_version_control_software)
 
@@ -549,7 +549,7 @@ if you haven't configured your key yet, this may not work.
 ### Some helpful commands for this cloned repository
 
 
-**Always** `pull` from the repository before doing anything with the contents (note that `master` refers to the branch name, which may be different depending on the repo)
+**Always** `pull` from the repository before doing anything with the contents (note that `master` refers to the branch name--in this case `ggplot2`'s default branch--which may be different depending on the repo)
 
 ```
 $ git pull origin master
@@ -670,61 +670,6 @@ git config --list
 
 ---
 
-# &#x2665; Git &#x2665;
-
-### Some helpful commands for your new repository
-
---
-
-Initialize a new Git repository
-
-```
-$ git init
-```
-
---
-
-After a file has been added or modified, you can stage the file 
-
-```
-$ git add README.md
-```
-
---
-
-Commit the file to your local repository and write a message
-
-```
-$ git commit -m "initial commit (README.md)"
-```
-
-
----
-
-# &#x2665; Git &#x2665;
-
-### Some helpful commands for your new repository
-
-After you have made your commit, the repository is up-to-date locally. Next you need to connect
-your local repo to the remote.
-
---
-
-Add the remote
-
-```
-$ git remote add origin git@github.com:username/repo-name.git
-```
-
---
-
-Push your snapshot to the remote
-
-```
-$ git push -u origin main
-```
-
----
 
 # Git Exercises
 
