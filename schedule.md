@@ -33,7 +33,7 @@ the previous week to the end and label it with the appropriate number -->
 <u>February 3-5</u> 
 
 * Synchronous Session, Feb 3: Intorduction to Version Control Using Git [[slides](slides/lecture_3Feb-TAH.html)] 
-* Synchronous Session, Feb 5: More Fun with Git
+* Synchronous Session, Feb 5: More Fun with Git [[slides](slides/lecture_5Feb-TAH.html)]
 
 
 ### Previous Weeks 

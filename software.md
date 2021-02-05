@@ -39,6 +39,7 @@ submit your job using a SLURM script. There is a script generator that you can u
 
 We highly recommend that you use an advanced text editor for this course and your research. Here are some that we like:
 
+* [Visual Studio Code](https://code.visualstudio.com/)
 * vim or emacs (Unix, Mac OS X)
 * [Sublime Text](http://www.sublimetext.com/) (Unix, Mac OS X, Windows)
 * [Atom](https://atom.io/) (Unix, Mac OS X, Windows)
