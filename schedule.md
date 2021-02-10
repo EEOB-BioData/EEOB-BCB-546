@@ -30,18 +30,22 @@ You will also need to access the files associated with the course textbook _Bioi
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move 
 the previous week to the end and label it with the appropriate number -->
 
-<u>February 3-5</u> 
+<u>February 10-12</u> 
 
-* Synchronous Session, Feb 3: Intorduction to Version Control Using Git [[slides](slides/lecture_3Feb-TAH.html)] 
-* Synchronous Session, Feb 5: More Fun with Git [[slides](slides/lecture_5Feb-TAH.html)]
+* Asynchronous Session, Feb 10: VB, Chapter 3: Remedial Unix Continued [[slides](slides/lecture_29Jan-MBH.html)]
 
 
 ### Previous Weeks 
 
 <u>January 27-29</u> 
 
-* Synchronous Session, Jan 27: Lecture 1: Introduction to Course [[slides](slides/Week1_Lecture1.pdf)] [[UNIX_exercise](slides/Unix_Exercise_1.pdf)]
-* Synchronous Session, Jan 29: Lecture 2: VB, Chapter 3: Remedial Unix [[slides](slides/lecture_29Jan-MBH.html)]
+* Synchronous Session, Jan 27: Introduction to Course [[slides](slides/Week1_Lecture1.pdf)] [[UNIX_exercise](slides/Unix_Exercise_1.pdf)]
+* Synchronous Session, Jan 29: VB, Chapter 3: Remedial Unix [[slides](slides/lecture_29Jan-MBH.html)]
+
+<u>February 3-5</u> 
+
+* Synchronous Session, Feb 3: Introduction to Version Control Using Git [[slides](slides/lecture_3Feb-TAH.html)] 
+* Synchronous Session, Feb 5: More Fun with Git [[slides](slides/lecture_5Feb-TAH.html)]
 
 
 
