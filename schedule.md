@@ -33,7 +33,7 @@ the previous week to the end and label it with the appropriate number -->
 <u>February 10-12</u> 
 
 * Asynchronous Session, Feb 10: VB, Chapter 3: Remedial Unix Continued [[slides](slides/lecture_29Jan-MBH.html)]
-* Synchronous Session, Feb 10: VB, Chapter 7: Advanced Unix [[slides](slides/lecture_13-Sept-MBH.html)]
+* Synchronous Session, Feb 12: VB, Chapter 7: Advanced Unix [[slides](slides/lecture_13-Sept-MBH.html)]
 
 
 ### Previous Weeks 
