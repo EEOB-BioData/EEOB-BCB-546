@@ -14,7 +14,8 @@ GitHub repository.
 All of the material required for grading must be submitted on the [course Canvas page](https://canvas.iastate.edu/courses/79905). 
 
 ### Assignment #1: Unix:
-* TBA
+* The UNIX Assignment is available through the course GitHub repository in the [`UNIX_Assignment`](https://github.com/EEOB-BioData/BCB546-Spring2021/tree/main/assignments/UNIX_Assignment) folder (in the `assignments` folder).
+* The assignment is due via submission in Canvas by 5pm on Friday, February 26th
 
 ### Assignment 2: R
 * TBA  
