@@ -30,10 +30,9 @@ You will also need to access the files associated with the course textbook _Bioi
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move 
 the previous week to the end and label it with the appropriate number -->
 
-<u>February 10-12</u> 
+<u>February 17-19</u> 
 
-* Asynchronous Session, Feb 10: VB, Chapter 3: Remedial Unix Continued [[slides](slides/lecture_29Jan-MBH.html)]
-* Synchronous Session, Feb 12: VB, Chapter 7: Advanced Unix [[slides](slides/lecture_13-Sept-MBH.html)]
+* Synchronous Session, Feb 17: VB, Chapter 7: Advanced Unix [[slides](slides/lecture_13-Sept-MBH.html)]
 
 
 ### Previous Weeks 
@@ -47,6 +46,11 @@ the previous week to the end and label it with the appropriate number -->
 
 * Synchronous Session, Feb 3: Introduction to Version Control Using Git [[slides](slides/lecture_3Feb-TAH.html)] 
 * Synchronous Session, Feb 5: More Fun with Git [[slides](slides/lecture_5Feb-TAH.html)]
+
+<u>February 10-12</u> 
+
+* Asynchronous Session, Feb 10: VB, Chapter 3: Remedial Unix Continued [[slides](slides/lecture_29Jan-MBH.html)]
+* Synchronous Session, Feb 12: VB, Chapter 7: Advanced Unix [[slides](slides/lecture_13-Sept-MBH.html)]
 
 
 
