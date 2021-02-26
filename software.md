@@ -63,7 +63,7 @@ For the parts of the course when we are working on programming in R or in Python
 
 You can work with R by writing text files or by using an IDE (interactive development environment). We recommend using an IDE (RStudio), which requires that you first install R.
 
-* [Download R](https://www.r-project.org/)
+* [Download R](https://mirror.las.iastate.edu/CRAN/)
 * [RStudio Desktop](https://www.rstudio.com/products/rstudio/download/) -- this is a well-designed IDE for working with R
 
 ### Python

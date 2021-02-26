@@ -33,7 +33,7 @@ the previous week to the end and label it with the appropriate number -->
 <u>February 24-26</u> 
 
 * Synchronous Session, Feb 24: HPC Resources [[slides](slides/lecture_11Sept-MBH.html)] [[HPC exercise](slides/HPC_Exercise.pdf)]
-
+* Synchronous Session, Feb 26: Introduction to R and RStudio [[tutorial](https://eeob-biodata.github.io/EEOB546-R/)]
 
 ### Previous Weeks 
 
