@@ -3,22 +3,23 @@ layout: page
 title: EEOB/BCB 546 - Assignments
 sidebar: Assignments
 navigation: 4
-icon: <i class='fa fa-check-circle'></i> 
+icon: <i class='fa fa-check-circle'></i>
 ---
 
 # Spring 2021 EEOB/BCB 546 Assignments
 
 Your grade for this course is based on four assignments and a final project. Details for each assignment and links to files will be posted here over the course of the semester.
 Instructions and data files for each assignment will be added to the [`assignments`](https://github.com/EEOB-BioData/BCB546-Spring2021/tree/main/assignments) folder in the course
-GitHub repository. 
-All of the material required for grading must be submitted on the [course Canvas page](https://canvas.iastate.edu/courses/79905). 
+GitHub repository.
+All of the material required for grading must be submitted on the [course Canvas page](https://canvas.iastate.edu/courses/79905).
 
 ### Assignment #1: Unix:
 * The UNIX Assignment is available through the course GitHub repository in the [`UNIX_Assignment`](https://github.com/EEOB-BioData/BCB546-Spring2021/tree/main/assignments/UNIX_Assignment) folder (in the `assignments` folder).
 * The assignment is due via submission in Canvas by 5pm on Friday, February 26th
 
 ### Assignment 2: R
-* TBA  
+* The R Assignment is available through the course GitHub repository in the [`R_Assignment`](https://github.com/EEOB-BioData/BCB546-Spring2021/tree/main/assignments/R_Assignment) folder (in the `assignments` folder).
+* Read the assignment document for the submission process.
 
 ### Assignment 3: Data Management Plans
 
