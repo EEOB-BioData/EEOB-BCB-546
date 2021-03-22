@@ -30,10 +30,10 @@ You will also need to access the files associated with the course textbook _Bioi
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move
 the previous week to the end and label it with the appropriate number -->
 
-<u>March 17-19</u>
+<u>March 24-26</u>
 
-* Synchronous Session, March 10: Data Visualization in R [[tutorial](https://eeob-biodata.github.io/EEOB546-R/)]
-* Synchronous Session, March 12: Functions and Control Flow in R [[tutorial](https://eeob-biodata.github.io/EEOB546-R/)]
+* Synchronous Session, March 24: Data Management Plans
+* Synchronous Session, March 26: Introduction to Python
 
 ### Previous Weeks
 
@@ -71,3 +71,8 @@ the previous week to the end and label it with the appropriate number -->
 
 * Synchronous Session, March 10: Data Transformation in R [[tutorial](https://eeob-biodata.github.io/EEOB546-R/)]
 * Synchronous Session, March 12: Data Visualization in R [[tutorial](https://eeob-biodata.github.io/EEOB546-R/)]
+
+<u>March 17-19</u>
+
+* Synchronous Session, March 10: Data Visualization in R [[tutorial](https://eeob-biodata.github.io/EEOB546-R/)]
+* Synchronous Session, March 12: Functions and Control Flow in R [[tutorial](https://eeob-biodata.github.io/EEOB546-R/)]
