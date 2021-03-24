@@ -18,7 +18,7 @@ All of the files used for in-class activities and assignments are published onli
 
 The Spring 2021 repository can be found at: [https://github.com/EEOB-BioData/BCB546-Spring2021](https://github.com/EEOB-BioData/BCB546-Spring2021).
 
-You will also need to access the files associated with the course textbook _Bioinformatics Data Skills_ by Vince Buffalo. This repostitory can be found here: [https://github.com/vsbuffalo/bds-files](https://github.com/vsbuffalo/bds-files).
+You will also need to access the files associated with the course textbook _Bioinformatics Data Skills_ by Vince Buffalo. This repository can be found here: [https://github.com/vsbuffalo/bds-files](https://github.com/vsbuffalo/bds-files).
 
 
 ## In Class Activities
