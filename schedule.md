@@ -32,7 +32,7 @@ the previous week to the end and label it with the appropriate number -->
 
 <u>March 24-26</u>
 
-* Recorded Session, March 24: Data Management Plans [[slides PDF](https://github.com/EEOB-BioData/EEOB-BCB-546/raw/master/slides/lecture_24Mar2021-TAH.pdf) and [slides source](https://www.overleaf.com/read/gjnngnkffpwg)] (video will be posted on Canvas soon...)
+* Recorded Session, March 24: Data Management Plans [[slides PDF](https://github.com/EEOB-BioData/EEOB-BCB-546/raw/master/slides/lecture_24Mar2021-TAH.pdf) and [slides source](https://www.overleaf.com/read/gjnngnkffpwg)] (video on Canvas)
 * Synchronous Session, March 26: Getting Started with Python [[tutorial](https://eeob-biodata.github.io/BCB546X-python)]
 
 ### Previous Weeks
