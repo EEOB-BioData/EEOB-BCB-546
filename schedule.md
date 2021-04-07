@@ -30,10 +30,12 @@ You will also need to access the files associated with the course textbook _Bioi
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move
 the previous week to the end and label it with the appropriate number -->
 
-<u>March 31 - April 2</u>
+<u>April 79</u>
 
-* Synchronous Session, March 31: Introduction to Python Datatypes and Packages [[tutorial](https://eeob-biodata.github.io/BCB546X-python/02-datatypes/)]
-* Synchronous Session, April 2: Working With Pandas DataFrames in Python [[tutorial](https://eeob-biodata.github.io/BCB546X-python/03-starting-with-data/)]
+* Recorded Session, April 7: 
+    * Pandas DataFrames Intro (continued) [[tutorial](https://eeob-biodata.github.io/BCB546X-python/03-starting-with-data/)] [[recording](https://canvas.iastate.edu/courses/79905/files/15019458?module_item_id=3581625)]
+    * Indexing, Slicing, Subsetting, and Iterating DataFrames in Python [[tutorial](https://eeob-biodata.github.io/BCB546X-python/04-more-dataframes/)] [recording coming soon]
+* Synchronous Session, April 9: Visualizing Data in Python [[tutorial](https://eeob-biodata.github.io/BCB546X-python/05-seaborn-viz/)]
 
 ### Previous Weeks
 
@@ -81,3 +83,8 @@ the previous week to the end and label it with the appropriate number -->
 
 * Recorded Session, March 24: Data Management Plans [[slides PDF](https://github.com/EEOB-BioData/EEOB-BCB-546/raw/master/slides/lecture_24Mar2021-TAH.pdf) and [slides source](https://www.overleaf.com/read/gjnngnkffpwg)] (video on Canvas)
 * Synchronous Session, March 26: Getting Started with Python [[tutorial](https://eeob-biodata.github.io/BCB546X-python)]
+
+<u>March 31 - April 2</u>
+
+* Synchronous Session, March 31: Introduction to Python Datatypes and Packages [[tutorial](https://eeob-biodata.github.io/BCB546X-python/02-datatypes/)]
+* Synchronous Session, April 2: Working With Pandas DataFrames in Python [[tutorial](https://eeob-biodata.github.io/BCB546X-python/03-starting-with-data/)]
