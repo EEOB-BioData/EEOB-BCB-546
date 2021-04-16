@@ -33,6 +33,7 @@ the previous week to the end and label it with the appropriate number -->
 <u>April 14-16</u>
 
 * Synchronous Session, April 14: Visualizing Data in Python continued [[tutorial](https://eeob-biodata.github.io/BCB546X-python/05-seaborn-viz/)]
+* Synchronous Session, April 16: Biopython [[tutorial](https://eeob-biodata.github.io/BCB546X-python/06-biopython/)]
 
 ### Previous Weeks
 
