@@ -30,10 +30,9 @@ You will also need to access the files associated with the course textbook _Bioi
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move
 the previous week to the end and label it with the appropriate number -->
 
-<u>April 14-16</u>
+<u>April 21-23</u>
 
-* Synchronous Session, April 14: Visualizing Data in Python continued [[tutorial](https://eeob-biodata.github.io/BCB546X-python/05-seaborn-viz/)]
-* Synchronous Session, April 16: Biopython [[tutorial](https://eeob-biodata.github.io/BCB546X-python/06-biopython/)]
+* Synchronous Session, April 21: Python practice using challenge exercises [[tutorial](https://eeob-biodata.github.io/BCB546X-python/07-additional-exercises)]
 
 ### Previous Weeks
 
@@ -93,3 +92,8 @@ the previous week to the end and label it with the appropriate number -->
     * Pandas DataFrames Intro (continued) [[tutorial](https://eeob-biodata.github.io/BCB546X-python/03-starting-with-data/)] [[recording](https://canvas.iastate.edu/courses/79905/files/15019458?module_item_id=3581625)]
     * Indexing, Slicing, Subsetting, and Iterating DataFrames in Python [[tutorial](https://eeob-biodata.github.io/BCB546X-python/04-more-dataframes/)] [[recording](https://canvas.iastate.edu/courses/79905/files/15027775?module_item_id=3582893)]
 * Synchronous Session, April 9: Visualizing Data in Python [[tutorial](https://eeob-biodata.github.io/BCB546X-python/05-seaborn-viz/)]
+
+<u>April 14-16</u>
+
+* Synchronous Session, April 14: Visualizing Data in Python continued [[tutorial](https://eeob-biodata.github.io/BCB546X-python/05-seaborn-viz/)]
+* Synchronous Session, April 16: Biopython [[tutorial](https://eeob-biodata.github.io/BCB546X-python/06-biopython/)]
