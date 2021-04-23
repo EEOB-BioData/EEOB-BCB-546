@@ -33,6 +33,7 @@ the previous week to the end and label it with the appropriate number -->
 <u>April 21-23</u>
 
 * Synchronous Session, April 21: Python practice using challenge exercises [[tutorial](https://eeob-biodata.github.io/BCB546X-python/07-additional-exercises)]
+* Synchronous Session, April 23: Sequence and Alignment Data [[slides](slides/SeqAlign_Slides_23APR2021.pdf)]
 
 ### Previous Weeks
 
