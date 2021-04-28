@@ -30,16 +30,16 @@ You will also need to access the files associated with the course textbook _Bioi
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move
 the previous week to the end and label it with the appropriate number -->
 
-<u>April 21-23</u>
+<u>April 28-30</u>
 
-* Synchronous Session, April 21: Python practice using challenge exercises [[tutorial](https://eeob-biodata.github.io/BCB546X-python/07-additional-exercises)]
-* Synchronous Session, April 23: Sequence and Alignment Data [[slides](slides/SeqAlign_Slides_23APR2021.pdf)]
+* Synchronous Session, April 28: Bash Shell Scripts and Pipelines [[tutorial](https://data-skills.github.io/unix-and-bash/03-bash-scripts/index.html)]
+* Synchronous Session, April 30: Final project presentations
 
 ### Previous Weeks
 
 <u>January 27-29</u>
 
-* Synchronous Session, Jan 27: Introduction to Course [[slides](slides/Week1_Lecture1.pdf)] [[UNIX_exercise](slides/Unix_Exercise_1.pdf)]
+* Synchronous Session, Jan 27: Introduction to the Course [[slides](slides/Week1_Lecture1.pdf)] [[UNIX_exercise](slides/Unix_Exercise_1.pdf)]
 * Synchronous Session, Jan 29: VB, Chapter 3: Remedial Unix [[slides](slides/lecture_29Jan-MBH.html)]
 
 <u>February 3-5</u>
@@ -89,7 +89,7 @@ the previous week to the end and label it with the appropriate number -->
 
 <u>April 7-9</u>
 
-* Recorded Session, April 7: 
+* Recorded Session, April 7:
     * Pandas DataFrames Intro (continued) [[tutorial](https://eeob-biodata.github.io/BCB546X-python/03-starting-with-data/)] [[recording](https://canvas.iastate.edu/courses/79905/files/15019458?module_item_id=3581625)]
     * Indexing, Slicing, Subsetting, and Iterating DataFrames in Python [[tutorial](https://eeob-biodata.github.io/BCB546X-python/04-more-dataframes/)] [[recording](https://canvas.iastate.edu/courses/79905/files/15027775?module_item_id=3582893)]
 * Synchronous Session, April 9: Visualizing Data in Python [[tutorial](https://eeob-biodata.github.io/BCB546X-python/05-seaborn-viz/)]
@@ -98,3 +98,8 @@ the previous week to the end and label it with the appropriate number -->
 
 * Synchronous Session, April 14: Visualizing Data in Python continued [[tutorial](https://eeob-biodata.github.io/BCB546X-python/05-seaborn-viz/)]
 * Synchronous Session, April 16: Biopython [[tutorial](https://eeob-biodata.github.io/BCB546X-python/06-biopython/)]
+
+<u>April 21-23</u>
+
+* Synchronous Session, April 21: Python practice using challenge exercises [[tutorial](https://eeob-biodata.github.io/BCB546X-python/07-additional-exercises)]
+* Synchronous Session, April 23: Sequence and Alignment Data [[slides](slides/SeqAlign_Slides_23APR2021.pdf)]
