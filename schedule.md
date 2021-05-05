@@ -30,10 +30,9 @@ You will also need to access the files associated with the course textbook _Bioi
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move
 the previous week to the end and label it with the appropriate number -->
 
-<u>April 28-30</u>
+<u>May 5</u>
 
-* Synchronous Session, April 28: Bash Shell Scripts and Pipelines [[tutorial](https://data-skills.github.io/unix-and-bash/03-bash-scripts/index.html)]
-* Synchronous Session, April 30: Final project presentations
+* Synchronous Session, May 5: Final project presentations
 
 ### Previous Weeks
 
@@ -103,3 +102,8 @@ the previous week to the end and label it with the appropriate number -->
 
 * Synchronous Session, April 21: Python practice using challenge exercises [[tutorial](https://eeob-biodata.github.io/BCB546X-python/07-additional-exercises)]
 * Synchronous Session, April 23: Sequence and Alignment Data [[slides](slides/SeqAlign_Slides_23APR2021.pdf)]
+
+<u>April 28-30</u>
+
+* Synchronous Session, April 28: Bash Shell Scripts and Pipelines [[tutorial](https://data-skills.github.io/unix-and-bash/03-bash-scripts/index.html)]
+* Synchronous Session, April 30: Final project presentations
