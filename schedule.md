@@ -30,9 +30,10 @@ You will also need to access the files associated with the course textbook _Bioi
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move
 the previous week to the end and label it with the appropriate number -->
 
-<u>May 5</u>
+<u>May 5-7</u>
 
 * Synchronous Session, May 5: Final project presentations
+* Optional Session, May 7: Python assignment troubleshooting
 
 ### Previous Weeks
 
