@@ -15,11 +15,11 @@ competent with command-line data processing and analysis. This course will devel
 Topics will include UNIX commands, scripting in R and Python, version control using Git and GitHub, use of high performance computing clusters, and writing effective data-management plans. These topics
 will be taught using a combination of lectures and computational exercises.
 
-<a href="https://github.com/EEOB-BioData/BCB546-Spring2021/blob/main/documents/syllabus_s2021.md"><button type="button" class="btn btn-primary">Course Syllabus</button></a>
+<!-- <a href="https://github.com/EEOB-BioData/BCB546-Spring2021/blob/main/documents/syllabus_s2021.md"><button type="button" class="btn btn-primary">Course Syllabus</button></a> -->
 
-### Spring 2021 Time and Location
+### Spring 2022 Time and Location
 
-Wednesday and Friday, 1:10-2:30 PM VIRTUAL <a href="https://canvas.iastate.edu/courses/79905/pages/zoom-sessions"><i class="fas fa-video"></i></a><br>All Zoom links will be posted on <a href="https://canvas.iastate.edu/courses/79905/pages/zoom-sessions">Canvas</a>
+Wednesday and Friday, 1:10-2:30 PM <!-- VIRTUAL <a href="https://canvas.iastate.edu/courses/79905/pages/zoom-sessions"><i class="fas fa-video"></i></a><br>All Zoom links will be posted on <a href="https://canvas.iastate.edu/courses/79905/pages/zoom-sessions">Canvas</a> -->
 
 
 ### Instructors

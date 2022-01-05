@@ -106,3 +106,8 @@ It is typically good to give the site a new look for each semester. This can be 
 * `assets/css/docs.scss` link color `#633A8E`
 * note that this semester will also include details for the virtual format that may need to be removed when updated for an in-person semester
 
+#### Spring 2022 Pink Theme
+
+* `_sass/milligram.scss` button background color `#821B28`
+* `_sass/variables.scss` navigation background color `#E7BBC1`
+* `assets/css/docs.scss` link color `#821B28`
