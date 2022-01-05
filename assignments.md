@@ -9,9 +9,9 @@ icon: <i class='fa fa-check-circle'></i>
 # Spring 2022 EEOB/BCB 546 Assignments
 
 Your grade for this course is based on four assignments and a final project. Details for each assignment and links to files will be posted here over the course of the semester.
-Instructions and data files for each assignment will be added to the [`assignments`](https://github.com/EEOB-BioData/BCB546-Spring2022) folder in the course
+Instructions and data files for each assignment will be added to the [`assignments`](https://github.com/EEOB-BioData/BCB546-Spring2022/tree/main/assignments) folder in the course
 GitHub repository.
-All of the material required for grading must be submitted on the [course Canvas page](https://canvas.iastate.edu). 
+All of the material required for grading must be submitted on the [course Canvas page](https://canvas.iastate.edu/courses/89022). 
 
 ### Assignment #1: Unix:
 <!-- * The UNIX Assignment is available through the course GitHub repository in the [`UNIX_Assignment`](https://github.com/EEOB-BioData/BCB546-Spring2021/tree/main/assignments/UNIX_Assignment) folder (in the `assignments` folder).
