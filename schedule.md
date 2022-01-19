@@ -23,8 +23,8 @@ You will also need to access the files associated with the course textbook _Bioi
 
 ## In Class Activities
 
-<!-- * Zoom sessions: live 1:10 PM to 2:30 PM on Zoom (link via the [Zoom Sessions page](https://canvas.iastate.edu/courses/79905/pages/zoom-sessions) on Canvas).
-* Recorded content: see the [Course Videos](https://canvas.iastate.edu/courses/79905/modules/461498) module on Canvas. -->
+* Zoom sessions: live 1:10 PM to 2:30 PM on Zoom (link via the [Canvas home page](https://canvas.iastate.edu/courses/89022)).
+<!-- * Recorded content: see the [Course Videos](https://canvas.iastate.edu/courses/79905/modules/461498) module on Canvas.  -->
 
 ### Current Week
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move
