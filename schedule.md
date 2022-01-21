@@ -32,13 +32,9 @@ the previous week to the end and label it with the appropriate number -->
 
 <u>January 19-21</u>
 
-<<<<<<< HEAD
+
 * Jan 19: Introduction to the Course <!--[[slides](slides/Week1_Lecture1.pdf)] [[UNIX_exercise](slides/Unix_Exercise_1.pdf)]-->[[slides](slides/Week1_Lecture1.pdf)] [[UNIX_exercise](slides/Unix_Exercise_1.pdf)]
 * Jan 21: VB, Chapter 3: Getting started with Unix [[slides](slides/lecture_21Jan-MBH.html)]
-=======
-* Jan 19: Introduction to the Course [[slides](slides/Week1_Lecture1.pdf)] [[UNIX_exercise](slides/Unix_Exercise_1.pdf)]
-* Jan 21: VB, Chapter 3: Getting started with Unix <!--[[slides](slides/lecture_29Jan-MBH.html)]-->
->>>>>>> 3c21d3f9f6968787e3609e20b42d233d530332f9
 
 ### Previous Weeks
 
