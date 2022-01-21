@@ -19,7 +19,8 @@ will be taught using a combination of lectures and computational exercises.
 
 ### Spring 2022 Time and Location
 
-Wednesday and Friday, 1:10-2:30 PM, Bessey Hall 334 <!-- VIRTUAL <a href="https://canvas.iastate.edu/courses/79905/pages/zoom-sessions"><i class="fas fa-video"></i></a><br>All Zoom links will be posted on <a href="https://canvas.iastate.edu/courses/79905/pages/zoom-sessions">Canvas</a> -->
+Wednesday and Friday, 1:10-2:30 PM, Bessey Hall 334 
+<!-- VIRTUAL <a href="https://canvas.iastate.edu/courses/79905/pages/zoom-sessions"><i class="fas fa-video"></i></a><br>All Zoom links will be posted on <a href="https://canvas.iastate.edu/courses/79905/pages/zoom-sessions">Canvas</a> -->
 
 
 ### Instructors
