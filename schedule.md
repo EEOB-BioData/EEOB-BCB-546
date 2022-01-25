@@ -34,7 +34,7 @@ the previous week to the end and label it with the appropriate number -->
 <u>January 26-28</u>
 
 
- * Jan 26: Introduction to Version Control Using Git <!--[[slides](slides/lecture_3Feb-TAH.html)] -->
+ * Jan 26: Introduction to Version Control Using Git [[slides](slides/lecture_26Jan-TAH.html)]
 * Jan 28: More Fun with Git <!--[[slides](slides/lecture_5Feb-TAH.html)]-->
 
 
