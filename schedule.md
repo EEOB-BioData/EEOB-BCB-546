@@ -24,17 +24,25 @@ You will also need to access the files associated with the course textbook _Bioi
 ## In Class Activities
 
 * VIRTUAL <a href="https://canvas.iastate.edu/courses/89022"><i class="fas fa-video"></i></a> Zoom sessions: live 1:10 PM to 2:30 PM on Zoom (link via the [Canvas home page](https://canvas.iastate.edu/courses/89022)).
+
 <!-- * Recorded content: see the [Course Videos](https://canvas.iastate.edu/courses/79905/modules/461498) module on Canvas.  -->
 
 ### Current Week
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move
 the previous week to the end and label it with the appropriate number -->
 
+<u>January 26-28</u>
+
+
+ * Jan 26: Introduction to Version Control Using Git <!--[[slides](slides/lecture_3Feb-TAH.html)] -->
+* Jan 28: More Fun with Git <!--[[slides](slides/lecture_5Feb-TAH.html)]-->
+
+
+### Previous Weeks
+
+
 <u>January 19-21</u>
 
 
 * Jan 19: Introduction to the Course <!--[[slides](slides/Week1_Lecture1.pdf)] [[UNIX_exercise](slides/Unix_Exercise_1.pdf)]-->[[slides](slides/Week1_Lecture1.pdf)] [[UNIX_exercise](slides/Unix_Exercise_1.pdf)]
 * Jan 21: VB, Chapter 3: Getting started with Unix [[slides](slides/lecture_21Jan-MBH.html)]
-
-### Previous Weeks
-
