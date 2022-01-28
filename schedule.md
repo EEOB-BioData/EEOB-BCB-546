@@ -35,7 +35,7 @@ the previous week to the end and label it with the appropriate number -->
 
 
  * Jan 26: Introduction to Version Control Using Git [[slides](slides/lecture_26Jan-TAH.html)]
-* Jan 28: More Fun with Git <!--[[slides](slides/lecture_5Feb-TAH.html)]-->
+* Jan 28: More Fun with Git [[slides](slides/lecture_28Jan-TAH.html)]
 
 
 ### Previous Weeks
