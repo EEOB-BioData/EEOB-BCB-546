@@ -23,7 +23,8 @@ You will also need to access the files associated with the course textbook _Bioi
 
 ## In Class Activities
 
-* VIRTUAL <a href="https://canvas.iastate.edu/courses/89022"><i class="fas fa-video"></i></a> Zoom sessions: live 1:10 PM to 2:30 PM on Zoom (link via the [Canvas home page](https://canvas.iastate.edu/courses/89022)).
+* In person <i class="fas fa-users"></i> sessions: 1:10 PM to 2:30 PM in 334 Bessey Hall.
+* Virtual <a href="https://canvas.iastate.edu/courses/89022"><i class="fas fa-video"></i></a> Zoom sessions: live 1:10 PM to 2:30 PM on Zoom (link via the [Canvas home page](https://canvas.iastate.edu/courses/89022)).
 * Recorded <a href="https://canvas.iastate.edu/courses/89022/modules/565906"><i class="fas fa-play"></i></a> sessions are available in the [Recorded Lectures Module on Canvas](https://canvas.iastate.edu/courses/89022/modules/565906).
 
 
