@@ -32,11 +32,11 @@ You will also need to access the files associated with the course textbook _Bioi
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move
 the previous week to the end and label it with the appropriate number -->
 
-<u>February 2-4</u>
+<u>February 9-11</u>
 
 
-* Feb 2: VB, Chapter 3: Getting started with Unix [[slides](slides/lecture_21Jan-MBH.html)]
-* Feb 4: VB, Chapter 7: Advanced Unix [[slides](slides/lecture_4-Feb-MBH.html)]
+* Feb 9: VB, Chapter 7: Advanced Unix [[slides](slides/lecture_4-Feb-MBH.html)]
+* Feb 11: VB, Chapter 7: Advanced Unix [[slides](slides/lecture_4-Feb-MBH.html)]
 
 
 ### Previous Weeks
@@ -52,3 +52,9 @@ the previous week to the end and label it with the appropriate number -->
 
 * Jan 26: Introduction to Version Control Using Git [[slides](slides/lecture_26Jan-TAH.html)]
 * Jan 28: More Fun with Git [[slides](slides/lecture_28Jan-TAH.html)]
+
+<u>February 2-4</u>
+
+
+* Feb 2: VB, Chapter 3: Getting started with Unix [[slides](slides/lecture_21Jan-MBH.html)]
+* Feb 4: VB, Chapter 7: Advanced Unix [[slides](slides/lecture_4-Feb-MBH.html)]
