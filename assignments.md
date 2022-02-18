@@ -32,6 +32,5 @@ All of the material required for grading must be submitted on the [course Canvas
 * The assignment is due via submission in Canvas by the end of the day on May 7, 2021  -->
 
 ## Final Group Project
-
-<!-- * The Final Group Project is available through the course GitHub repository in the [`Final_Project`](https://github.com/EEOB-BioData/BCB546-Spring2021/tree/master/assignments/Final_Project) folder (in the `assignments` folder).
-* The assignment is due via submission in Canvas by 5pm on May 7th -->
+* The Final Group Project is available through the course GitHub repository in the [`Final_Project`](https://github.com/EEOB-BioData/BCB546-Spring2022/tree/master/assignments/Final_Project) folder (in the `assignments` folder).
+* The assignment is due via submission in Canvas by 5pm on May 6th
