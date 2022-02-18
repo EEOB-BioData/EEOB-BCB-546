@@ -36,7 +36,7 @@ the previous week to the end and label it with the appropriate number -->
 
 
 * Feb 16: VB, Chapter 7: Advanced Unix [[slides](slides/lecture_4-Feb-MBH.html)], Intro. to HPC [[slides](slides/lecture_11Sept-MBH.html)]
-
+* Feb 18: Introduction to R and RStudio; R basics [[website](https://eeob-biodata.github.io/EEOB546-R/)]
 
 
 ### Previous Weeks
