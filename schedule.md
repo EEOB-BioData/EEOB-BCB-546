@@ -34,8 +34,8 @@ the previous week to the end and label it with the appropriate number -->
 
 <u>March 23-25</u>
 
-* Mar 9: Data Management Plans and LaTeX [[slides](https://github.com/EEOB-BioData/EEOB-BCB-546/blob/master/slides/lecture_23Mar2022_TAH.pdf); [slides source](https://www.overleaf.com/read/hrfvdhydwjpd)]
-* Mar 11: Intro to Python 
+* Mar 23: Data Management Plans and LaTeX [[slides](https://github.com/EEOB-BioData/EEOB-BCB-546/blob/master/slides/lecture_23Mar2022_TAH.pdf); [slides source](https://www.overleaf.com/read/hrfvdhydwjpd)]
+* Mar 25: Intro to Python 
 
 
 ### Previous Weeks
