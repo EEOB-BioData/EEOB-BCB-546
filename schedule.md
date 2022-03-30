@@ -32,11 +32,10 @@ You will also need to access the files associated with the course textbook _Bioi
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move
 the previous week to the end and label it with the appropriate number -->
 
-<u>March 23-25</u>
+<u>March 30 - April 1</u>
 
-* Mar 23: Data Management Plans and LaTeX [[slides](https://github.com/EEOB-BioData/EEOB-BCB-546/blob/master/slides/lecture_23Mar2022_TAH.pdf); [slides source](https://www.overleaf.com/read/hrfvdhydwjpd)]
-* Mar 25: Intro to Python [[tutorial home](https://eeob-biodata.github.io/BCB546X-python/); [intro tutorial](https://eeob-biodata.github.io/BCB546X-python/01-intro/)]
-
+* Mar 30: Introduction to Python Datatypes and Packages [[tutorial](https://eeob-biodata.github.io/BCB546X-python/02-datatypes/)]
+* Apr 1: Working With Pandas DataFrames in Python
 
 ### Previous Weeks
 
@@ -82,3 +81,10 @@ the previous week to the end and label it with the appropriate number -->
 
 * Mar 9: Data Visualization/Applying Functions to Data [[website](https://eeob-biodata.github.io/EEOB546-R/)]
 * Mar 11: Developing Workflows [[website](https://eeob-biodata.github.io/EEOB546-R/)]
+
+
+<u>March 23-25</u>
+
+* Mar 23: Data Management Plans and LaTeX [[slides](https://github.com/EEOB-BioData/EEOB-BCB-546/blob/master/slides/lecture_23Mar2022_TAH.pdf); [slides source](https://www.overleaf.com/read/hrfvdhydwjpd)]
+* Mar 25: Intro to Python [[tutorial home](https://eeob-biodata.github.io/BCB546X-python/); [intro tutorial](https://eeob-biodata.github.io/BCB546X-python/01-intro/)]
+
