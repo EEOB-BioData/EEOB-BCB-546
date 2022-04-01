@@ -35,7 +35,7 @@ the previous week to the end and label it with the appropriate number -->
 <u>March 30 - April 1</u>
 
 * Mar 30: Introduction to Python Datatypes and Packages [[tutorial](https://eeob-biodata.github.io/BCB546X-python/02-datatypes/)]
-* Apr 1: Working With Pandas DataFrames in Python
+* Apr 1: Introduction to Python Datatypes and Packages continued [[tutorial](https://eeob-biodata.github.io/BCB546X-python/02-datatypes/)] and Working With Pandas DataFrames in Python [[tutorial](https://eeob-biodata.github.io/BCB546X-python/03-starting-with-data/)]
 
 ### Previous Weeks
 
