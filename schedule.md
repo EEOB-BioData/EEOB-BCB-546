@@ -35,7 +35,7 @@ the previous week to the end and label it with the appropriate number -->
 <u>April 6-8</u>
 
 * Apr 6: Working With Pandas DataFrames in Python [[tutorial](https://eeob-biodata.github.io/BCB546X-python/03-starting-with-data/)]
-* Apr 8: Indexing, Slicing, Subsetting, and Iterating DataFrames in Python
+* Apr 8: Indexing, Slicing, Subsetting, and Iterating DataFrames in Python [[tutorial](https://eeob-biodata.github.io/BCB546X-python/04-more-dataframes/)]
 
 ### Previous Weeks
 
