@@ -32,10 +32,10 @@ You will also need to access the files associated with the course textbook _Bioi
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move
 the previous week to the end and label it with the appropriate number -->
 
-<u>April 6-8</u>
+<u>April 13-15</u>
 
-* Apr 6: Working With Pandas DataFrames in Python [[tutorial](https://eeob-biodata.github.io/BCB546X-python/03-starting-with-data/)]
-* Apr 8: Indexing, Slicing, Subsetting, and Iterating DataFrames in Python [[tutorial](https://eeob-biodata.github.io/BCB546X-python/04-more-dataframes/)]
+* Apr 13: Indexing, Slicing, Subsetting, and Iterating DataFrames in Python continued [[tutorial](https://eeob-biodata.github.io/BCB546X-python/04-more-dataframes/)]
+* Apr 15: Visualizing Data in Python [[tutorial](https://eeob-biodata.github.io/BCB546X-python/05-seaborn-viz/)]
 
 ### Previous Weeks
 
@@ -92,3 +92,9 @@ the previous week to the end and label it with the appropriate number -->
 
 * Mar 30: Introduction to Python Datatypes and Packages [[tutorial](https://eeob-biodata.github.io/BCB546X-python/02-datatypes/)]
 * Apr 1: Introduction to Python Datatypes and Packages continued [[tutorial](https://eeob-biodata.github.io/BCB546X-python/02-datatypes/)] and Working With Pandas DataFrames in Python [[tutorial](https://eeob-biodata.github.io/BCB546X-python/03-starting-with-data/)]
+
+<u>April 6-8</u>
+
+* Apr 6: Working With Pandas DataFrames in Python [[tutorial](https://eeob-biodata.github.io/BCB546X-python/03-starting-with-data/)]
+* Apr 8: Indexing, Slicing, Subsetting, and Iterating DataFrames in Python [[tutorial](https://eeob-biodata.github.io/BCB546X-python/04-more-dataframes/)]
+
