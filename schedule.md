@@ -32,10 +32,10 @@ You will also need to access the files associated with the course textbook _Bioi
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move
 the previous week to the end and label it with the appropriate number -->
 
-<u>April 13-15</u>
+<u>April 20-22</u>
 
-* Apr 13: Indexing, Slicing, Subsetting, and Iterating DataFrames in Python continued [[tutorial](https://eeob-biodata.github.io/BCB546X-python/04-more-dataframes/)]
-* Apr 15: Visualizing Data in Python [[tutorial](https://eeob-biodata.github.io/BCB546X-python/05-seaborn-viz/)]
+* Apr 20: Biopython [[tutorial](https://eeob-biodata.github.io/BCB546X-python/06-biopython/)]
+* Apr 22: Sequence Data & Alignments
 
 ### Previous Weeks
 
@@ -97,4 +97,9 @@ the previous week to the end and label it with the appropriate number -->
 
 * Apr 6: Working With Pandas DataFrames in Python [[tutorial](https://eeob-biodata.github.io/BCB546X-python/03-starting-with-data/)]
 * Apr 8: Indexing, Slicing, Subsetting, and Iterating DataFrames in Python [[tutorial](https://eeob-biodata.github.io/BCB546X-python/04-more-dataframes/)]
+
+<u>April 13-15</u>
+
+* Apr 13: Indexing, Slicing, Subsetting, and Iterating DataFrames in Python continued [[tutorial](https://eeob-biodata.github.io/BCB546X-python/04-more-dataframes/)]
+* Apr 15: Visualizing Data in Python [[tutorial](https://eeob-biodata.github.io/BCB546X-python/05-seaborn-viz/)]
 
