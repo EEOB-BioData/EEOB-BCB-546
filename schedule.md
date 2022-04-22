@@ -35,7 +35,8 @@ the previous week to the end and label it with the appropriate number -->
 <u>April 20-22</u>
 
 * Apr 20: Biopython [[tutorial](https://eeob-biodata.github.io/BCB546X-python/06-biopython/)]
-* Apr 22: Sequence Data & Alignments
+* Apr 22: Sequence Data & Alignments [[slides](slides/lecture_14Nov-MBH.html)]
+
 
 ### Previous Weeks
 
