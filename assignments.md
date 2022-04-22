@@ -11,26 +11,29 @@ icon: <i class='fa fa-check-circle'></i>
 Your grade for this course is based on four assignments and a final project. Details for each assignment and links to files will be posted here over the course of the semester.
 Instructions and data files for each assignment will be added to the [`assignments`](https://github.com/EEOB-BioData/BCB546-Spring2022/tree/main/assignments) folder in the course
 GitHub repository.
-All of the material required for grading must be submitted on the [course Canvas page](https://canvas.iastate.edu/courses/89022). 
+All of the material required for grading must be submitted on the [course Canvas page](https://canvas.iastate.edu/courses/89022).
 
 ### Assignment #1: Unix:
+
 * The UNIX Assignment is available through the course GitHub repository in the [`UNIX_Assignment`](https://github.com/EEOB-BioData/BCB546-Spring2022/tree/main/assignments/UNIX_Assignment) folder (in the `assignments` folder).
 * The assignment is due via submission in Canvas by 5pm on Friday, February 18th
 
 ### Assignment 2: R
-<!-- * The R Assignment is available through the course GitHub repository in the [`R_Assignment`](https://github.com/EEOB-BioData/BCB546-Spring2021/tree/main/assignments/R_Assignment) folder (in the `assignments` folder).
-* Read the assignment document for the submission process. -->
+
+* The R Assignment is available through the course GitHub repository in the [`R_Assignment`](https://github.com/EEOB-BioData/BCB546-Spring2022/tree/main/assignments/R_Assignment) folder (in the `assignments` folder).
+* Read the assignment document for the submission process.
 
 ### Assignment 3: Data Management Plans
 
-<!-- * The instructions for the DMP assignment are available on the course GitHub repository in the [`DMP_Assignment`](https://github.com/EEOB-BioData/BCB546-Spring2021/tree/master/assignments/DMP_Assignment) folder (in the `assignments` folder).
-* The assignment is due via submission in Canvas by the end of the day on April 7, 2021 -->
+* The instructions for the DMP assignment are available on the course GitHub repository in the [`DMP_Assignment`](https://github.com/EEOB-BioData/BCB546-Spring2022/tree/main/assignments/DMP_Assignment) folder (in the `assignments` folder).
+* The assignment is due via submission in Canvas by the end of the day on April 6, 2022
 
 ### Assignment 4: Python
 
-<!-- * The instructions for the Python assignment are available on the course GitHub repository in the [`Python_Assignment`](https://github.com/EEOB-BioData/BCB546-Spring2021/tree/main/assignments/Python_Assignment) folder (in the `assignments` folder).
-* The assignment is due via submission in Canvas by the end of the day on May 7, 2021  -->
+* The instructions for the Python assignment are available on the course GitHub repository in the [`Python_Assignment`](https://github.com/EEOB-BioData/BCB546-Spring2022/tree/main/assignments/Python_Assignment) folder (in the `assignments` folder).
+* The assignment is due via submission in Canvas by the end of the day on May 6, 2022 
 
 ## Final Group Project
-* The Final Group Project is available through the course GitHub repository in the [`Final_Project`](https://github.com/EEOB-BioData/BCB546-Spring2022/tree/master/assignments/Final_Project) folder (in the `assignments` folder).
+
+* The Final Group Project is available through the course GitHub repository in the [`Final_Project`](https://github.com/EEOB-BioData/BCB546-Spring2022/tree/main/assignments/Final_Project) folder (in the `assignments` folder).
 * The assignment is due via submission in Canvas by 5pm on May 6th

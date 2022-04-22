@@ -32,18 +32,15 @@ You will also need to access the files associated with the course textbook _Bioi
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move
 the previous week to the end and label it with the appropriate number -->
 
-<u>February 16-18</u>
+<u>April 20-22</u>
 
-
-* Feb 16: VB, Chapter 7: Advanced Unix [[slides](slides/lecture_4-Feb-MBH.html)], Intro. to HPC [[slides](slides/lecture_11Sept-MBH.html)]
-* Feb 18: Introduction to R and RStudio; R basics [[website](https://eeob-biodata.github.io/EEOB546-R/)]
-
+* Apr 20: Biopython [[tutorial](https://eeob-biodata.github.io/BCB546X-python/06-biopython/)]
+* Apr 22: Sequence Data & Alignments
 
 ### Previous Weeks
 
 
 <u>January 19-21</u>
-
 
 * Jan 19: Introduction to the Course [[slides](slides/Week1_Lecture1.pdf)] [[UNIX_exercise](slides/Unix_Exercise_1.pdf)]
 * Jan 21: VB, Chapter 3: Getting started with Unix [[slides](slides/lecture_21Jan-MBH.html)]
@@ -65,4 +62,44 @@ the previous week to the end and label it with the appropriate number -->
 * Feb 9: VB, Chapter 7: Advanced Unix [[slides](slides/lecture_4-Feb-MBH.html)]
 * Feb 11: VB, Chapter 7: Advanced Unix [[slides](slides/lecture_4-Feb-MBH.html)]
 
+<u>February 16-18</u>
+
+* Feb 16: VB, Chapter 7: Advanced Unix [[slides](slides/lecture_4-Feb-MBH.html)], Intro. to HPC [[slides](slides/lecture_11Sept-MBH.html)]
+* Feb 18: Introduction to R and RStudio; R basics [[website](https://eeob-biodata.github.io/EEOB546-R/)]
+
+<u>February 23-25</u>
+
+* Feb 23: R basics; Data Structures [[website](https://eeob-biodata.github.io/EEOB546-R/)]
+* Feb 25: Data Structures and Subsetting [[website](https://eeob-biodata.github.io/EEOB546-R/)]
+
+<u>March 2-4</u>
+
+* Mar 2: Data Transformation [[website](https://eeob-biodata.github.io/EEOB546-R/)]
+* Mar 4: Data Visualization [[website](https://eeob-biodata.github.io/EEOB546-R/)]
+
+<u>March 9-11</u>
+
+* Mar 9: Data Visualization/Applying Functions to Data [[website](https://eeob-biodata.github.io/EEOB546-R/)]
+* Mar 11: Developing Workflows [[website](https://eeob-biodata.github.io/EEOB546-R/)]
+
+
+<u>March 23-25</u>
+
+* Mar 23: Data Management Plans and LaTeX [[slides](https://github.com/EEOB-BioData/EEOB-BCB-546/blob/master/slides/lecture_23Mar2022_TAH.pdf); [slides source](https://www.overleaf.com/read/hrfvdhydwjpd)]
+* Mar 25: Intro to Python [[tutorial home](https://eeob-biodata.github.io/BCB546X-python/); [intro tutorial](https://eeob-biodata.github.io/BCB546X-python/01-intro/)]
+
+<u>March 30 - April 1</u>
+
+* Mar 30: Introduction to Python Datatypes and Packages [[tutorial](https://eeob-biodata.github.io/BCB546X-python/02-datatypes/)]
+* Apr 1: Introduction to Python Datatypes and Packages continued [[tutorial](https://eeob-biodata.github.io/BCB546X-python/02-datatypes/)] and Working With Pandas DataFrames in Python [[tutorial](https://eeob-biodata.github.io/BCB546X-python/03-starting-with-data/)]
+
+<u>April 6-8</u>
+
+* Apr 6: Working With Pandas DataFrames in Python [[tutorial](https://eeob-biodata.github.io/BCB546X-python/03-starting-with-data/)]
+* Apr 8: Indexing, Slicing, Subsetting, and Iterating DataFrames in Python [[tutorial](https://eeob-biodata.github.io/BCB546X-python/04-more-dataframes/)]
+
+<u>April 13-15</u>
+
+* Apr 13: Indexing, Slicing, Subsetting, and Iterating DataFrames in Python continued [[tutorial](https://eeob-biodata.github.io/BCB546X-python/04-more-dataframes/)]
+* Apr 15: Visualizing Data in Python [[tutorial](https://eeob-biodata.github.io/BCB546X-python/05-seaborn-viz/)]
 
