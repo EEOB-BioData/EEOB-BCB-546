@@ -29,10 +29,10 @@ You will also need to access the files associated with the course textbook _Bioi
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move
 the previous week to the end and label it with the appropriate number -->
 
-<u>February 1-3</u>
+<u>February 8-10</u>
 
-* Feb 1: VB, Chapter 7: Advanced Unix [[slides](slides/lecture_4-Feb-MBH.html)]
-* Feb 3: VB, Chapter 7: Advanced Unix [[slides](slides/lecture_4-Feb-MBH.html)]
+* Feb 8: High Performance Computing at ISU [[slides](slides/lecture_8Feb2023-MBH.html)]
+
 
 
 ### Previous Weeks
@@ -46,3 +46,8 @@ the previous week to the end and label it with the appropriate number -->
 
 * Jan 25: VB, Chapter 3: Getting started with Unix [[slides](slides/lecture_21Jan-MBH.html)]; VB, Chapter 7: Advanced Unix [[slides](slides/lecture_4-Feb-MBH.html)]
 * Jan 27: VB, Chapter 7: Advanced Unix [[slides](slides/lecture_4-Feb-MBH.html)]
+
+<u>February 1-3</u>
+
+* Feb 1: VB, Chapter 7: Advanced Unix [[slides](slides/lecture_4-Feb-MBH.html)]
+* Feb 3: VB, Chapter 7: Advanced Unix [[slides](slides/lecture_4-Feb-MBH.html)]
