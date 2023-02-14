@@ -28,12 +28,7 @@ You will also need to access the files associated with the course textbook _Bioi
 ### Current Week
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move
 the previous week to the end and label it with the appropriate number -->
-
-<u>February 8-10</u>
-
-* Feb 8: High Performance Computing at ISU [[slides](slides/lecture_8Feb2023-MBH.html)]
-
-
+* Feb 15: More on Git with Wade [[slides](slides/lecture_15Feb-WTD.html)]
 
 ### Previous Weeks
 
@@ -51,3 +46,9 @@ the previous week to the end and label it with the appropriate number -->
 
 * Feb 1: VB, Chapter 7: Advanced Unix [[slides](slides/lecture_4-Feb-MBH.html)]
 * Feb 3: VB, Chapter 7: Advanced Unix [[slides](slides/lecture_4-Feb-MBH.html)]
+
+<u>February 8-10</u>
+
+* Feb 8: High Performance Computing at ISU [[slides](slides/lecture_8Feb2023-MBH.html)]
+* Feb 10: Introduction to Git [[slides](slides/lecture_10Feb-WTD.html)]
+
