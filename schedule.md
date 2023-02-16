@@ -29,6 +29,7 @@ You will also need to access the files associated with the course textbook _Bioi
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move
 the previous week to the end and label it with the appropriate number -->
 * Feb 15: More on Git with Wade [[slides](slides/lecture_15Feb-WTD.html)]
+* Feb 17: Intro to R [[website](https://eeob-biodata.github.io/EEOB546-R/)]
 
 ### Previous Weeks
 
