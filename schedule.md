@@ -28,8 +28,8 @@ You will also need to access the files associated with the course textbook _Bioi
 ### Current Week
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move
 the previous week to the end and label it with the appropriate number -->
-* Feb 15: More on Git with Wade [[slides](slides/lecture_15Feb-WTD.html)]
-* Feb 17: Intro to R [[website](https://eeob-biodata.github.io/EEOB546-R/)]
+* Feb 22: R Data Structures [[website](https://eeob-biodata.github.io/EEOB546-R/)]
+* Feb 24: R Data Subsetting and Transformation [[website](https://eeob-biodata.github.io/EEOB546-R/)]
 
 ### Previous Weeks
 
@@ -53,3 +53,7 @@ the previous week to the end and label it with the appropriate number -->
 * Feb 8: High Performance Computing at ISU [[slides](slides/lecture_8Feb2023-MBH.html)]
 * Feb 10: Introduction to Git [[slides](slides/lecture_10Feb-WTD.html)]
 
+<u>February 15-17</u>
+
+* Feb 15: More on Git with Wade [[slides](slides/lecture_15Feb-WTD.html)]
+* Feb 17: Intro to R [[website](https://eeob-biodata.github.io/EEOB546-R/)]
