@@ -28,9 +28,11 @@ You will also need to access the files associated with the course textbook _Bioi
 ### Current Week
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move
 the previous week to the end and label it with the appropriate number -->
-* Mar 8: R Data Visualization [[website](https://eeob-biodata.github.io/EEOB546-R/)]
-* Mar 10: R Frunctions and Scripts [[website](https://eeob-biodata.github.io/EEOB546-R/)]
+<u> March 29-31</u>
 
+* Mar 29: [Python data structures](https://eeob-biodata.github.io/BCB546X-python/02-datatypes/)
+* Mar 31: [Pandas dataframes](https://eeob-biodata.github.io/BCB546X-python/01-intro/)
+) 
 ### Previous Weeks
 
 <u>January 18-20</u>
@@ -67,3 +69,16 @@ the previous week to the end and label it with the appropriate number -->
 
 * Mar 1: R Data Transformation [[website](https://eeob-biodata.github.io/EEOB546-R/)]
 * Mar 3: R Data Visualization [[website](https://eeob-biodata.github.io/EEOB546-R/)]
+
+<u>March 8-10</u>
+
+* Mar 8: R Data Visualization [[website](https://eeob-biodata.github.io/EEOB546-R/)]
+* Mar 10: R Frunctions and Scripts [[website](https://eeob-biodata.github.io/EEOB546-R/)]
+
+<u>March 15-17</u>
+* Spring Break
+
+<u>March 22-24</u>
+
+* Mar 22: Data management plans and LaTeX [[slides]](slides/DMP_slides.pdf)
+* Mar 29: [Intro to python](https://eeob-biodata.github.io/BCB546X-python/01-intro/)
