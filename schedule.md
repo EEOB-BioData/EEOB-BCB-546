@@ -28,11 +28,11 @@ You will also need to access the files associated with the course textbook _Bioi
 ### Current Week
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move
 the previous week to the end and label it with the appropriate number -->
-<u> March 29-31</u>
+<u> April 12-14</u>
 
-* Mar 29: [Python data structures](https://eeob-biodata.github.io/BCB546X-python/02-datatypes/)
-* Mar 31: [Pandas dataframes](https://eeob-biodata.github.io/BCB546X-python/01-intro/)
-) 
+* Apr 12: [Introduction to BioPython](https://eeob-biodata.github.io/BCB546X-python/06-biopython/)
+* Apr 14: [More Python](https://eeob-biodata.github.io/BCB546X-python/07-additional-exercises/)
+
 ### Previous Weeks
 
 <u>January 18-20</u>
@@ -81,4 +81,12 @@ the previous week to the end and label it with the appropriate number -->
 <u>March 22-24</u>
 
 * Mar 22: Data management plans and LaTeX [[slides]](slides/DMP_slides.pdf)
-* Mar 29: [Intro to python](https://eeob-biodata.github.io/BCB546X-python/01-intro/)
+* Mar 24: [Intro to python](https://eeob-biodata.github.io/BCB546X-python/01-intro/)
+
+<u>March 29-31</u>
+* Mar 29: [Python data structures](https://eeob-biodata.github.io/BCB546X-python/02-datatypes/)
+* Mar 31: [Pandas dataframes](https://eeob-biodata.github.io/BCB546X-python/03-starting-with-data/)
+
+<u> April 5-7</u>
+* Apr 5: [Subsetting Pandas dataframes](https://eeob-biodata.github.io/BCB546X-python/04-more-dataframes/)
+* Apr 7: [Data Visualization with Seaborn](https://eeob-biodata.github.io/BCB546X-python/05-seaborn-viz/)
