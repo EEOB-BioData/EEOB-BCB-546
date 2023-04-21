@@ -28,10 +28,10 @@ You will also need to access the files associated with the course textbook _Bioi
 ### Current Week
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move
 the previous week to the end and label it with the appropriate number -->
-<u> April 12-14</u>
+<u> April 19-21</u>
 
-* Apr 12: [Introduction to BioPython](https://eeob-biodata.github.io/BCB546X-python/06-biopython/)
-* Apr 14: [More Python](https://eeob-biodata.github.io/BCB546X-python/07-additional-exercises/)
+* Apr 19: No Class
+* Apr 21: VB, Chapters 10-11: Sequencing & Alignment Data [[slides](slides/lecture_14Nov-MBH.html)]
 
 ### Previous Weeks
 
@@ -90,3 +90,8 @@ the previous week to the end and label it with the appropriate number -->
 <u> April 5-7</u>
 * Apr 5: [Subsetting Pandas dataframes](https://eeob-biodata.github.io/BCB546X-python/04-more-dataframes/)
 * Apr 7: [Data Visualization with Seaborn](https://eeob-biodata.github.io/BCB546X-python/05-seaborn-viz/)
+
+<u> April 12-14</u>
+
+* Apr 12: [Introduction to BioPython](https://eeob-biodata.github.io/BCB546X-python/06-biopython/)
+* Apr 14: [More Python](https://eeob-biodata.github.io/BCB546X-python/07-additional-exercises/)
