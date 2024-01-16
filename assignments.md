@@ -6,14 +6,16 @@ navigation: 4
 icon: <i class='fa fa-check-circle'></i>
 ---
 
-## Spring 2023 EEOB/BCB 546 Assignments
+## Spring 2024 EEOB/BCB 546 Assignments
 
 Your grade for this course is based on four assignments and a final project. Details for each assignment and links to files will be posted here over the course of the semester.
-Instructions and data files for each assignment will be added to the [`assignments`](https://github.com/EEOB-BioData/BCB546_Spring2023/tree/main/assignments) folder in the course
+Instructions and data files for each assignment will be added to the [`assignments`](https://github.com/EEOB-BioData/BCB546_Spring2024/tree/main/assignments) folder in the course
 GitHub repository.
 All of the material required for grading must be submitted on the [course Canvas page]().
 
 ### Assignment #1: Unix:
+
+<!--
 
 * The UNIX Assignment is available through the course GitHub repository in the [`UNIX_Assignment`](https://github.com/EEOB-BioData/BCB546_Spring2023/tree/main/assignments/UNIX_Assignment) folder (in the `assignments` folder).
 * The assignment is due via submission in Canvas by 5pm on Friday, February 17th
@@ -37,3 +39,4 @@ All of the material required for grading must be submitted on the [course Canvas
 
 * The Final Group Project is available through the course GitHub repository in the [`Final_Project`](https://github.com/EEOB-BioData/BCB546_Spring2023/tree/main/assignments/Final_Project) folder (in the `assignments` folder).
 * The assignment is due via submission in Canvas by 5pm on May 5th
+-->
