@@ -29,9 +29,9 @@ You will also need to access the files associated with the course textbook _Bioi
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move
 the previous week to the end and label it with the appropriate number -->
 
-<u>January 31-February 2</u>
+<u>January 30-February 2</u>
 
-* Jan 31: VB, Chapter 7: Advanced Unix [[slides](slides/lecture_4-Feb-MBH.html)]
+* Jan 30: VB, Chapter 7: Advanced Unix [[slides](slides/lecture_4-Feb-MBH.html)]
 * Feb 2: VB, Chapter 7: Advanced Unix [[slides](slides/lecture_4-Feb-MBH.html)]
 
 
