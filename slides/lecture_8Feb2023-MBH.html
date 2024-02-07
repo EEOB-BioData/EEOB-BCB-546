@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="keywords" content="hpc, research it, servers, clusters, storage" />
     <meta name="description" content="Lecture on HPC resources and methods." />
-    <title>BCB 546X -- 11 Sept 2019</title>
+    <title>BCB 546X -- 07 Feb 2024</title>
     <style>
       @import url(https://fonts.googleapis.com/css?family=Droid+Serif);
       @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
@@ -226,31 +226,22 @@ There are other tools, but these will get you the basic info you need and are in
 
 * [hpc-class on nova](http://www.hpc.iastate.edu/guides/nova/hpc-class)
     * For classes, not research
-    * 31 nodes
-        * 2.6-2.65GHz, 64 or 48 cores per node, 500GB RAM per node
+    
 --
 		        
-* [condo2017](http://www.hpc.iastate.edu/guides/condo-2017)
-    * Primarily for sponsored research
-    * 138 Nodes, all freely available to ISU users
-    * Likely removed from service next Fall
-        * 2.6GHz, 16 cores, 128GB RAM
-        * 3 High-memory nodes (1 and 2TB RAM)
-        * 1 GPU node
+<div style="text-align:center"><img src="images/hpc_class.png" alt="HPC Class" style="width: 700px;"/></div>
 
 ---
 
 # Compute Resources at ISU
 
-## Clusters
-
 * [nova](http://www.hpc.iastate.edu/guides/nova)
 	* Primarily for sponsored research
 	* Hundreds of Nodes
-		* Many types of nodes with variable numbers of cores and memory
-		* 3 High-memory nodes (3TB RAM)
-		
+
 --
+
+<div style="text-align:center"><img src="images/nova.png" alt="Nova" style="width: 500px;"/></div>
 
 Also check out these [UNIX tutorials](https://www.hpc.iastate.edu/guides/unix-introduction) through ISU-HPC!
 ---
@@ -265,13 +256,11 @@ Also check out these [UNIX tutorials](https://www.hpc.iastate.edu/guides/unix-in
     * 2.6GHz, 48 threads, 1.5TB of RAM
 --
 * Speedy (for single threaded programs, like R)
-    * 3.4GHz, 24 threads, 256GB of RAM
+    * 3.4GHz, 24 threads, 366GB of RAM
+    * For jobs that cannot be parallelized and require the fastest CPU
 --
-* Speedy2 (for single threaded programs, like R)
-    * 3.2GHz, 32 threads, 256GB of RAM
---
-* LASWIN01 (for Windows only software)
-    * 2.6GHz, 24 threads, 64GB of RAM
+* GPU (for jobs that need a GPU)
+
 --
 * Legion (for massively parallel applications)
     * 4 nodes
