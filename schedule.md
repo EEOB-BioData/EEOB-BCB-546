@@ -29,10 +29,15 @@ You will also need to access the files associated with the course textbook _Bioi
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move
 the previous week to the end and label it with the appropriate number -->
 
+<!--<u>February 14-16</u>
+
+* Feb 14: VB, Chapter 4, 5: More on Git [[slides - same as Feb 9](slides/lecture_9Feb-and-14Feb-AS.html)]
+* Feb 16: R Intro -->
+
 <u>February 7-9</u>
 
 * Feb 7: Chapter 7: Advanced Unix [[slides](slides/lecture_4-Feb-MBH.html)]; High Performance Computing at ISU [[slides](slides/lecture_8Feb2023-MBH.html)]
-* Feb 9: Introduction to Git
+* Feb 9: VB, Chapter 4, 5: Intro to Version Control using Git [[slides](slides/lecture_9Feb-and-14Feb-AS.html)]
 
 
 ### Previous Weeks

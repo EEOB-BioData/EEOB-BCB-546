@@ -1,0 +1,2038 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!--change keywords, description-->
+    <meta name="keywords" content="git,version-control,github,nova,presentation" />
+    <meta name="description" content="Introduction to Version Control using Git" />
+    <link href="https://github.com/EEOB-BioData/BCB546_Spring2024/assets/4835524/69467d59-5524-47b6-b377-6b819e32ac56"
+        rel="icon" type="image/png" />
+    <!--change title-->
+    <title>Version Control with Git</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Fira+Mono&display=swap);
+        @import url(https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap);
+        @import url(https://fonts.googleapis.com/css?family=Droid+Serif);
+        @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+        @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+        body {
+            font-family: 'PT Sans';
+            font-weight: 400;
+            font-size: large;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Yanone Kaffeesatz';
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+
+        .remark-slide-content h1 {
+            font-size: 3em;
+        }
+
+        .remark-slide-content h2 {
+            font-size: 2em;
+        }
+
+        .remark-slide-content h3 {
+            font-size: 1.25em;
+        }
+
+        .footnote {
+            position: absolute;
+            bottom: 2em;
+        }
+
+        li p {
+            line-height: 1.25em;
+        }
+
+        .red {
+            color: #fa0000;
+        }
+
+        .large {
+            font-size: 2em;
+        }
+
+        a,
+        a>code {
+            color: rgb(249, 38, 114);
+            text-decoration: none;
+        }
+
+        code {
+            background: #e7e8e2;
+            border-radius: 5px;
+        }
+
+        .remark-code,
+        .remark-inline-code {
+            font-family: 'Fira Code';
+            font-weight: normal;
+            font-size: 13px;
+
+        }
+        .unix-cli,
+        .unix-cli-code {
+            font-family: 'Fira Code';
+            font-weight: normal;
+            font-size: 13px;
+            color:lime;
+            background-color: #373832;
+        }
+
+        .remark-code-line-highlighted {
+            background-color: #373832;
+        }
+
+        .pull-left {
+            float: left;
+            width: 47%;
+        }
+
+        .pull-right {
+            float: right;
+            width: 47%;
+        }
+
+        .pull-right~p {
+            clear: both;
+        }
+
+        #slideshow .slide .content code {
+            font-size: 0.8em;
+        }
+
+        #slideshow .slide .content pre code {
+            font-size: 0.9em;
+            padding: 15px;
+        }
+
+        .inverse {
+            background: #272822;
+            color: #777872;
+            text-shadow: 0 0 20px #333;
+        }
+
+        .inverse h1,
+        .inverse h2 {
+            color: #f3f3f3;
+            line-height: 0.8em;
+        }
+
+        /* Slide-specific styling */
+        #slide-inverse .footnote {
+            bottom: 12px;
+            left: 20px;
+        }
+
+        #slide-how .slides {
+            font-size: 0.9em;
+            position: absolute;
+            top: 151px;
+            right: 140px;
+        }
+
+        #slide-how .slides h3 {
+            margin-top: 0.2em;
+        }
+
+        #slide-how .slides .first,
+        #slide-how .slides .second {
+            padding: 1px 20px;
+            height: 90px;
+            width: 120px;
+            -moz-box-shadow: 0 0 10px #777;
+            -webkit-box-shadow: 0 0 10px #777;
+            box-shadow: 0 0 10px #777;
+        }
+
+        #slide-how .slides .first {
+            background: #fff;
+            position: absolute;
+            top: 20%;
+            left: 20%;
+            z-index: 1;
+        }
+
+        #slide-how .slides .second {
+            position: relative;
+            background: #fff;
+            z-index: 0;
+        }
+
+        /* Two-column layout */
+        .left-column {
+            color: #777;
+            width: 20%;
+            height: 92%;
+            float: left;
+        }
+        .left-columnB {
+            color: #000;
+            width: 20%;
+            height: 92%;
+            float: left;
+        }
+
+        .left-column h2:last-of-type,
+        .left-column h3:last-child {
+            color: #000;
+        }
+
+        .right-column {
+            width: 75%;
+            float: right;
+            padding-top: 1em;
+        }
+
+    </style>
+</head>
+
+<body>
+    <textarea id="source">
+name: inverse
+layout: true
+class: center, middle, inverse
+
+---
+# Introduction to Version Control using Git 
+
+---
+layout: false
+# Before we begin:
+
+### <span style="font-weight:normal;color:#777;">Create a GitHub account if you don't have one already.</span>
+### <span style="font-weight:normal;color:#777;">Set up SSH keys for your GitHub account.</span>
+### <span style="font-weight:normal;color:#777;">Install Git on your computer (if necessary).</span>
+### <span style="font-weight:normal;color:#777;">Configure Git with your name and email.</span>
+
+---
+
+layout: false
+# Before we begin:
+
+### Create a GitHub account if you don't have one already.
+### <span style="font-weight:normal;color:#777;">Set up SSH keys for your GitHub account.</span>
+### <span style="font-weight:normal;color:#777;">Install Git on your computer (if necessary).</span>
+### <span style="font-weight:normal;color:#777;">Configure Git with your name and email.</span>
+
+---
+name: inverse
+layout: true
+class: center, middle, inverse
+
+---
+# Set up SSH keys for your GitHub account
+---
+
+layout: false
+.left-column[
+### Step 1 - Check Keys
+]
+.right-column[
+Open your terminal and SSH to Nova:
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;"> ssh netid@nova.its.iastate.edu</span>
+
+``` 
+Enter your 2FA code and then password
+
+Navigate to `.ssh` directory and list contents:
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">ls -la</span>
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">cd ~/.ssh</span>
+```
+
+If you see `id_rsa.pub` and `id_rsa` files, you can skip to **Step 3**.
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">ls -la</span>
+total 293
+-rw-------.  1 arnstrm domain users   410 Jan 28  2019 authorized_keys
+-rwx------.  1 arnstrm domain users  1827 Sep  2  2022 <span style="font-weight:bold;color:lime;">config</span>
+-rw-------.  1 arnstrm domain users  3243 Jan  1  2020 id_rsa
+-rw-r--r--.  1 arnstrm domain users   745 Jan  1  2020 id_rsa.pub
+-rw-------.  1 arnstrm domain users 36286 Nov  1 10:32 known_hosts
+```
+]
+
+---
+.left-column[
+### Step 1 - Check Keys
+### Step 2 - Generate Keys
+]
+
+.right-column[
+Those without `id_rsa.pub` and `id_rsa` files, generate them by typing:
+
+```bash
+ssh-keygen -t rsa -b 4096 -C "<netid>@iastate.edu"
+```
+
+* The command will prompt you for a name and for a passphrase. You can leave it blank by hitting enter.
+* Here,
+    - `-t` specifies the type of key
+    - `-b` specifies the number of bits in the key, and
+    - `-C` specifies the comment (use same email used for GitHub account)
+* The key will be saved in `~/.ssh` directory.
+* The `id_rsa` file is your private key and should never be shared (stays in this directory forever)
+* The `id_rsa.pub` file is your public key and can be saved on other hosts (e.g. GitHub)
+
+
+
+]
+---
+.left-column[
+### Step 1 - Check Keys
+### Step 2 - Generate Keys
+]
+
+.right-column[
+
+The command will generate the following output:
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">ssh-keygen -t rsa -b 4096 -C "arnstrm@iastate.edu"</span>
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/arnstrm/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /home/arnstrm/.ssh/id_rsa
+Your public key has been saved in /home/arnstrm/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:JMZKKmV62lx8+Bjw/45JAM6ImJJLXqGSVyjscj5e4rM arnstrm@iastate.edu
+The key's randomart image is:
++---[RSA 4096]----+
+|                 |
+|. . .            |
+|..*.o + .        |
+|+%.O.+ o         |
+|&+B.O . S        |
+|*@.. B           |
+|o.* o +          |
+| o.+ . +         |
++----[SHA256]-----+
+```
+
+
+You can view the public key:
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">cat ~/.ssh/id_rsa.pub</span>
+ssh-rsa AAAAB3NzaC1yc2EAAAADAAABAQ..... arnstrm@nova.its.iastate.edu
+```
+]
+---
+.left-column[
+### Step 1 - Check Keys
+### Step 2 - Generate Keys
+### Step 3 - Add Keys to GitHub
+]
+
+.right-column[
+1. Go to [https://github.com/settings/keys](https://github.com/settings/keys)
+
+2. Click on `New SSH key`
+
+3. Give it a title (e.g. nova)
+
+4. Copy `id_rsa.pub` contents and paste it in the `Key` field
+
+5. Click on `Add SSH key` button
+
+
+<img src="https://github.com/EEOB-BioData/BCB546_Spring2024/assets/4835524/bc3ea5c5-d4eb-4017-98c4-a831db4a3b1d"
+    alt="image" width="600" height="auto">
+
+.red[The public key (`id_rsa.pub` contents) is the one that you need to paste!]
+]
+
+---
+.left-column[
+### Step 1 - Check Keys
+### Step 2 - Generate Keys
+### Step 3 - Add Keys to GitHub
+### Step 4 - Test SSH connection
+]
+
+.right-column[
+
+Go to your Nova terminal session and type:
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">ssh -T git@github.com</span>
+Hi aseetharam! You've successfully authenticated, 
+but GitHub does not provide shell access.
+```
+
+Congratulations! You have successfully set up your SSH key for GitHub!
+
+]
+
+---
+# Things to remember
+
+1. You can reuse this public key for other remote hosts (e.g. GitLab, BitBucket, Pronto etc.)
+2. The private key (`id_rsa`) should never be shared with anyone
+3. You can add multiple public key for your GitHub account (eg. one for Nova, one for your personal computer etc.)
+4. Any remote host that has your public key can be accessed without a password, but if there is 2FA, you will still need to enter the code.
+    - when you `ssh` to Nova from your local computer - save the public key generated from your local computer to Nova's `~/.ssh/authorized_keys` file 
+
+---
+layout: false
+# Before we begin:
+
+### Create a GitHub account if you don't have one already.
+### Set up SSH keys for your GitHub account.
+### <span style="font-weight:normal;color:#777;">Install Git on your computer (if necessary).</span>
+### <span style="font-weight:normal;color:#777;">Configure Git with your name and email.</span>
+
+---
+
+layout: false
+# Before we begin:
+
+### Create a GitHub account if you don't have one already.
+### Set up SSH keys for your GitHub account.
+### Install Git on your computer (if necessary) **or use Nova.**
+### <span style="font-weight:normal;color:#777;">Configure Git with your name and email.</span>
+
+---
+
+# Configure Git with your name and email
+
+## Git Setup
+
+Git needs to know who you are, so that it can properly label the changes you make. You can tell Git who you are by setting your name and email address. To do this, use:
+
+```terminal
+git config --global user.name "FirstName LastName"
+git config --global user.email "netid@iastate.edu"
+```
+
+Another useful Git setting to enable now is terminal colors to visually indicate changes. We can enable this with:
+
+```terminal
+git config --global color.ui true
+```
+See changes with:
+```terminal
+git config --list
+```
+
+---
+layout: false
+# Before we begin:
+
+### Create a GitHub account if you don't have one already. ✔
+### Set up SSH keys for your GitHub account. ✔
+### Install Git on your computer (if necessary) or use Nova. ✔
+### Configure Git with your name and email. ✔
+
+---
+
+layout: false
+.left-column[
+### What's Git?
+]
+.right-column[
+]
+
+---
+
+layout: false
+.left-column[
+### What's Git?
+]
+.right-column[
+
+* Git is a distributed Version Control System (VCS) that allows you to track changes in your code and collaborate with
+others.
+
+* It was created by Linus Torvalds in 2005 to manage the development of the Linux kernel.
+
+* Git vs. GitHub:
+    - GitHub is a web-based hosting service for Git repositories (provides a web interface for Git). Some other hosting services include GitLab,
+BitBucket, etc.
+    - Git is the software that runs on your computer and manages your codebase. Many VCS exist, eg: Subversion, Mercurial, etc.
+
+* Git is a command line tool, but there are many graphical user interfaces available for it. eg.
+    - [GitHub Desktop](https://desktop.github.com/)
+    - [GitKraken](https://www.gitkraken.com/)
+    - [SourceTree](https://www.sourcetreeapp.com/), etc.
+
+]
+
+---
+.left-column[
+### What's Git?
+### Why use Git?
+]
+.right-column[
+
+Git is useful for many reasons:
+- Track changes in your code over time
+- Merge versions and manage conflicts
+- Experiment with new features without altering original
+- Collaborate/coordinate with others
+- Backup your code
+- Reproducible research
+
+Consider the following scenario:
+
+]
+
+<img src="https://github.com/EEOB-BioData/BCB546_Spring2024/assets/4835524/e5c297df-ae2b-4f8f-a940-fafa9e6755a5"
+    alt="image" width="400" height="auto">
+
+
+---
+.left-column[
+### What's Git?
+### Why use Git?
+]
+.right-column[
+
+Git is useful for many reasons:
+- Track changes in your code over time
+- Merge versions and manage conflicts
+- Experiment with new features without altering original
+- Collaborate/coordinate with others
+- Backup your code
+- Reproducible research
+
+Consider the following scenario:
+
+]
+
+<img src="https://github.com/EEOB-BioData/BCB546_Spring2024/assets/4835524/e5c297df-ae2b-4f8f-a940-fafa9e6755a5"
+    alt="image" width="400" height="auto">
+<img src="https://github.com/EEOB-BioData/BCB546_Spring2024/assets/4835524/906bfc8a-18be-43a4-b4e0-d1a1c3b92168"
+    alt="image" width="300" height="auto">
+---
+.left-column[
+### What's Git?
+### Why use Git?
+]
+
+.right-column[
+
+Git is useful for many reasons:
+- Track changes in your code over time
+- Merge versions and manage conflicts
+- Experiment with new features without altering original
+- Collaborate/coordinate with others
+- Backup your code
+- Reproducible research
+
+or this:
+
+```terminal
+final_manuscript.docx
+final_manuscript_as1.docx
+final_manuscript_as1_final.docx
+final_manuscript_as1_final2.docx
+final_manuscript_as1_final3.docx
+final_manuscript_as1_final_final.docx
+```
+]
+---
+
+.left-column[
+### What's Git?
+### Why use Git?
+### How to use Git?
+]
+
+.right-column[
+### 1. Starting a new project (`init`, `clone`)
+### 2. Day-to-day operations (`add`, `mv`, `rm`, `commit`, `status`)
+### 3. Branching and merging (`branch`, `checkout`, `merge`, `rebase`)
+### 4. Synchronizing work (`fetch`, `pull`, `push`)
+### 5. Inspecting history (`log`, `diff`, `reflog`)
+### 6. Storing work (`stash`, `tag`)
+### 7. Reversing changes (`reset`, `revert`)
+### 8. Ignoring files (editing `.gitignore` file)
+### 9. Many more*
+
+
+.footnote[.red[*there are more than 100 commands in Git, but these are the most commonly used ones. Get the full list using `git help -a` command]]
+
+]
+---
+
+## 1. Starting a new project
+
+The commands:
+
+```terminal
+# initialize a new git repository
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git init project-folder</span>
+# clone an existing repository
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git clone url-for-repo</span>
+```
+
+Let's give it a try!
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">mkdir git-demo</span>
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">cd git-demo</span>
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">vi README.md</span> # add some text and Save
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git init</span>
+Initialized empty Git repository in /some/path/git-demo/.git/
+```
+What happened?
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">ls -la </span>
+total 0
+drwxrwxrwx 1 arnstrm arnstrm 4096 Feb 1 19:48 <span style="font-weight:bold;color:yellow;">.</span>
+drwxrwxrwx 1 arnstrm arnstrm 4096 Feb 1 19:48 <span style="font-weight:bold;color:yellow;">..</span>
+drwxrwxrwx 1 arnstrm arnstrm 4096 Feb 1 19:48 <span style="font-weight:bold;color:yellow;">.git</span>
+```
+
+---
+
+## 1. Starting a new project
+
+Similarly, you can clone an existing repository:
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git clone git@github.com:EEOB-BioData/BCB546_Spring2024.git</span>
+Cloning into 'BCB546_Spring2024'...
+remote: Enumerating objects: 44, done.
+remote: Counting objects: 100% (44/44), done.
+remote: Compressing objects: 100% (30/30), done.
+remote: Total 44 (delta 5), reused 42 (delta 3), pack-reused 0
+Receiving objects: 100% (44/44), 1.64 MiB | 6.33 MiB/s, done.
+Resolving deltas: 100% (5/5), done.
+```
+
+Again, let's check the contents:
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">ls -la</span>
+total 12
+drwxrwxrwx 1 arnstrm arnstrm 4096 Feb 1 19:53 <span style="font-weight:bold;color:yellow;">.</span>
+drwxrwxrwx 1 arnstrm arnstrm 4096 Feb 1 19:53 <span style="font-weight:bold;color:yellow;">..</span>
+-rwxrwxrwx 1 arnstrm arnstrm 6148 Feb 1 19:53 <span style="font-weight:bold;color:lime;">.DS_Store</span>
+drwxrwxrwx 1 arnstrm arnstrm 4096 Feb 1 19:53 <span style="font-weight:bold;color:yellow;">.git</span>
+-rwxrwxrwx 1 arnstrm arnstrm 2775 Feb 1 19:53 <span style="font-weight:bold;color:lime;">README.md</span>
+drwxrwxrwx 1 arnstrm arnstrm 4096 Feb 1 19:53 <span style="font-weight:bold;color:yellow;">assignments</span>
+drwxrwxrwx 1 arnstrm arnstrm 4096 Feb 1 19:53 <span style="font-weight:bold;color:yellow;">course-files</span>
+drwxrwxrwx 1 arnstrm arnstrm 4096 Feb 1 19:53 <span style="font-weight:bold;color:yellow;">documents</span>
+```
+---
+## 2. Day-to-day operations
+
+<img src="https://github.com/EEOB-BioData/BCB546_Spring2024/assets/4835524/4257cbe4-e0f6-4eeb-9780-e4d426e60196"
+    alt="image" width="650" height="auto">
+
+Some terms to remember:
+
+* Commit: A snapshot of changes to the repository
+* SHA: a unique identifier for a commit 
+* Branch: a reference to a commit; can have a tracked upstream
+* Tag: a reference (standard) or an object (annotated)
+* HEAD: a place where your working directory is now
+
+
+---
+.left-columnB[
+### 2. Day-to-day operations:
+- `git add`
+- `git mv`
+- `git rm`
+- `git commit`
+- `git status`
+
+]
+
+.right-column[
+
+The commands:
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git add <file></span>
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git mv <source> <destination></span>
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git rm <file></span>
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git commit -m "message"</span>
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git status</span>
+```
+
+Let's give it a try!
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">cd git-demo/</span>
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">ls</span>
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">vi README.md # add some text and Save</span>
+```
+
+Add file to staging area and commit:
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git add README.md</span>
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git commit -m "Added my first file"</span>
+[master (root-commit) 8e5a454] Added my first file
+1 file changed, 1 insertion(+)
+create mode 100644 README.md
+```
+Check  status:
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git status</span>
+On branch master
+nothing to commit, working tree clean
+```
+]
+---
+.left-columnB[
+### 2. Day-to-day operations:
+- `git add`
+- `git mv`
+- `git rm`
+- `git commit`
+- `git status`
+
+]
+
+.right-column[
+
+Lets add more files:
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">touch script.sh notneeded.txt</span>
+```
+What's the status?
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git status</span>
+On branch master
+Untracked files:
+(use "git add <file>..." to include in what will be committed)
+    notneeded.txt
+    script.sh
+
+nothing added to commit but untracked files present (use "git add" to t
+```
+
+Now lets add them. When there are multiple files to add, you can use the `-A` flag to add all files (or `.` for
+everything in the directory):
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git add -A</span>
+```
+The files are moved to the staging area. Now commit:
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git commit -m "added more files"</span>
+[master cd3af88] added more files
+2 files changed, 0 insertions(+), 0 deletions(-)
+create mode 100644 notneeded.txt
+create mode 100644 script.sh
+```
+
+Check status now.
+
+]
+
+---
+.left-columnB[
+### 2. Day-to-day operations:
+ - `git add`
+ - `git mv`
+ - `git rm`
+ - `git commit`
+ - `git status`
+
+]
+
+.right-column[
+
+Moving and deleting files:
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">ls</span>
+README.md notneeded.txt script.sh
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git mv notneeded.txt deleteme.txt</span>
+```
+
+Check status:
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git status</span>
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    notneeded.txt -> deleteme.txt
+```
+
+What files are in the directory?
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">ls</span>
+README.md  deleteme.txt  script.sh
+```
+`notneeded.txt` is gone!
+
+Now, commit the changes.
+]
+---
+.left-columnB[
+### 2. Day-to-day operations:
+- `git add`
+- `git mv`
+- `git rm`
+- `git commit`
+- `git status`
+
+]
+
+.right-column[
+
+File deletion:
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git rm deleteme.txt</span>
+rm 'deleteme.txt'
+```
+Check status:
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git status</span>
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    deleteme.txt
+```
+
+Let's commit the changes:
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git commit -m "deleted a file"</span>
+[master a973e9c] deleted a file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 deleteme.txt
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git status</span>
+On branch master
+nothing to commit, working tree clean
+```
+]
+---
+## 3. Branching and merging
+
+
+The commands:
+
+```terminal
+git branch <branch-name>
+git checkout <branch-name>
+git merge <branch-name>
+git rebase <branch-name>
+```
+
+Command | Description
+------------- | -------------
+`branch`  | list, create, or delete branches
+`checkout`  | switch branches or restore working tree files
+`merge`  | join two or more development histories together
+`rebase`  | reapply commits from another branch on top/tip of another branch 
+
+---
+.left-columnB[
+### 3. Branching and merging:
+- `git branch`
+- `git checkout`
+- `git merge`
+- `git rebase`
+]
+
+.right-column[
+
+First, let's create few branches:
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">cd git-demo</span>
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git branch feature1</span>
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git branch feature2</span>
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git branch feature3</span>
+```
+
+if you don't provide the name, it will list them:
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git branch -a</span>
+   feature1
+   feature2
+   feature3
+ * master
+```
+The * indicates the current branch. Any commits/changes you make will be applicable to the current branch. The command also lists branches without `-a` option.
+
+By default, the remote branches are not listed. To list them, use `-r` option. But since we haven't pushed anything to remote, there are no remote branches.
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git branch -r</span>
+```
+
+No output.
+]
+
+---
+.left-columnB[
+### 3. Branching and merging:
+- `git branch`
+- `git checkout`
+- `git merge`
+- `git rebase`
+]
+
+.right-column[
+To delete a branch, you can use (`-D` to force delete):
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git branch -d feature3</span>
+Deleted branch feature3 (was a973e9c).
+```
+
+check the branches:
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git branch -a</span>
+   feature1
+   feature2
+ * master
+```
+The `feature3` branch has been deleted.
+
+To visually summarize:
+
+<img src="https://github.com/EEOB-BioData/BCB546_Spring2024/assets/4835524/61805a86-3ba2-48e8-8a2a-0924a1db4758"
+    alt="image" width="400" height="auto">
+
+```
+
+]
+---
+.left-columnB[
+### 3. Branching and merging:
+- `git branch`
+- `git checkout`
+- `git merge`
+- `git rebase`
+]
+
+.right-column[
+
+`git checkout`, a powerful command that allows us to navigating branches, including creating and switching, restoring files, and exploring historical commits. 
+
+To switch to a branch, use:
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git checkout feature1</span>
+Switched to branch 'feature1'
+```
+
+Check which branch is current:
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git branch</span>
+ * feature1
+   feature2
+   master
+```
+
+While `git branch` can only create new branches, `git checkout` can create and switch to a new branch in one command:
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git checkout -b feature4</span>
+Switched to a new branch 'feature4'
+```
+
+Go ahead and check the branches now.
+
+NOTE: If you have uncommitted changes, you will not be able to switch branches. You will need to commit or stash (we
+will learn this soon) the changes before switching.
+
+]
+---
+
+.left-columnB[
+### 3. Branching and merging:
+- `git branch`
+- `git checkout`
+- `git merge`
+- `git rebase`
+]
+
+.right-column[
+
+`git checkout` to discard uncommitted changes:
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git checkout feature1</span>
+Switched to branch 'feature1'
+```
+
+Now let's create a new script `greetings.sh` and commit it to the `feature1` branch:
+
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">vi greetings.sh</span>
+# add these lines:
+```
+```bash
+#!/bin/bash
+echo "Hello $USER!"
+echo "you are using $HOSTNAME"
+```
+
+save and exit.
+Escape key, followed by `colon`, `w` and `q` keys. Press Enter key.
+
+Add and commit changes:
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git add greetings.sh</span>
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git commit -m "added greetings script"</span>
+[feature1 b073ae1] added greetings script
+1 file changed, 3 insertions(+)
+create mode 100644 greetings.sh
+```
+]
+---
+
+.left-columnB[
+### 3. Branching and merging:
+- `git branch`
+- `git checkout`
+- `git merge`
+- `git rebase`
+]
+
+.right-column[
+
+Now, let's make another change and break the script:
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">vi greetings.sh</span>
+# add these lines:
+```
+
+```bash
+"Today is $(date)"
+```
+save and exit (`ESC`, `:wq` and Enter). 
+
+Let's run the script again:
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">bash greetings.sh</span>
+Hello arnstrm!
+you are using nova.its.iastate.edu
+./greetings.sh: line 4: Today is Mon Feb  5 12:16:52 CST 2024: command 
+```
+
+The script is broken. Let's fix it with `git checkout` (discard uncommitted changes):
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git checkout -- greetings.sh</span>
+```
+
+Now, run the script again:
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">bash greetings.sh</span>
+Hello arnstrm!
+you are using nova.its.iastate.edu
+```
+]   
+
+
+
+---
+
+.left-columnB[
+### 3. Branching and merging:
+- `git branch`
+- `git checkout`
+- `git merge`
+- `git rebase`
+]
+
+.right-column[
+`git merge` will combine one branch into another.
+Work done in separate branches can be brought to your main branch (eg: `feature1` branch to `master`).
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git checkout feature1</span>
+Switched to branch 'feature1'
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">ls -l</span>
+total 0
+-rwxrwxrwx 1 arnstrm arnstrm  17 Feb 1 20:43 <span style="font-weight:bold;color:lime;">README.md</span>
+-rwxrwxrwx 1 arnstrm arnstrm 121 Feb 5 12:34 <span style="font-weight:bold;color:lime;">greetings.sh</span>
+-rwxrwxrwx 1 arnstrm arnstrm   0 Feb 1 20:45 <span style="font-weight:bold;color:lime;">script.sh</span>
+```
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git checkout master</span>
+Switched to branch 'master'
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">ls -l</span>
+total 0
+-rwxrwxrwx 1 arnstrm arnstrm 17 Feb 1 20:43 <span style="font-weight:bold;color:lime;">README.md</span>
+-rwxrwxrwx 1 arnstrm arnstrm  0 Feb 1 20:45 <span style="font-weight:bold;color:lime;">script.sh</span>
+```
+
+To merge the changes from `feature1` to `master`:
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git merge feature1</span>
+Updating a973e9c..829bdd6
+Fast-forward
+greetings.sh | 5 +++++
+1 file changed, 5 insertions(+)
+create mode 100644 greetings.sh
+```
+
+Did the contents of `master` change?
+
+]
+---
+.left-columnB[
+### 3. Branching and merging:
+- `git branch`
+- `git checkout`
+- `git merge`
+- `git rebase`
+]
+
+.right-column[
+
+### Quick recap:
+
+Visually, we can summarize these steps:
+<img src="https://github.com/EEOB-BioData/BCB546_Spring2024/assets/4835524/53d7d5be-2638-4998-adc2-d6c65dd95ffc"
+    alt="image" width="600" height="auto">
+NOTE:
+- When files have conflicts, `merge` will report conflicts and you will need to resolve them manually.
+- Latest `git` versions have a new command `switch` an experimental command that combines `checkout` and `branch`
+commands.
+- `git switch` is a more intuitive way to switch branches.
+]
+---
+.left-columnB[
+### 3. Branching and merging:
+- `git branch`
+- `git checkout`
+- `git merge`
+- `git rebase`
+]
+
+.right-column[
+`git rebase` is another way to integrate changes from one branch to another.
+
+Unlike `merge`, `rebase` will not create a new commit, but will rewrite the commit history so it appears as if the changes were made on top of the `master` branch.
+
+Let's demonstrate this with `feature2` branch. We will add 2 commits to move the `feature2` branch ahead of `master` branch.
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git checkout feature2</span>
+Switched to branch 'feature2'
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">vi README.md</span> 
+# add some text and Save
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git add README.md</span>
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git commit -m "added text to README"</span>
+[feature2 1b788b1] added text to README
+ 1 file changed, 1 insertion(+)
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">touch helloworld.sh</span>
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git add helloworld.sh</span>
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git commit -m "added helloworld script"</span>
+[feature1 e9ef46d] added helloworld script
+1 file changed, 0 insertions(+), 0 deletions(-)
+create mode 100644 helloworld.sh
+```
+]
+
+
+
+
+---
+.left-columnB[
+### 3. Branching and merging:
+- `git branch`
+- `git checkout`
+- `git merge`
+- `git rebase`
+]
+
+.right-column[
+
+Now, let's rebase the `feature2` branch to `master`:
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git checkout master</span>
+Switched to branch 'master'
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git rebase feature2</span>
+$ git rebase feature1
+First, rewinding head to replay your work on top of it...
+Fast-forwarded master to feature2.
+```
+
+The last 2 commits made on `feature2` branch are now on top of `master` branch.
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git log --oneline</span>
+<span style="color:yellow;">e9ef46d</span> added helloworld script
+<span style="color:yellow;">1b788b1</span> added text to README
+<span style="color:yellow;">829bdd6</span> shell
+<span style="color:yellow;">e27f8ea</span> added date to greetings script
+<span style="color:yellow;">b073ae1</span> added greetings script
+<span style="color:yellow;">a973e9c</span> deleted a file
+<span style="color:yellow;">ffa5e81</span> renamed a file
+<span style="color:yellow;">cd3af88</span> added more files
+<span style="color:yellow;">8e5a454</span> Added my first file
+```
+]
+---
+
+.left-columnB[
+### 3. Branching and merging:
+- `git branch`
+- `git checkout`
+- `git merge`
+- `git rebase`
+]
+
+.right-column[
+Summarizing `rebase` vs. `merge` visually:
+
+
+<img src="https://github.com/EEOB-BioData/BCB546_Spring2024/assets/4835524/82ad7640-0cf2-4930-8d33-03f89c1cf4f0"
+    alt="image" width="600" height="auto">
+
+
+
+]
+
+---
+## 4. Synchronizing work:
+
+The commands:
+
+```terminal
+git remote -v
+git remote add <remote> <url>
+git fetch <remote>
+git pull <remote> <branch>
+git push <remote> <branch>
+```
+
+Command | Description
+------------- | -------------
+`remote`  | manage set of tracked repositories
+`fetch`  | download objects and refs from another repository
+`pull`  | fetch from and integrate with another repository or a local branch
+`push`  | update remote refs along with associated objects
+
+To demonstrate, lets first create and connect a remote repository (using GitHub).
+
+1. Go to GitHub and create a new repository. Let's call it `git-demo`.
+2. Copy the URL of the repository. In my case: `git@github.com:aseetharam/git-demo.git`
+3. Go back to your terminal and navigate to the `git-demo` directory.
+
+
+---
+.left-columnB[
+### 4. Synchronizing work:
+- `git remote`
+- `git push`
+- `git fetch`
+- `git pull`
+]
+
+.right-column[
+
+To connect a remote repository to local repository:
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git remote add origin git@github.com:aseetharam/git-demo.git</span>
+```
+
+
+Now, let's check the remote:
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git remote -v</span>
+origin git@github.com:aseetharam/git-demo.git (fetch)
+origin git@github.com:aseetharam/git-demo.git (push)
+```
+
+The `git remote -v` lists the remote repositories associated with your local Git repository,
+along with the URLs used for fetching and pushing changes to and from those repositories.
+The default name for the remote repository is `origin`.
+
+All changes made so far are local. To push them to the remote repository, use:
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git push origin master</span>
+Enumerating objects: 19, done.
+Counting objects: 100% (19/19), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (15/15), done.
+Writing objects: 100% (19/19), 1.87 KiB | 46.00 KiB/s, done.
+Total 19 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), done.
+To github.com:aseetharam/git-demo.git
+* [new branch] master -> master
+```
+]
+
+
+---
+
+.left-columnB[
+### 4. Synchronizing work:
+- `git remote`
+- `git push`
+- `git fetch`
+- `git pull`
+]
+
+.right-column[
+
+
+`git push` sends your local commits on the `master` branch (HEAD) to the main branch of the remote repository named `origin`
+
+Let's go to GitHub and check the repository. You should see the files there.
+
+<img src="https://github.com/EEOB-BioData/BCB546_Spring2024/assets/4835524/ea90b726-b7b8-449d-8323-15aeff22e423"
+    alt="image" width="550" height="auto">
+
+
+]
+
+---
+
+.left-columnB[
+### 4. Synchronizing work:
+- `git remote`
+- `git push`
+- `git fetch`
+- `git pull`
+]
+
+.right-column[
+
+You can also push a local branch to a remote repository:
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git checkout -b feature1</span>
+Switched to a new branch 'feature1'
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git push origin feature1</span>
+Total 0 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'feature2' on GitHub by visiting:
+remote: https://github.com/aseetharam/git-demo/pull/new/feature2
+remote:
+To github.com:aseetharam/git-demo.git
+* [new branch] feature2 -> feature2
+```
+
+NOTE:
+- Use `-u` flag you can set default remote branch as the default upstream branch
+- To create a new branch on the remote repository, first, create a local branch and then push it to the remote repository.
+
+To check the remote branches:
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git branch -r</span>
+origin/feature2
+origin/master
+```
+
+What changes do you see on GitHub?
+
+]
+
+
+---
+
+.left-columnB[
+### 4. Synchronizing work:
+- `git remote`
+- `git push`
+- `git fetch`
+- `git pull`
+]
+.right-column[
+
+Let's look at `git fetch` first.  Try these commands below:
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git branch -a</span>
+   feature1
+ * feature2
+   master
+   remotes/origin/feature1
+   remotes/origin/feature2
+   remotes/origin/master
+```
+Let's fetch the changes:
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git fetch origin</span>
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 1012 bytes | 20.00 KiB/s, done.
+From github.com:aseetharam/git-demo
+* [new branch] remoteFeature1 -> origin/remoteFeature1
+```
+
+
+```terminal
+
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git branch -a</span>
+   feature1
+<span style="font-weight:normal;color:red;"> * feature2</span>
+   master
+   remotes/origin/feature1
+   remotes/origin/feature2
+   remotes/origin/master
+   remotes/origin/remoteFeature1
+```
+
+]
+
+---
+
+.left-columnB[
+### 4. Synchronizing work:
+- `git remote`
+- `git push`
+- `git fetch`
+- `git pull`
+]
+
+.right-column[
+
+`git fetch` retrieves changes from a remote to your local repository. It:
+
+- It updates your remote tracking branches (e.g., `origin/main`).
+- It does not automatically merge the fetched changes into your current branch.
+- You can review the changes and decide whether to merge them using `git merge`.
+- offers a safe way to bring changes from the remote repository without automatically modifying your local branches.
+
+eg:
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git fetch origin</span>
+```
+]
+
+---
+
+
+.left-columnB[
+### 4. Synchronizing work:
+- `git remote`
+- `git push`
+- `git fetch`
+- `git pull`
+]
+
+.right-column[
+`git pull` is a combination of `git fetch` and `git merge`.
+
+- It downloads changes from the remote repository using git fetch.
+- It automatically merges the fetched changes into your current branch.
+- It's convenient for quickly updating your local branch with changes from the remote repository.
+- However, it may lead to unexpected merges if there are conflicts between your local changes and the changes fetched from
+the remote repository.
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git pull origin master</span>
+```
+]
+
+---
+## 5. Inspecting history
+
+The commands:
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git log</span>
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git diff</span>
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git reflog</span>
+```
+
+Command | Description
+------------- | -------------
+`log`  | show commit logs
+`diff`  | show changes between commits, commit and working tree, etc
+`reflog`  | manage reflog information
+
+---
+
+.left-columnB[
+### 5. Inspecting history:
+- `git log`
+- `git diff`
+- `git reflog`
+]
+
+.right-column[
+`git log` command shows a list of commits in reverse chronological order. It shows the commit hash, author, date, and commit message. This can run into hundreds of lines, so you can use `--oneline` to show a more concise list.
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git log --oneline</span>
+<span style="color:yellow;">4480902</span> Update README.md
+<span style="color:yellow;">829bdd6</span> shell
+<span style="color:yellow;">e27f8ea</span> added date to greetings script
+<span style="color:yellow;">b073ae1</span> added greetings script
+<span style="color:yellow;">a973e9c</span> deleted a file
+<span style="color:yellow;">ffa5e81</span> renamed a file
+<span style="color:yellow;">cd3af88</span> added more files
+<span style="color:yellow;">8e5a454</span> Added my first file
+```
+]
+
+---
+
+.left-columnB[
+### 5. Inspecting history:
+- `git log`
+- `git diff`
+- `git reflog`
+]
+
+.right-column[
+`git diff` shows the changes between commits, commit and working tree, etc. It can be used to compare different versions of files.
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git diff e27f8ea 8e5a454</span>
+<span style="font-weight:bold;">diff --git a/greetings.sh b/greetings.sh</span>
+<span style="font-weight:bold;">deleted file mode 100644</span>
+<span style="font-weight:bold;">index 9e96050..0000000</span>
+<span style="font-weight:bold;">--- a/greetings.sh</span>
+<span style="font-weight:bold;">+++ /dev/null</span>
+<span style="color:aqua;">@@ -1,4 +0,0 @@</span>
+<span style="color:red;">-#!/bin/bash</span>
+<span style="color:red;">-echo &quot;Hello $USER!&quot;</span>
+<span style="color:red;">-echo &quot;you are using $HOSTNAME&quot;</span>
+<span style="color:red;">-echo &quot;Today is $(date)&quot;</span>
+<span style="font-weight:bold;">diff --git a/script.sh b/script.sh</span>
+<span style="font-weight:bold;">deleted file mode 100644</span>
+<span style="font-weight:bold;">index e69de29..0000000</span>
+```
+
+You can tailor the options to show specific changes that you wish to see that are different.
+]
+
+---
+
+.left-columnB[
+### 5. Inspecting history:
+- `git log`
+- `git diff`
+- `git reflog`
+]
+
+.right-column[
+`git reflog` is a reference log that records when the tips of branches and other references were updated in the local repository. It's a useful tool for recovering lost commits or branches.
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git reflog</span>
+<span style="color:yellow;">4480902</span> HEAD@{0}: checkout: moving from feature2 to origin/remoteFeatur
+<span style="color:yellow;">829bdd6</span> HEAD@{1}: checkout: moving from master to feature2
+<span style="color:yellow;">829bdd6</span> HEAD@{2}: checkout: moving from feature2 to master
+<span style="color:yellow;">829bdd6</span> HEAD@{3}: merge feature1: Fast-forward
+<span style="color:yellow;">a973e9c</span> HEAD@{4}: checkout: moving from master to feature2
+<span style="color:yellow;">829bdd6</span> HEAD@{5}: merge feature1: Fast-forward
+<span style="color:yellow;">a973e9c</span> HEAD@{6}: checkout: moving from feature1 to master
+<span style="color:yellow;">829bdd6</span> HEAD@{7}: checkout: moving from master to feature1
+<span style="color:yellow;">a973e9c</span> HEAD@{8}: checkout: moving from feature1 to master
+<span style="color:yellow;">829bdd6</span> HEAD@{9}: commit: shell
+<span style="color:yellow;">e27f8ea</span> HEAD@{10}: checkout: moving from master to feature1
+<span style="color:yellow;">a973e9c</span> HEAD@{11}: checkout: moving from feature1 to master
+<span style="color:yellow;">e27f8ea</span> HEAD@{12}: commit: added date to greetings script
+<span style="color:yellow;">b073ae1</span> HEAD@{13}: commit: added greetings script
+<span style="color:yellow;">a973e9c</span> HEAD@{14}: checkout: moving from master to feature1
+<span style="color:yellow;">a973e9c</span> HEAD@{15}: commit: deleted a file
+<span style="color:yellow;">ffa5e81</span> HEAD@{16}: commit: renamed a file
+<span style="color:yellow;">cd3af88</span> HEAD@{17}: commit: added more files
+<span style="color:yellow;">8e5a454</span> HEAD@{18}: commit (initial): Added my first file
+```
+]
+
+---
+## 6. Storing work
+
+The commands:
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git stash</span>
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git tag &lt; tag-name&gt;</span>
+```
+
+Command | Description
+------------- | -------------
+`stash`  | stash the changes in a dirty working directory away
+`tag`  | create, list, delete or verify a tag object signed with GPG
+
+---
+.left-columnB[
+### 6. Storing work:
+- `git stash`
+- `git tag`
+]
+
+.right-column[
+
+
+Git stash is a command that temporarily shelves changes in your working directory, allowing you to switch branches or
+perform other operations without committing the changes. Some scenarios `stash` is useful:
+
+1. When you added a bunch of changes (uncommitted) and realized you are on the wrong branch.
+2. When you want to switch branches but have uncommitted changes.
+3. When you want to pull changes from the remote repository but have uncommitted changes.
+
+
+How to Use `git stash`:
+- To stash changes: `git stash`
+- To apply stashed changes: `git stash apply`
+- To remove stashed changes: `git stash drop`
+
+Advanced `git stash` Options:
+- Apply and remove most recent stashed changes: `git stash pop`
+- Lists all stashed changes: `git stash list`
+- Removes all stashed changes: `git stash clear`
+
+]
+
+---
+.left-columnB[
+### 6. Storing work:
+- `git stash`
+- `git tag`
+]
+
+.right-column[
+
+A Git tag is a label that points to a specific commit in the repository history.
+
+```bash
+# To create a lightweight tag:
+git tag <tagname>
+# To create an annotated tag with a message:
+git tag -a <tagname> -m "Tag message"
+```
+
+Useful commands for viewing and managing `tags`:
+   - To list all tags: `git tag`
+   - To show details of a specific tag: `git show <tagname>`
+   - To push tags to a remote repository: `git push origin <tagname>`
+   - To delete a tag locally: `git tag -d <tagname>`
+   - To delete a tag remotely: `git push origin --delete <tagname>`
+]
+
+---
+## 7. Undoing changes
+
+The commands:
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git reset</span>
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git revert</span>
+```
+
+Command | Description
+------------- | -------------
+`reset`  | reset current HEAD to the specified state
+`revert`  | revert some existing commits
+
+---
+.left-columnB[
+### 7. Undoing changes:
+- `git reset`
+- `git revert`
+]
+
+.right-column[
+
+## git reset
+
+`git reset` is a powerful command that is used to undo or redo changes.
+Using the `log` or `reflog` you can find the SHA of the commit you want to reset to.
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git reset last-good-SHA</span>
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git reset --hard last-good-SHA</span>
+```
+By default, the changes are not lost, but are moved to the staging area. But if you use `--hard` option it will completely remove all the changes from that SHA forward.
+
+
+
+]
+
+---
+
+.left-columnB[
+### 7. Undoing changes:
+- `git reset`
+- `git revert`
+]
+
+.right-column[
+
+## git revert
+
+`git revert` is another option to undo a commit. It creates a new commit that undoes the changes from a previous commit.
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git revert last-bad-SHA</span>
+```
+
+This will create a new commit that is exactly opposite of the specified SHA (the commit you want to undo). 
+It does not alter the existing commits or history, but adds a new commit saying which commit was reverted.
+
+]
+---
+
+.left-columnB[
+### 7. Undoing changes:
+- `git reset`
+- `git revert`
+]
+
+.right-column[
+
+Useful post on undoing changes in git: [How to undo (almost) anything with Git](https://github.blog/2015-06-08-how-to-undo-almost-anything-with-git/)
+
+Finally:
+
+<img src="https://imgs.xkcd.com/comics/git.png"
+    alt="image" width="auto" height="300">
+
+.footnotes[Source: https://xkcd.com/1597]
+]
+
+---
+
+.left-columnB[
+### 7. Undoing changes:
+- `git reset`
+- `git revert`
+]
+
+.right-column[
+
+NOTE:
+
+You can also use `git checkout` or `git rebase` to undo large number of changes or to revert to a previous state of the repository.
+
+`git checkout` can be used to:
+* undo changes to a file (explained before)
+* revert the entire repository to a previous state, without losing any changes.
+
+Use the SHA of the commit and simply `checkout`. This will put you in a detached HEAD state (branchless), so you will need to create a new branch to save the changes.
+
+Let's check the log for the master branch:
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git log --oneline</span>
+<span style="color:yellow;">e9ef46d</span> added helloworld script
+<span style="color:yellow;">1b788b1</span> added text to README
+<span style="color:yellow;">829bdd6</span> shell
+<span style="color:yellow;">e27f8ea</span> added date to greetings script
+<span style="color:yellow;">b073ae1</span> added greetings script
+<span style="color:yellow;">a973e9c</span> deleted a file
+<span style="color:yellow;">ffa5e81</span> renamed a file
+<span style="color:yellow;">cd3af88</span> added more files
+<span style="color:yellow;">8e5a454</span> Added my first file
+```
+
+]
+---
+.left-columnB[
+### 7. Undoing changes:
+- `git reset`
+- `git revert`
+]
+
+.right-column[
+
+NOTE (continued):
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git checkout b073ae1</span>
+Note: switching to 'b073ae1'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at b073ae1 added greetings script
+```
+
+Now the log looks like this:
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">git log --oneline</span>
+<span style="color:yellow;">b073ae1</span> added greetings script
+<span style="color:yellow;">a973e9c</span> deleted a file
+<span style="color:yellow;">ffa5e81</span> renamed a file
+<span style="color:yellow;">cd3af88</span> added more files
+<span style="color:yellow;">8e5a454</span> Added my first file
+```
+Now you can branch and make new changes, or revert back to the previous state.
+
+]
+
+
+
+---
+
+## 8. Ignoring files
+
+The file (should be placed in the root directory of the git repo)
+
+```terminal
+<span style="font-weight:normal;color:cyan;">$</span> <span style="font-weight:normal;color:lime;">touch .gitignore</span>
+```
+
+Command | Description
+------------- | -------------
+`.gitignore`  | file specifies intentionally untracked files to ignore
+
+
+### R project repository contents of `.gitignore` file :
+
+```terminal
+tmp/*
+vignettes/datasets*
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.Rapp.history
+.DS_Store
+.rds
+```
+
+
+---
+
+## Git Don'ts
+
+1. Don't commit large files. GitHub has a 100MB file limit, anything larger will be rejected. There is also a 1GB repository limit. Larger the repo, slower the clone/push.
+2. Don't commit sensitive information (eg: `GITHUB_PAT`, `API keys`, `passwords`).
+3. Don't use binary files (eg: `.docx`, `.pdf`, `.xls`) unless necessary. Git is not designed to read and track changes in binary files.
+4. Don't use `git push -f`  or `git reset` with `HARD` option unless you are absolutely sure what you are doing. Some changes are permanently lost and there is noway to undo them.
+
+## Git Do's
+
+1. Add files you want to ignore (sensitive information) to `.gitignore` file.
+2. Provide meaningful `commit` message that describes the changes you made.
+2. `git commit` often. It's better to have many small commits than one large commit. When things go wrong, it's easier to find the problem.
+3. Avoid conflicts on your local branch by using `git pull` before `git push`. Also, use `git stash` to shelve uncommitted changes.
+4. Branching is a better way to organize your work. It's easier to manage and merge changes. Use `merge` or `rebase` to integrate changes from one branch to another depending on the situation.
+
+---
+
+# Additional information:
+
+1. Markdown
+2. Git resources
+3. Software
+4. Contributing to open source
+5. Assignment1 (wk1)
+6. Assignment2 (wk2)
+
+---
+
+.left-column[
+### 1. Markdown
+]
+
+.right-column[
+
+## Markdown
+
+- Markdown is a lightweight markup language with simple syntax for formatting plain text. 
+Git can render markdown files. The syntax is simple and easy to learn ([more info](https://www.markdownguide.org/basic-syntax/))
+- Use Markdown documents for keeping track of your work, sharing information, and collaborating with others. Not just for code, but also for documentation, reports, and presentations.
+    * Rmarkdown and Jupyter notebooks use markdown.
+    * You can use them to create slideshows like this one.
+    * Even Slack supports markdown.
+- Many freely available Markdown editors are available (see the [Software section](https://eeob-biodata.github.io/EEOB-BCB-546/software.html) of course website for some options).
+]
+
+---
+.left-column[
+### 1. Markdown
+### 2. Git resources
+]
+
+.right-column[
+
+## Git resources
+
+1. **Git documentation**: The official [Git documentation](https://git-scm.com/doc) is a great place to start.
+2. **Stack Overflow**: A popular Q&A site for programming questions. Use the [git tag](https://stackoverflow.com/questions/tagged/git) to search for questions related to git.
+3. **GitHub**: The [GitHub help](https://docs.github.com/en) page has a lot of useful information.
+4. **Google**: Use Google to search for specific questions or issues you are facing. You will find many blogs, tutorials, and videos that can help you.
+]
+
+---
+
+.left-column[
+### 1. Markdown
+### 2. Git resources
+### 3. Software
+]
+
+.right-column[
+
+## Software/Programs to use with Git/Markdown
+
+1. GUI clients ([more](https://git-scm.com/download/gui/linux)): 
+    * [GitHub Desktop](https://desktop.github.com/)
+    * [GitKraken](https://www.gitkraken.com/)
+    * [Sourcetree](https://www.sourcetreeapp.com/)
+    * [VS Code](https://code.visualstudio.com/)
+2. Text editors ([more](https://github.com/collections/text-editors)):
+    * [VS Code](https://code.visualstudio.com/)
+    * [Notepad++](https://notepad-plus-plus.org/)
+    * [Sublime Text](https://www.sublimetext.com/) (shareware)
+3. IDEs:
+    * [RStudio](https://www.rstudio.com/)
+    * [PyCharm](https://www.jetbrains.com/pycharm/)
+    * [Eclipse](https://www.eclipse.org/)
+]
+---
+
+.left-column[
+### 1. Markdown
+### 2. Git resources
+### 3. Software
+### 4. Contributing to open source
+]
+
+.right-column[
+
+## Steps to contribute to open source projects
+
+1. **Fork the repository**: Go to the repository you want to contribute to and click on the `Fork` button. This will create a copy of the repository in your GitHub account.
+2. **Clone the repository**: Clone the repository to your local machine using `git clone`.
+3. **Create a new branch**: Create a new branch for your changes using `git checkout -b branch-name`.
+4. **Make changes**: Make changes to the files in the repository.
+5. **Commit changes**: Commit the changes to your local repository using `git commit`.
+6. **Push changes**: Push the changes to your forked repository using `git push`.
+7. **Create a pull request**: Go to your forked repository on GitHub and click on the `New pull request` button. This will create a pull request to the original repository.
+8. **Review and merge**: The maintainers of the original repository will review your pull request and merge it if everything looks good.
+]
+
+---
+
+.left-column[
+### 1. Markdown
+### 2. Git resources
+### 3. Software
+### 4. Contributing to open source
+### 5. Assignment 1
+]
+
+.right-column[
+
+## Assignment 1 (not graded)
+
+* Write some notes on Chapter 5 in [Bioinformatics Data Skills](http://vincebuffalo.org/book/) (or anything that you
+found interesting, confusing, or worth sharing) in a text file (use Markdown or HTML if you like).
+
+* Add this file to your repository and push the changes to the remote on GitHub
+
+* Post the URL to your repository to the `#reading-discussion` channel on Slack
+
+* If you have any problems just post a message on the `#scripting_help` channel
+
+**Additional Challenge:** Try this fun [Git/Markdown Exercise](https://github.com/EEOB-BioData/Git-Markdown-Exercise) posted online!
+
+]
+
+---
+.left-column[
+### 1. Markdown
+### 2. Git resources
+### 3. Software
+### 4. Contributing to open source
+### 5. Assignment 1
+### 6. Assignment 2
+]
+
+.right-column[
+
+## Assignment 2 (not graded)
+
+Create a personal website using [GitHub Pages](https://pages.github.com/).
+
+1. Create a new repository on GitHub with the name `username.github.io` (replace `username` with your GitHub username).
+2. Clone the repository to your local machine.
+3. Create an `index.html` file and add some content to it (use this [template](https://gist.githubusercontent.com/aseetharam/f345224289913a57f67753aa8e43e66b/raw/f7fea91d9856258462cc0df00a01a15fe7165c1e/index.html) or create your own).
+4. Commit and push the changes to the remote repository.
+5. Your Markdown files will be automatically rendered in sometime.
+Your website will be accessible at https://username.github.io.
+
+Feel free to explore various themes available for GitHub Pages and customize your website!
+More Information available [here](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll)
+]
+
+---
+
+name: last-page
+template: inverse
+
+## That's all folks (for now)!
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+    <script>
+        var hljs = remark.highlighter.engine;
+    </script>
+    <script src="https://joshbode.github.io/remark/terminal.language.js"></script>
+    <script>
+        var slideshow = remark.create({
+            highlightStyle: 'monokai',
+            highlightLanguage: 'remark',
+            highlightLines: true
+        });
+        // extract the embedded styling from ansi spans
+        var highlighted = document.querySelectorAll("code.terminal span.hljs-ansi");
+        Array.prototype.forEach.call(highlighted, function (next) {
+            next.insertAdjacentHTML("beforebegin", next.textContent);
+            next.parentNode.removeChild(next);
+        });
+    </script>
+    </body>
+    
+    </html>
+
+
