@@ -61,10 +61,7 @@ the previous week to the end and label it with the appropriate number -->
 * Feb 14: More on Git [[slides](slides/lecture_9Feb-and-14Feb-AS.html)]
 * Feb 16: Intro to R [[website](https://eeob-biodata.github.io/EEOB546-R/)]
 
-
-
 <!--
-
 
 <u>February 8-10</u>
 
