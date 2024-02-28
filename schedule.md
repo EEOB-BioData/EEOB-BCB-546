@@ -29,10 +29,10 @@ You will also need to access the files associated with the course textbook _Bioi
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move
 the previous week to the end and label it with the appropriate number -->
 
-<u>February 21-23</u>
+<u>February 28 - March 1</u>
 
-* Feb 21: R Data Structures [[website](https://eeob-biodata.github.io/EEOB546-R/)]
-* Feb 23: R Data Subsetting and Transformation [[website](https://eeob-biodata.github.io/EEOB546-R/)]
+* Feb 28: R Data Transformation [[website](https://eeob-biodata.github.io/EEOB546-R/)]
+* Mar 1: R Data Visualization [[website](https://eeob-biodata.github.io/EEOB546-R/)]
 
 ### Previous Weeks
 
@@ -61,6 +61,11 @@ the previous week to the end and label it with the appropriate number -->
 * Feb 14: More on Git [[slides](slides/lecture_9Feb-and-14Feb-AS.html)]
 * Feb 16: Intro to R [[website](https://eeob-biodata.github.io/EEOB546-R/)]
 
+<u>February 21-23</u>
+
+* Feb 21: R Data Structures [[website](https://eeob-biodata.github.io/EEOB546-R/)]
+* Feb 23: R Data Subsetting and Transformation [[website](https://eeob-biodata.github.io/EEOB546-R/)]
+
 <!--
 
 <u>February 8-10</u>
@@ -73,11 +78,6 @@ the previous week to the end and label it with the appropriate number -->
 * Feb 15: More on Git with Wade [[slides](slides/lecture_15Feb-WTD.html)]
 * Feb 17: Intro to R [[website](https://eeob-biodata.github.io/EEOB546-R/)]
 
-
-<u>March 1-3</u>
-
-* Mar 1: R Data Transformation [[website](https://eeob-biodata.github.io/EEOB546-R/)]
-* Mar 3: R Data Visualization [[website](https://eeob-biodata.github.io/EEOB546-R/)]
 
 <u>March 8-10</u>
 
