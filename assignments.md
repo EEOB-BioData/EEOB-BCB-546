@@ -18,6 +18,11 @@ All of the material required for grading must be submitted on the [course Canvas
 * The UNIX Assignment is available through the course GitHub repository in the [`UNIX_Assignment`](https://github.com/EEOB-BioData/BCB546_Spring2024/tree/main/assignments/UNIX_Assignment) folder (in the `assignments` folder).
 * The assignment is due via submission in Canvas by 5pm on Friday, February 16th
 
+### Final Group Project
+
+* The Final Group Project is available through the course GitHub repository in the [`Final_Project`](https://github.com/EEOB-BioData/BCB546_Spring2023/tree/main/assignments/Final_Project) folder (in the `assignments` folder).
+* The assignment is due via submission in Canvas by 5pm on May 5th
+
 <!--
 
 * The UNIX Assignment is available through the course GitHub repository in the [`UNIX_Assignment`](https://github.com/EEOB-BioData/BCB546_Spring2023/tree/main/assignments/UNIX_Assignment) folder (in the `assignments` folder).
