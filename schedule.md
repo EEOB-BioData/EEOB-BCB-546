@@ -32,7 +32,7 @@ the previous week to the end and label it with the appropriate number -->
 <u>March 20-22</u>
 
 * Mar 20: Data Management Plans and LaTeX [[slides]](slides/DMP_slides.pdf)
-* Mar 22: Introduction to python: [[website]](https://eeob-biodata.github.io/BCB546X-python/01-intro/)[[slides]](slides/lecture_22-and-27Mar-AS_slides.html), Setting up Jupyter on Nova, [[slides]](slides/lecture_22Mar-AS.html)
+* Mar 22: Introduction to python: [[website]](https://eeob-biodata.github.io/BCB546X-python)[[slides]](slides/lecture_22-and-27Mar-AS_slides.html), Setting up Jupyter on Nova, [[slides]](slides/lecture_22Mar-AS.html)
 
 
 ### Previous Weeks
