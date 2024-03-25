@@ -29,11 +29,9 @@ You will also need to access the files associated with the course textbook _Bioi
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move
 the previous week to the end and label it with the appropriate number -->
 
-<u>March 20-22</u>
-
-* Mar 20: Data Management Plans and LaTeX [[slides]](slides/DMP_slides.pdf)
-* Mar 22: Introduction to python: [[website]](https://eeob-biodata.github.io/BCB546X-python)[[slides]](slides/lecture_22-and-27Mar-AS_slides.html), Setting up Jupyter on Nova, [[slides]](slides/lecture_22Mar-AS_setup.html)
-
+<u>March 27-29</u>
+* Mar 27: Introduction to python (part 2): [[website]](https://eeob-biodata.github.io/BCB546X-python), [[slides]](slides/lecture_22-and-27Mar-AS_slides.html), Jupyter Tips and Tricks [[slides]](slides/lecture_27Mar-AS_juptyer-tips.html)
+* Mar 29: Pandas Dataframes [[website]](https://eeob-biodata.github.io/BCB546X-python/03-starting-with-data/), [[slides]]() (coming soon)
 
 ### Previous Weeks
 
@@ -71,6 +69,11 @@ the previous week to the end and label it with the appropriate number -->
 
 * Feb 28: R Data Transformation [[website](https://eeob-biodata.github.io/EEOB546-R/)]
 * Mar 1: R Data Visualization [[website](https://eeob-biodata.github.io/EEOB546-R/)]
+
+<u>March 20-22</u>
+
+* Mar 20: Data Management Plans and LaTeX [[slides]](slides/DMP_slides.pdf)
+* Mar 22: Introduction to python: [[website]](https://eeob-biodata.github.io/BCB546X-python)[[slides]](slides/lecture_22-and-27Mar-AS_slides.html), Setting up Jupyter on Nova, [[slides]](slides/lecture_22Mar-AS_setup.html)
 
 <!--
 
