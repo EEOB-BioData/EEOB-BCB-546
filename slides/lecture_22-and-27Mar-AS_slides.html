@@ -690,7 +690,7 @@ age = age -5
 
 <img src="https://github.com/EEOB-BioData/BCB546_Spring2024/assets/4835524/7a475e69-13bb-4f9e-99c1-dbf7f3a3149b"
     alt="image" width="600" height="auto">
-    
+
 ]
 ---
 
@@ -730,11 +730,11 @@ age = age -5
 
 ```python
 # integers
-x = 5
+number = 42
 # floating point numbers
-y = 3.14
+pi_value = 3.1415
 # strings
-name = "John"
+text = "Go Cyclones"
 # boolean
 is_student = True
 # None
@@ -928,15 +928,82 @@ print(str(5))
     * `help()` (to get help on a function)
 * You can also define your own functions using the `def` keyword.
 
-```python
-def greet(name):
-    print(f"Hello, {name}!")
-greet("John")
-```
 ]
 
 ---
 
+.left-column[
+### Overview
+### Installation
+### Interactive Python console
+### Variables
+### Basic data types
+### Type conversions
+### Operators
+### Functions
+]
+
+.right-column[
+
+## functions
+
+
+<img src="https://github.com/EEOB-BioData/EEOB-BCB-546/assets/4835524/413b878f-449a-4607-b3bf-0215351a7116" alt="image"
+        width="640" height="auto">
+
+
+
+]
+---
+## functions
+
+.cols[
+
+.seventy[
+<img src="https://github.com/EEOB-BioData/EEOB-BCB-546/assets/4835524/a8098e37-dd2c-423d-94c9-877598608edd" alt="image"
+    width="400" height="auto">
+]
+
+.thirty[
+```python
+# loading the module
+import fibo
+# running functions from the loaded module
+fibo.fib(1000)
+fibo.fib1(50)
+# you can also assign a name 
+fib = fibo.fib
+fib(500)
+```
+
+
+```python
+# import all names that a module
+from fibo import *
+# running functions from the loaded module
+fib(1000)
+fib1(500)
+```
+
+```python
+# alias the module
+import fibo as fib
+# running functions from the loaded module
+fib.fib(1000)
+fib.fib1(50)
+```
+
+```python
+# alias to anything you want!
+from fibo import fib as fibonacci
+# running functions from the loaded module
+fibonacci(1000)
+```
+
+]
+]
+
+---
 .left-column[
 ### Overview
 ### Installation
