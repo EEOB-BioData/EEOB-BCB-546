@@ -678,12 +678,42 @@ age = age -5
 ]
 
 ---
+
 .left-column[
 ### Overview
 ### Installation
 ### Interactive Python console
 ### Variables
-### Basic data types
+### Data types
+]
+
+.right-column[
+
+## Python data types
+
+* Python has several basic data types including:
+    - `int` (integer)
+    - `float` (floating point number)
+    - `str` (string)
+    - `bool` (boolean)
+    - `None` (null value)
+
+* Python also has several composite data types including:
+    - `list` (ordered, mutable collection)
+    - `tuple` (ordered, immutable collection)
+    - `dict` (unordered, mutable collection of key-value pairs)
+    - `set` (unordered, mutable collection of unique elements)
+
+]
+
+---
+
+.left-column[
+### Overview
+### Installation
+### Interactive Python console
+### Variables
+### Data types
 ]
 
 .right-column[
@@ -699,29 +729,7 @@ age = age -5
 ### Installation
 ### Interactive Python console
 ### Variables
-### Basic data types
-]
-
-.right-column[
-
-## Python data types
-
-* Python has several basic data types including:
-    - `int` (integer)
-    - `float` (floating point number)
-    - `str` (string)
-    - `bool` (boolean)
-    - `None` (null value)
-
-]
----
-
-.left-column[
-### Overview
-### Installation
-### Interactive Python console
-### Variables
-### Basic data types
+### Data types
 ]
 
 .right-column[
@@ -753,7 +761,7 @@ nothing = None
 ### Installation
 ### Interactive Python console
 ### Variables
-### Basic data types
+### Data types
 ]
 
 .right-column[
@@ -787,7 +795,7 @@ print(greeting[7:12])
 ### Installation
 ### Interactive Python console
 ### Variables
-### Basic data types
+### Data types
 
 ]
 
@@ -808,14 +816,12 @@ print("backslash \\ and words with \"quotes\" can also be printed.")
 ```
 ]
 ---
-
-
 .left-column[
 ### Overview
 ### Installation
 ### Interactive Python console
 ### Variables
-### Basic data types
+### Data types
 ]
 
 .right-column[
@@ -831,14 +837,305 @@ is_teacher = False
 nothing = None
 ```
 ]
+
+---
+
+.left-column[
+### Overview
+### Installation
+### Interactive Python console
+### Variables
+### Data types
+
+]
+
+.right-column[
+
+## Lists
+
+* Lists are ordered, mutable collections of elements.
+* Lists can contain elements of different types.
+* Lists are indexed and sliced using square brackets `[]`.
+* Lists can be nested and can contain other lists.
+
+```python
+fruits = ["apple", "banana", "cherry"]
+primes = [2, 3, 5, 7, 11, 13]
+products = [
+{"name": "apple", "price": 1.00},
+{"name": "banana", "price": 0.50},
+{"name": "cherry", "price": 2.00}
+]
+print(fruits[1]) # second element
+print(fruits[1:3]) # slice
+print(fruits[-1]) # last element
+fruits[1] = "orange" # change element
+print(fruits)
+```
+]
 ---
 .left-column[
 ### Overview
 ### Installation
 ### Interactive Python console
 ### Variables
-### Basic data types
-### Type conversions
+### Data types
+
+]
+
+.right-column[
+## Tuples
+
+* Tuples are ordered, immutable collections of elements.
+* Tuples can contain elements of different types.
+* Tuples are indexed and sliced using square brackets `[]`.
+* Tuples can be nested and can contain other tuples.
+
+```python
+fruits = ("apple", "banana", "cherry")
+print(fruits[1])
+print(fruits[1:3])
+```
+]
+---
+.left-column[
+### Overview
+### Installation
+### Interactive Python console
+### Variables
+### Data types
+
+]
+
+.right-column[
+## Dictionaries
+
+* Dictionaries are unordered, mutable collections of key-value pairs.
+* Dictionaries can contain elements of different types.
+* Dictionaries are indexed using keys.
+* Dictionaries can be nested and can contain other dictionaries.
+
+```python
+person = {
+"name": "John",
+"age": 25,
+"is_student": True
+}
+print(person["name"])
+print(person["age"])
+print(person["is_student"])
+person["age"] = 30
+print(person)
+```
+]
+---
+
+.left-column[
+### Overview
+### Installation
+### Interactive Python console
+### Variables
+### Data types
+
+]
+
+.right-column[
+## Sets
+
+* Sets are unordered, mutable collections of unique elements.
+* Sets can contain elements of different types.
+* Sets are indexed using keys.
+* Sets can be nested and can contain other sets.
+
+```python
+fruits = {"apple", "banana", "cherry"}
+print(fruits)
+fruits.add("orange")
+print(fruits)
+```
+]
+
+---
+
+.left-column[
+### Overview
+### Installation
+### Interactive Python console
+### Variables
+### Data types
+### Language Semantics
+]
+
+.right-column[
+
+## Assigning Elements of a List or Tuple to New Variables
+
+Variable unpacking is a convenient way to assign multiple variables at once.
+
+```python
+my_list = ['Cyclones','Go','!']
+v1, v2, v3 = my_list
+print(v2, v1, v3) # output: Go Cyclones !
+```
+
+Also works for tuples
+
+```python
+my_tup = ('U','I','S')
+c, a, b = my_tup
+print(a, b, c) # output: I S U
+```
+
+
+]
+
+
+---
+.left-column[
+### Overview
+### Installation
+### Interactive Python console
+### Variables
+### Data types
+### Language Semantics
+]
+
+.right-column[
+
+## Function and object method calls
+
+
+Functions are called using parentheses and passing arguments.
+
+```terminal
+result = f(x, y, z)
+g()
+```
+
+Methods are called using the dot notation.
+
+```python
+obj.some_method(x, y, z)
+```
+
+]
+
+---
+
+.left-column[
+### Overview
+### Installation
+### Interactive Python console
+### Variables
+### Data types
+### Language Semantics
+]
+
+.right-column[
+
+## Variables and argument passing
+
+Assigning variable in python creates a reference to the object. Consider a list `a`:
+
+```python
+a = [1, 2, 3]
+```
+
+If we assign `a` to another variable `b`, both `a` and `b` will refer to the same object.
+
+```python
+b = a
+```
+
+If we modify the object through one of the references, the change will be reflected in both.
+
+```python
+a.append(4)
+print(b) # outputs: [1, 2, 3, 4]
+```
+But what happens in the function stays in the function.
+
+```python
+def append_element(some_list, element):
+    some_list.append(element)
+```
+
+]
+
+---
+.left-column[
+### Overview
+### Installation
+### Interactive Python console
+### Variables
+### Data types
+### Language Semantics
+]
+
+.right-column[
+
+## Dynamic references, strong types
+
+Python is not statically typed. The type information is stored in the object itself.
+
+```python
+a = 5
+type(a) # output: <class 'int'>
+a = 'foo'
+type(a) # output: <class 'str'>
+```
+
+Python is strongly typed. This means that every object has a specific type (or class), and implicit conversions will occur only in certain obvious circumstances.
+
+```python
+'5' + 5 # TypeError
+a = 4.5
+b = 2
+print('a is {0}, b is {1}'.format(type(a), type(b)))
+# output: a is <class 'float'>, b is <class 'int'>
+a / b
+# output: 2.25
+```
+Though `b` is an integer, it is implicitly converted to a float in the division. 
+
+]
+
+---
+.left-column[
+### Overview
+### Installation
+### Interactive Python console
+### Variables
+### Data types
+### Language Semantics
+]
+
+.right-column[
+
+## Dynamic references, strong types
+
+You can check the type of an object using the `type` function and check if an object is an instance of a particular type using the `isinstance` function.
+
+```python
+a = 5
+isinstance(a, int) # output: True
+type(a) # output: <class 'int'>
+```
+
+## Attributes and methods
+
+Objects in Python typically have both attributes (other Python objects stored "inside" the object) and methods (functions associated with an object that can have access to the object's internal data).
+
+
+]
+---
+.left-column[
+### Overview
+### Installation
+### Interactive Python console
+### Variables
+### Data types
+### Language Semantics
 ]
 
 .right-column[
@@ -875,8 +1172,8 @@ print(str(5))
 ### Installation
 ### Interactive Python console
 ### Variables
-### Basic data types
-### Type conversions
+### Data types
+### Language Semantics
 ### Operators
 ]
 
@@ -903,8 +1200,8 @@ print(str(5))
 ### Installation
 ### Interactive Python console
 ### Variables
-### Basic data types
-### Type conversions
+### Data types
+### Language Semantics
 ### Operators
 ### Functions
 ]
@@ -937,8 +1234,8 @@ print(str(5))
 ### Installation
 ### Interactive Python console
 ### Variables
-### Basic data types
-### Type conversions
+### Data types
+### Language Semantics
 ### Operators
 ### Functions
 ]
@@ -959,10 +1256,36 @@ print(str(5))
 
 .cols[
 
-.seventy[
-<img src="https://github.com/EEOB-BioData/EEOB-BCB-546/assets/4835524/a8098e37-dd2c-423d-94c9-877598608edd" alt="image"
-    width="400" height="auto">
+.thirty[
+
+```
+WORKDIR
+│
+└── fibo.py
+```
+
+```python
+# Fibonacci numbers module
+# 1. print fibonacci series up to n
+def fib(n):
+    a, b = 0, 1
+    while a < n:
+        print(a, end=' ')
+        a, b = b, a+b
+    print()
+# 2. return fibonacci series up to n
+def fib2(n):
+    result = []
+    a, b = 0, 1
+    while a < n:
+        result.append(a)
+        a, b = b, a+b
+    return result
+```
+
 ]
+
+<p style="background-color:white;color:white;">White</p>
 
 .thirty[
 ```python
@@ -1009,8 +1332,8 @@ fibonacci(1000)
 ### Installation
 ### Interactive Python console
 ### Variables
-### Basic data types
-### Type conversions
+### Data types
+### Language Semantics
 ### Operators
 ### Functions
 ### Methods
@@ -1045,8 +1368,8 @@ fibonacci(1000)
 ### Installation
 ### Interactive Python console
 ### Variables
-### Basic data types
-### Type conversions
+### Data types
+### Language Semantics
 ### Operators
 ### Functions
 ### Methods
@@ -1075,182 +1398,17 @@ print(fruits)
 ]
 ---
 
-.left-column[
-### Overview
-### Installation
-### Interactive Python console
-### Variables
-### Basic data types
-### Type conversions
-### Operators
-### Functions
-### Methods
-### Composite data types
-]
-
-.right-column[
-
-## Python data types
-
-* Python has several basic data types including:
-- `int` (integer)
-- `float` (floating point number)
-- `str` (string)
-- `bool` (boolean)
-- `None` (null value)
-
-* Python also has several composite data types including:
-- `list` (ordered, mutable collection)
-- `tuple` (ordered, immutable collection)
-- `dict` (unordered, mutable collection of key-value pairs)
-- `set` (unordered, mutable collection of unique elements)
-
-]
----
 
 .left-column[
 ### Overview
 ### Installation
 ### Interactive Python console
 ### Variables
-### Basic data types
-### Type conversions
+### Data types
+### Language Semantics
 ### Operators
 ### Functions
 ### Methods
-### Composite data types
-]
-
-.right-column[
-
-### Lists
-
-* Lists are ordered, mutable collections of elements.
-* Lists can contain elements of different types.
-* Lists are indexed and sliced using square brackets `[]`.
-* Lists can be nested and can contain other lists.
-
-```python
-fruits = ["apple", "banana", "cherry"]
-primes = [2, 3, 5, 7, 11, 13]
-products = [
-    {"name": "apple", "price": 1.00},
-    {"name": "banana", "price": 0.50},
-    {"name": "cherry", "price": 2.00}
-]
-print(fruits[1]) # second element
-print(fruits[1:3]) # slice
-print(fruits[-1]) # last element
-fruits[1] = "orange" # change element
-print(fruits) 
-```
-]
----
-.left-column[
-### Overview
-### Installation
-### Interactive Python console
-### Variables
-### Basic data types
-### Type conversions
-### Operators
-### Functions
-### Methods
-### Composite data types
-]
-
-.right-column[
-### Tuples
-
-* Tuples are ordered, immutable collections of elements.
-* Tuples can contain elements of different types.
-* Tuples are indexed and sliced using square brackets `[]`.
-* Tuples can be nested and can contain other tuples.
-
-```python
-fruits = ("apple", "banana", "cherry")
-print(fruits[1])
-print(fruits[1:3])
-```
-]
----
-.left-column[
-### Overview
-### Installation
-### Interactive Python console
-### Variables
-### Basic data types
-### Type conversions
-### Operators
-### Functions
-### Methods
-### Composite data types
-]
-
-.right-column[
-### Dictionaries
-
-* Dictionaries are unordered, mutable collections of key-value pairs.
-* Dictionaries can contain elements of different types.
-* Dictionaries are indexed using keys.
-* Dictionaries can be nested and can contain other dictionaries.
-
-```python
-person = {
-    "name": "John",
-    "age": 25,
-    "is_student": True
-}
-print(person["name"])
-print(person["age"])
-print(person["is_student"])
-person["age"] = 30
-print(person)
-```
-]
----
-
-.left-column[
-### Overview
-### Installation
-### Interactive Python console
-### Variables
-### Basic data types
-### Type conversions
-### Operators
-### Functions
-### Methods
-### Composite data types
-]
-
-.right-column[
-### Sets
-
-* Sets are unordered, mutable collections of unique elements.
-* Sets can contain elements of different types.
-* Sets are indexed using keys.
-* Sets can be nested and can contain other sets.
-
-```python
-fruits = {"apple", "banana", "cherry"}
-print(fruits)
-fruits.add("orange")
-print(fruits)
-```
-]
----
-
-.left-column[
-### Overview
-### Installation
-### Interactive Python console
-### Variables
-### Basic data types
-### Type conversions
-### Operators
-### Functions
-### Methods
-### Composite data types
 ### Help/Errors
 ]
 
@@ -1276,12 +1434,11 @@ help(int)
 ### Installation
 ### Interactive Python console
 ### Variables
-### Basic data types
-### Type conversions
+### Data types
+### Language Semantics
 ### Operators
 ### Functions
 ### Methods
-### Composite data types
 ### Help/Errors
 ]
 
