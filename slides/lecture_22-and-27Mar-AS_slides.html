@@ -921,13 +921,58 @@ person = {
 "age": 25,
 "is_student": True
 }
-print(person["name"])
-print(person["age"])
-print(person["is_student"])
-person["age"] = 30
-print(person)
+print(person["name"]) # John
+print(person["age"]) # 25
+print(person["is_student"]) # True
+person["age"] = 30 
+print(person) # {'name': 'John', 'age': 30, 'is_student': True}
+```
+
+Adding items to a dictionary:
+
+```python
+person["city"] = "Ames"
+print(person) # {'name': 'John', 'age': 30, 'is_student': True, 'city': 'Ames'}
 ```
 ]
+
+---
+
+.left-column[
+### Overview
+### Installation
+### Interactive Python console
+### Variables
+### Data types
+]
+
+.right-column[
+
+## Dictionaries
+
+You can iterate over the keys and values of a dictionary using the `items()` method.
+
+```python
+numbers2 = {1: 'one', 2: 'two', 3: 'three', 4: 'four'}
+for key, value in numbers2.items():
+    print(key, "->", value)
+```
+or:
+```python
+for key in numbers2:
+    print(key, "->", numbers2[key])
+```
+
+output:
+
+```terminal
+1 -> one
+2 -> two
+3 -> three
+4 -> four
+```
+]
+
 ---
 
 .left-column[
