@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!--change keywords, description-->
+    <meta name="keywords" content="Pandas Cheat Sheet" />
+    <meta name="description" content="Python for Data analysis (part3)" />
+    <link href="https://github.com/EEOB-BioData/BCB546_Spring2024/assets/4835524/69467d59-5524-47b6-b377-6b819e32ac56"
+        rel="icon" type="image/png" />
+    <!--change title-->
+    <title>Pandas Introduction (Lecture 3)</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Fira+Mono&display=swap);
+        @import url(https://fonts.googleapis.com/css2?family=Fira+Sans);
+        @import url(https://fonts.googleapis.com/css?family=Droid+Serif);
+        @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+        @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+        body {
+            font-family: 'Fira Sans';
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Yanone Kaffeesatz';
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+
+        .remark-slide-content h1 {
+            font-size: 3em;
+        }
+
+        .remark-slide-content h2 {
+            font-size: 2em;
+        }
+
+        .remark-slide-content h3 {
+            font-size: 1.25em;
+        }
+
+        .footnote {
+            position: absolute;
+            bottom: 2em;
+        }
+
+        li p {
+            line-height: 1.25em;
+        }
+
+        .red {
+            color: #fa0000;
+        }
+        .gray {
+            color: #777;
+        }        
+
+        .large {
+            font-size: 2em;
+        }
+
+        a,
+        a>code {
+            color: rgb(249, 38, 114);
+            text-decoration: none;
+        }
+
+        code {
+            background: #e7e8e2;
+            border-radius: 5px;
+        }
+
+        .remark-code,
+        .remark-inline-code {
+            font-family: 'Fira Code';
+            font-weight: normal;
+            font-size: 13px;
+
+        }
+
+        .unix-cli,
+        .unix-cli-code {
+            font-family: 'Fira Code';
+            font-weight: normal;
+            font-size: 13px;
+            color: lime;
+            background-color: #373832;
+        }
+
+        .remark-code-line-highlighted {
+            background-color: #373832;
+        }
+
+        .pull-left {
+            float: left;
+            width: 47%;
+        }
+
+        .pull-right {
+            float: right;
+            width: 47%;
+        }
+
+        .pull-right~p {
+            clear: both;
+        }
+
+        #slideshow .slide .content code {
+            font-size: 0.8em;
+        }
+
+        #slideshow .slide .content pre code {
+            font-size: 0.9em;
+            padding: 15px;
+        }
+
+        .inverse {
+            background: #272822;
+            color: #777872;
+            text-shadow: 0 0 20px #333;
+        }
+
+        .inverse h1,
+        .inverse h2 {
+            color: #f3f3f3;
+            line-height: 0.8em;
+        }
+
+        /* Slide-specific styling */
+        #slide-inverse .footnote {
+            bottom: 12px;
+            left: 20px;
+        }
+
+        #slide-how .slides {
+            font-size: 0.9em;
+            position: absolute;
+            top: 151px;
+            right: 140px;
+        }
+
+        #slide-how .slides h3 {
+            margin-top: 0.2em;
+        }
+
+        #slide-how .slides .first,
+        #slide-how .slides .second {
+            padding: 1px 20px;
+            height: 90px;
+            width: 120px;
+            -moz-box-shadow: 0 0 10px #777;
+            -webkit-box-shadow: 0 0 10px #777;
+            box-shadow: 0 0 10px #777;
+        }
+
+        #slide-how .slides .first {
+            background: #fff;
+            position: absolute;
+            top: 20%;
+            left: 20%;
+            z-index: 1;
+        }
+
+        #slide-how .slides .second {
+            position: relative;
+            background: #fff;
+            z-index: 0;
+        }
+
+        /* Two-column layout */
+        .left-column {
+            color: #777;
+            width: 20%;
+            height: 92%;
+            float: left;
+        }
+
+        .left-columnB {
+            color: #000;
+            width: 20%;
+            height: 92%;
+            float: left;
+        }
+
+        .left-column h2:last-of-type,
+        .left-column h3:last-child {
+            color: #000;
+        }
+
+        .right-column {
+            width: 75%;
+            float: right;
+            padding-top: 1em;
+        }
+
+        .cols {
+            display: flex;
+        }
+
+        .fifty {
+            flex: 50%;
+        }
+        .sixty {
+            flex: 60%;
+        }
+        .forty {
+            flex: 40%;
+        }
+        .seventy {
+            flex: 70%;
+        }
+
+        .thirty {
+            flex: 30%;
+        }
+
+        .eighty {
+            flex: 80%;
+        }
+
+        .twenty {
+            flex: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <textarea id="source">
+name: inverse
+layout: true
+class: center, middle, inverse
+
+---
+# Python for Data analysis
+## Lecture 3
+
+
+---
+layout: false
+## Reading Files
+
+Before you begin, import the necessary libraries:
+
+```python
+import pandas as pd
+```
+
+To read a file, use the `pd.read_csv()` function:
+
+```python
+data = pd.read_csv('data.csv')
+```
+
+you can change delimiter by using the `sep` argument:
+
+```python
+data = pd.read_csv('data.tsv', sep='\t')
+```
+
+
+
+---
+
+## Writing Files
+
+To write a file, use the `to_csv()` method:
+
+```python
+data.to_csv('data.csv')
+```
+
+Again, you can change delimiter by using the `sep` argument:
+
+```python
+data.to_csv('data.tsv', sep='\t')
+```
+
+other formats (read/write) are supported, such as Excel, JSON, and SQL databases [(and many
+more!)](https://pandas.pydata.org/pandas-docs/stable/user_guide/io.html).
+
+
+---
+
+## Basic Information
+
+Display a concise summary of the DataFrame including data types and memory usage.
+
+```python
+data.info()
+```
+
+Return a tuple representing the dimensionality of the DataFrame (rows, columns).
+
+```python
+data.shape
+```
+
+Return the column labels of the DataFrame.
+
+```python
+data.columns
+```
+
+Return the index labels of the DataFrame.
+
+```python
+data.index
+```
+
+---
+
+## Viewing Data
+
+To view the first `n` rows of the DataFrame, use the `head()` method:
+
+```python
+data.head(3)
+```
+
+To view the last `n` rows of the DataFrame, use the `tail()` method:
+
+```python
+data.tail(3)
+```
+
+To view a random sample of n rows from the DataFrame, use the sample() method:
+
+```python
+data.sample(3)
+```
+
+---
+
+## Summary Statistics (part1):
+
+To generate descriptive statistics that summarize the central tendency, dispersion, and shape of the numerical data, use
+the `describe()` method:
+
+```python
+data.describe()
+```
+
+To calculate the mean of all numerical columns, use the `mean()` method:
+
+```python
+data.mean()
+```
+
+To calculate the median of all numerical columns, use the `median()` method:
+
+```python
+data.median()
+```
+
+To find the minimum value of each numerical column, use the `min()` method:
+
+```python
+data.min()
+```
+
+To find the maximum value of each numerical column, use the `max()` method:
+
+```python
+data.max()
+```
+
+---
+
+## Summary Statistics (part2):
+
+
+To calculate the standard deviation of all numerical columns, use the `std()` method:
+
+```python
+data.std()
+```
+
+To count non-null values for each column, use the `count()` method:
+
+```python
+data.count()
+```
+
+To count the number of unique values for each column, use the `nunique()` method:
+
+```python
+data.nunique()
+```
+
+
+To compute the variance of all numerical columns, use the `var()` method:
+
+```python
+data.var()
+```
+
+To calculate the correlation between numerical columns, use the `corr()` method:
+
+```python
+data.corr()
+```
+
+---
+
+
+## Checking for Missing Values:
+
+
+To check for missing values in the DataFrame and return a DataFrame of boolean values indicating missing values, use the
+`isna()` method:
+
+```python
+data.isna()
+```
+
+To check for missing values in the DataFrame (alias for `isna()`), use the `isnull()` method:
+
+```python
+data.isnull()
+```
+
+To check for non-missing values in the DataFrame and return a DataFrame of boolean values indicating non-missing values,
+use the `notna()` method:
+
+```python
+data.notna()
+```
+
+To check for non-missing values in the DataFrame (alias for `notna()`), use the `notnull()` method:
+
+```python
+data.notnull()
+```
+
+---
+## Reshaping Data:
+
+Reshaping data involves transforming the layout of your DataFrame to better suit your analysis or presentation needs.
+Pandas provides several methods for reshaping data, including melting, pivoting, and stacking/unstacking.
+
+
+<img src="https://github.com/EEOB-BioData/BCB546_Spring2024/assets/4835524/5a500282-e845-4cc3-90d2-157a644980bd"
+    alt="image" width="600" height="auto">
+
+    
+---
+
+## Reshaping Data:
+
+
+### Melting:
+
+To unpivot a DataFrame from wide format to long format, use the `pd.melt()` function:
+
+```python
+# Melting DataFrame
+melted_df = pd.melt(df, id_vars=['id_vars'], value_vars=['value_vars'])
+```
+
+---
+
+## Reshaping Data:
+
+### Pivoting:
+
+To pivot a DataFrame from long format to wide format, use the `pivot()` or `pivot_table()` methods:
+
+```python
+# Pivoting DataFrame
+pivoted_df = df.pivot(index='index_column', 
+columns='column_to_pivot', values='values_to_fill')
+
+# Or pivot_table for more advanced operations
+pivot_table_df = pd.pivot_table(df, values='values_to_fill', 
+index='index_column', columns='column_to_pivot',
+aggfunc='agg_function')
+```
+---
+
+
+## Combining Datasets:
+
+
+### Concatenation:
+
+To concatenate two DataFrames along rows or columns, use the `pd.concat()` function:
+
+```python
+# Concatenate along rows
+df_concatenated = pd.concat([df1, df2])
+
+# Concatenate along columns
+df_concatenated = pd.concat([df1, df2], axis=1)
+```
+
+
+---
+
+## Combining Datasets:
+
+### Merging:
+
+To merge two DataFrames based on one or more keys, use the `pd.merge()` function:
+
+```python
+# Merge based on a single key
+merged_df = pd.merge(df1, df2, on='key_column')
+
+# Merge based on multiple keys
+merged_df = pd.merge(df1, df2, on=['key_column1', 'key_column2'])
+
+# Different types of joins: 'inner', 'left', 'right', 'outer'
+merged_df = pd.merge(df1, df2, on='key_column', how='inner')
+```
+
+These methods allow you to efficiently combine datasets based on specific criteria, enabling comprehensive data analysis
+and insights.
+
+
+---
+
+## Stacking/Unstacking:
+
+To reshape hierarchical index DataFrame from long format to wide format or vice versa, use the `stack()` and `unstack()`
+methods:
+
+```python
+# Stacking DataFrame
+stacked_df = df.stack()
+
+# Unstacking DataFrame
+unstacked_df = df.unstack()
+```
+
+---
+## Subsetting Rows:
+
+**Drop Duplicates:** Remove duplicate rows from the DataFrame.
+
+```python
+df.drop_duplicates()
+```
+
+**Sample:** Return a random sample of items from the DataFrame.
+
+```python
+df.sample(n=5) # Return 5 random rows
+```
+
+**nlargest:** Return the top n largest values of a specific column.
+
+```python
+df.nlargest(n=3, columns='column_name') # Return 3 largest values
+```
+
+**nsmallest:** Return the top n smallest values of a specific column.
+
+```python
+df.nsmallest(n=3, columns='column_name') # Return 3 smallest values
+```
+---
+
+## Subsetting Columns:
+
+
+To select specific columns by their labels, you can use the indexing operator `[]` or the `loc[]` accessor.
+
+```python
+# Using indexing operator
+df[['column1', 'column2']]
+# Using loc accessor
+df.loc[:, ['column1', 'column2']]
+```
+
+To select columns by their integer position, you can use the `iloc[]` accessor.
+
+```python
+df.iloc[:, [0, 1]] # Select first two columns
+```
+
+To drop specific columns from the DataFrame, you can use the `drop()` method.
+
+```python
+df.drop(columns=['column1', 'column2'])
+```
+
+To select columns based on their data type, you can use the `select_dtypes()` method.
+
+```python
+df.select_dtypes(include='number') # Select numeric columns
+```
+
+To rename columns, you can use the `rename()` method.
+
+```python
+df.rename(columns={'old_name': 'new_name'})
+```
+
+---
+
+
+## Sorting:
+
+To sort the DataFrame by one or more columns, use the `sort_values()` method.
+
+```python
+df.sort_values(by='column_name') # Sort by a single column
+df.sort_values(by=['column1', 'column2']) # Sort by multiple columns
+```
+
+To sort the DataFrame by the index, use the `sort_index()` method.
+
+```python
+df.sort_index() # Sort by index labels
+```
+
+---
+## Indexing:
+
+To select rows by their index labels, use the `loc[]` accessor.
+
+```python
+df.loc['index_label'] # Select a single row
+df.loc['start_index':'end_index'] # Select a range of rows
+```
+
+---
+
+## Grouping and Aggregating:
+
+To group the DataFrame by one or more columns and apply an aggregation function, use the `groupby()` method.
+
+```python
+df.groupby('column_name') # Group by a single column
+df.groupby(['column1', 'column2']) # Group by multiple columns
+```
+
+After grouping, you can apply aggregation functions to the grouped data using methods like sum(), mean(), count(), etc.
+
+```python
+df.groupby('column_name').sum() # Sum of grouped data
+df.groupby('column_name').mean() # Mean of grouped data
+df.groupby('column_name').count() # Count of grouped data
+```
+
+To aggregate the grouped data, use the `agg()` method.
+
+```python
+df.groupby('column_name').agg({'column_to_aggregate': 'agg_function'})
+```
+
+To apply multiple aggregation functions, use a list of functions.
+
+```python
+df.groupby('column_name').agg({'column_to_aggregate': ['agg_function1', 'agg_function2']})
+```
+
+---
+
+
+name: last-page
+template: inverse
+## That's all folks (for now)!
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+    <script>
+        var hljs = remark.highlighter.engine;
+    </script>
+    <script src="https://joshbode.github.io/remark/terminal.language.js"></script>
+    <script>
+        var slideshow = remark.create({
+            highlightStyle: 'monokai',
+            highlightLanguage: 'remark',
+            highlightLines: true
+        });
+        // extract the embedded styling from ansi spans
+        var highlighted = document.querySelectorAll("code.terminal span.hljs-ansi");
+        Array.prototype.forEach.call(highlighted, function (next) {
+            next.insertAdjacentHTML("beforebegin", next.textContent);
+            next.parentNode.removeChild(next);
+        });
+    </script>
+    </body>
+    
+    </html>
+
+

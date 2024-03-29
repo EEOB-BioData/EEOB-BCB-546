@@ -31,7 +31,7 @@ the previous week to the end and label it with the appropriate number -->
 
 <u>March 27-29</u>
 * Mar 27: Introduction to python (part 2): [[website]](https://eeob-biodata.github.io/BCB546X-python), [[slides]](slides/lecture_22-and-27Mar-AS_slides.html), Jupyter Tips and Tricks [[slides]](slides/lecture_27Mar-AS_juptyer-tips.html)
-* Mar 29: Pandas Dataframes [[website]](https://eeob-biodata.github.io/BCB546X-python/03-starting-with-data/), [[slides]]() (coming soon)
+* Mar 29: Pandas Dataframes [[website]](https://eeob-biodata.github.io/BCB546X-python/03-starting-with-data/), [[slides]](slides/lecture_29Mar-AS_slides.html)
 
 ### Previous Weeks
 
