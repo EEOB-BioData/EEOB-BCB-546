@@ -658,8 +658,56 @@ df.groupby('column_name').agg({'column_to_aggregate': ['agg_function1', 'agg_fun
 ```
 
 ---
+## Plotting (part1)
+
+To create a line plot of the DataFrame, use the `plot()` method with `kind='line'`.
+
+```python
+df.plot(kind='line')
+```
+
+To create a bar plot use `kind='bar'`.
+
+```python
+df.plot(kind='bar')
+```
+
+To create a histogram use `kind='hist'`.
+
+```python
+df.plot(kind='hist')
+```
+
+To create a box plot use `kind='box'`.
+
+```python
+df.plot(kind='box')
+```
+
+---
+## Plotting (part2)
 
 
+To create a scatter plot use `kind='scatter'`.
+
+```python
+df.plot(kind='scatter', x='column1', y='column2')
+```
+
+To create a kernel density estimation plot use `kind='kde'`.
+
+```python
+df.plot(kind='kde')
+```
+
+To create an area plot use `kind='area'`.
+
+```python
+df.plot(kind='area')
+```
+
+
+---
 name: last-page
 template: inverse
 ## That's all folks (for now)!
