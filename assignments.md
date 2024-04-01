@@ -24,6 +24,11 @@ All of the material required for grading must be submitted on the [course Canvas
 * The R Assignment is available through the course GitHub repository in the [`R_Assignment`](https://github.com/EEOB-BioData/BCB546_Spring2024/tree/main/assignments/R_Assignment) folder (in the `assignments` folder).
 * Read the assignment document for the submission process.
 
+### Assignment #3: Data Management Plans
+
+* The instructions for the DMP assignment are available on the course GitHub repository in the [`DMP_Assignment`](https://github.com/EEOB-BioData/BCB546_Spring2023/tree/main/assignments/DMP_Assignment) folder (in the `assignments` folder).
+* The assignment is due via submission in Canvas by the end of the day on April 9, 2024
+
 ### Final Group Project
 
 * The Final Group Project is available through the course GitHub repository in the [`Final_Project`](https://github.com/EEOB-BioData/BCB546_Spring2023/tree/main/assignments/Final_Project) folder (in the `assignments` folder).
