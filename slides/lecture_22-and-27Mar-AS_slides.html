@@ -1,0 +1,1537 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!--change keywords, description-->
+    <meta name="keywords" content="python,basics,introduction,jupyter,notebook" />
+    <meta name="description" content="Introduction to Python" />
+    <link href="https://github.com/EEOB-BioData/BCB546_Spring2024/assets/4835524/69467d59-5524-47b6-b377-6b819e32ac56"
+        rel="icon" type="image/png" />
+    <!--change title-->
+    <title>Python Introduction (Part 1 & 2)</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Fira+Mono&display=swap);
+        @import url(https://fonts.googleapis.com/css2?family=Fira+Sans);
+        @import url(https://fonts.googleapis.com/css?family=Droid+Serif);
+        @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+        @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+        body {
+            font-family: 'Fira Sans';
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Yanone Kaffeesatz';
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+
+        .remark-slide-content h1 {
+            font-size: 3em;
+        }
+
+        .remark-slide-content h2 {
+            font-size: 2em;
+        }
+
+        .remark-slide-content h3 {
+            font-size: 1.25em;
+        }
+
+        .footnote {
+            position: absolute;
+            bottom: 2em;
+        }
+
+        li p {
+            line-height: 1.25em;
+        }
+
+        .red {
+            color: #fa0000;
+        }
+        .gray {
+            color: #777;
+        }        
+
+        .large {
+            font-size: 2em;
+        }
+
+        a,
+        a>code {
+            color: rgb(249, 38, 114);
+            text-decoration: none;
+        }
+
+        code {
+            background: #e7e8e2;
+            border-radius: 5px;
+        }
+
+        .remark-code,
+        .remark-inline-code {
+            font-family: 'Fira Code';
+            font-weight: normal;
+            font-size: 13px;
+
+        }
+
+        .unix-cli,
+        .unix-cli-code {
+            font-family: 'Fira Code';
+            font-weight: normal;
+            font-size: 13px;
+            color: lime;
+            background-color: #373832;
+        }
+
+        .remark-code-line-highlighted {
+            background-color: #373832;
+        }
+
+        .pull-left {
+            float: left;
+            width: 47%;
+        }
+
+        .pull-right {
+            float: right;
+            width: 47%;
+        }
+
+        .pull-right~p {
+            clear: both;
+        }
+
+        #slideshow .slide .content code {
+            font-size: 0.8em;
+        }
+
+        #slideshow .slide .content pre code {
+            font-size: 0.9em;
+            padding: 15px;
+        }
+
+        .inverse {
+            background: #272822;
+            color: #777872;
+            text-shadow: 0 0 20px #333;
+        }
+
+        .inverse h1,
+        .inverse h2 {
+            color: #f3f3f3;
+            line-height: 0.8em;
+        }
+
+        /* Slide-specific styling */
+        #slide-inverse .footnote {
+            bottom: 12px;
+            left: 20px;
+        }
+
+        #slide-how .slides {
+            font-size: 0.9em;
+            position: absolute;
+            top: 151px;
+            right: 140px;
+        }
+
+        #slide-how .slides h3 {
+            margin-top: 0.2em;
+        }
+
+        #slide-how .slides .first,
+        #slide-how .slides .second {
+            padding: 1px 20px;
+            height: 90px;
+            width: 120px;
+            -moz-box-shadow: 0 0 10px #777;
+            -webkit-box-shadow: 0 0 10px #777;
+            box-shadow: 0 0 10px #777;
+        }
+
+        #slide-how .slides .first {
+            background: #fff;
+            position: absolute;
+            top: 20%;
+            left: 20%;
+            z-index: 1;
+        }
+
+        #slide-how .slides .second {
+            position: relative;
+            background: #fff;
+            z-index: 0;
+        }
+
+        /* Two-column layout */
+        .left-column {
+            color: #777;
+            width: 20%;
+            height: 92%;
+            float: left;
+        }
+
+        .left-columnB {
+            color: #000;
+            width: 20%;
+            height: 92%;
+            float: left;
+        }
+
+        .left-column h2:last-of-type,
+        .left-column h3:last-child {
+            color: #000;
+        }
+
+        .right-column {
+            width: 75%;
+            float: right;
+            padding-top: 1em;
+        }
+
+        .cols {
+            display: flex;
+        }
+
+        .fifty {
+            flex: 50%;
+        }
+        .sixty {
+            flex: 60%;
+        }
+        .forty {
+            flex: 40%;
+        }
+        .seventy {
+            flex: 70%;
+        }
+
+        .thirty {
+            flex: 30%;
+        }
+
+        .eighty {
+            flex: 80%;
+        }
+
+        .twenty {
+            flex: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <textarea id="source">
+name: inverse
+layout: true
+class: center, middle, inverse
+
+---
+# Python for Data analysis
+## Lecture 1 and 2
+
+
+---
+layout: false
+# Optional Reference
+
+
+
+.cols[
+
+.seventy[
+* Python for Data Analysis, 3rd Edition by Wes McKinney.
+* Available as free e-book: https://wesmckinney.com/book/
+* Also available for purchase: You can [order a paper copy](https://amzn.to/3DyLaJc) or a [DRM-free eBook](https://www.ebooks.com/en-us/book/210644288/python-for-data-analysis/wes-mckinney/?affId=WES398681F)
+* Associated code/workbooks available at: https://github.com/wesm/pydata-book/tree/3rd-edition
+
+]
+
+.thirty[
+
+<img src="https://github.com/EEOB-BioData/BCB546_Spring2024/assets/4835524/0df41033-d944-4580-a851-f3f1cb355228"
+    alt="image" width="200" height="auto">
+]
+]
+
+
+
+---
+
+# Topics
+
+* Chapter 2: Python Language Basics, IPython, and Jupyter Notebooks
+* Chapter 3: Built-in Data Structures, Functions, and Files
+* Chapter 4: NumPy Basics: Arrays and Vectorized Computation
+* Chapter 5: Getting Started with pandas
+* Chapter 6: Data Loading, Storage, and File Formats
+* Chapter 7: Data Cleaning and Preparation
+* Chapter 8: Data Wrangling: Join, Combine, and Reshape
+* Chapter 9: Plotting and Visualization
+* Chapter 10: Data Aggregation and Group Operations
+* Chapter 11: Time Series
+* Chapter 12: Introduction to Modeling Libraries in Python
+* Chapter 13: Data Analysis Examples
+
+
+---
+layout: false
+
+# Topics
+
+* Chapter 2: Python Language Basics, IPython, and Jupyter Notebooks
+* Chapter 3: Built-in Data Structures, Functions, and Files
+* .gray[Chapter 4: NumPy Basics: Arrays and Vectorized Computation]
+* Chapter 5: Getting Started with pandas
+* Chapter 6: Data Loading, Storage, and File Formats
+* Chapter 7: Data Cleaning and Preparation
+* Chapter 8: Data Wrangling: Join, Combine, and Reshape
+* Chapter 9: Plotting and Visualization
+* Chapter 10: Data Aggregation and Group Operations
+* .gray[Chapter 11: Time Series]
+* .gray[Chapter 12: Introduction to Modeling Libraries in Python]
+* .gray[Chapter 13: Data Analysis Examples]
+
+
+---
+
+layout: false
+.left-column[
+### Overview
+]
+
+.right-column[
+
+## Why Python for Data Analysis?
+
+* Python is a high-level, general-purpose programming language
+* Widely used in scientific computing, data analysis, and bioinformatics
+* Easy to learn and use- well structured and readable code
+* Has a large user base and active community
+* Large standard library and number of third-party libraries are available
+* Extremely portable and can be used on any platform
+
+
+### Example python code
+
+```python
+# assigning a value to a variable (this is comment!)
+a = 5
+b = 3
+# adding two numbers
+c = a + b
+# printing the result
+print(c)
+# conditional statement
+if (c > 5):
+    print("c is greater than 5")
+else:
+    print("c is less than or equal to 5")
+```
+]
+---
+.left-column[
+### Overview
+]
+
+.right-column[
+## Python Basics
+
+Python's clear syntax and readability make it an excellent choice for beginners. The code looks like pseudo-code and is easy to understand.
+
+Let's say we want to use a for loop to count the number of Gs in a DNA sequence. The pseudo-code might look like this:
+
+```terminal
+seq = "...ACGT..."
+count = 0
+for base in seq
+    if base is a 'G'
+        increment count
+print count
+```
+
+When this is written in Python, it looks like this:
+
+```python
+seq = 'GACTTAATGGGCAATAGGCAAGCACTTGAAAAAGATGCCAACGACATGAAAACACAAGACAA'
+count = 0
+for base in seq:
+    if base == 'G':
+        count += 1
+
+print(count)
+```
+
+PS: the shortened version of `count = count + 1` is `count += 1`
+]
+---
+.left-column[
+### Overview
+]
+
+.right-column[
+
+## Code layout
+
+* Python uses indentation to define blocks of code (loops, conditionals, functions, and classes) that are executed together.
+* Indentation is usually four spaces or one tab, but should be consistent throughout the code (either tab or space, no mixing both).
+* colon `:` is used to start a block of code.
+
+```python
+s = "hello"
+capital_s = ""
+for char in s:
+    capital_letter = char.upper()
+    capital_s += capital_letter
+
+print(capital_s)
+```
+- why does the print statement not have the same indentation as the for loop?
+- what would it print if it had the same indentation as the for loop?
+
+
+]
+---
+.left-column[
+### Overview
+]
+
+.right-column[
+## Indexing
+
+* Python uses zero-based indexing for sequences (strings, lists, tuples, etc.) - 1st element is at index 0, the 2nd at index 1, and so on.
+* Negative indices can be used to index from the end of the sequence.
+* Slicing is used to extract a subsequence from a sequence using square brackets `[]`.
+
+```python
+s = "hello"
+n = len(s)
+print(s[0]) # h
+print(s[-1]) # o
+print(s[1:4]) # ell
+print(s[n]) # error!
+print(s[n - 1]) # o
+```
+
+]
+---
+.left-column[
+### Overview
+]
+
+.right-column[
+## Python vs. R
+
+Python and R are both popular languages for data analysis and have their strengths and weaknesses.
+
+Count the number of Gs in the sequence above using a for loop in R 
+
+```R
+seq <- 'GACTTAATGGGCAATAGGCAAGCACTTGAAAAAGATGCCAACGACATGAAAACACAAGACAA'
+seq_split <- strsplit(seq, "")[[1]]
+count <- 0
+for(base in seq_split){
+    if(base == 'G'){
+        count <- count + 1
+    }
+}
+print(count)
+```
+or using `stringr` package:
+
+```R
+library(stringr)
+seq <- 'GACTTAATGGGCAATAGGCAAGCACTTGAAAAAGATGCCAACGACATGAAAACACAAGACAA'
+count <- str_count(seq, 'G')
+print(count)
+```
+
+PS: indent does not matter in R
+]
+
+---
+.left-column[
+### Overview
+]
+
+.right-column[
+## Python vs. R
+
+Count the number of Gs in the sequence above using a for loop in python 
+
+```python
+seq = 'GACTTAATGGGCAATAGGCAAGCACTTGAAAAAGATGCCAACGACATGAAAACACAAGACAA'
+count = 0
+for base in seq:
+    if base == 'G':
+        count += 1
+print(count)
+```
+
+or the simplest way:
+
+```python
+seq = 'GACTTAATGGGCAATAGGCAAGCACTTGAAAAAGATGCCAACGACATGAAAACACAAGACAA'
+count = seq.count('G')
+print(count)
+```
+
+]
+---
+.left-column[
+### Overview
+]
+
+.right-column[
+## Command line vs. Script
+
+* Python can be used interactively or by running scripts. A separate "terminal" or "command prompt" is used to run scripts and can be invoked by typing `python` at the command line.
+* The interactive mode is useful for testing small pieces of code and for learning Python syntax.
+* The script mode is useful for writing and running larger programs.
+* For development, it is recommended to use an Integrated Development Environment (IDE) such as PyCharm, Visual Studio Code, or Jupyter Notebook.
+
+]
+---
+.left-column[
+### Overview
+]
+
+.right-column[
+
+## interactive interpreter example:
+```terminal
+arnstrm@nova [~] $ python
+Python 3.9.16 (main, Sep 12 2023, 00:00:00)
+[GCC 11.3.1 20221121 (Red Hat 11.3.1-4)] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print('Hello, world!')
+Hello, world!
+>>>
+```
+
+## script example:
+
+```terminal
+arnstrm@nova [~] $ cat hello.py
+print('Hello, world!')
+arnstrm@nova [~] $ python hello.py
+Hello, world!
+```
+
+]
+---
+
+.left-column[
+### Overview
+
+]
+
+.right-column[
+
+## Python on cluster
+
+* Python is available as a module on HPC systems.
+* There is also `miniconda3` module, to create/manage virtual environments using `conda` command.
+
+
+```terminal
+arnstrm@nova [~] $ python --version
+Python 3.9.16
+arnstrm@nova [~] $ module load python
+arnstrm@nova [~] $ python --version
+Python 3.10.10
+arnstrm@nova [~] $ module spider python
+
+python:
+
+Versions:
+python/3.8.18-4j5jvxi
+python/3.9.16-yukabfp
+python/3.10.10-zwlkg4l
+```
+]
+---
+
+.left-column[
+### Overview
+### Installation
+
+]
+
+.right-column[
+## Installation
+
+* Python can be installed from the [official website: python.org](https://www.python.org/downloads/).
+* Python is also available through package managers such as `apt` or `yum` on Linux, `brew` on macOS, and `chocolatey` on Windows.
+* Python 3 is the current version and is recommended for new projects. Python 2 is no longer supported.
+* For Windows, it is recommended to check the box to add Python to the system PATH during installation ("Add Python 3.x to PATH").
+* On HPC systems, Python is often available as a module and can be loaded using `module load python`.
+
+]
+
+
+---
+
+.left-column[
+### Overview
+### Installation
+
+]
+
+.right-column[
+
+## Windows installation includes:
+
+* Python interpreter to run python scripts
+* Python console to run python commands interactively
+* Interactive development environment (IDE) called IDLE
+* Python package manager called `pip` to install third-party packages
+]
+
+---
+
+.left-column[
+### Overview
+### Installation
+### Interactive Python console
+
+]
+
+.right-column[
+
+## Interactive Python console
+
+* The Python console is a great way to test small pieces of code and to learn Python syntax.
+* It can be invoked by typing `python` at the command line or as part of an IDE such as IDLE, PyCharm, or Jupyter Notebook.
+* Useful to test code, run scripts, and debug programs. You can run line by line code, quick calculations, experiment, data exploration, troubleshoot, document your workflow and more!
+
+]
+---
+
+.left-column[
+### Overview
+### Installation
+### Interactive Python console
+
+]
+
+.right-column[
+
+## Online Python console
+
+* There are also online Python consoles available such as:
+    - [repl.it](https://repl.it/languages/python3) 
+    - [PythonAnywhere](https://www.pythonanywhere.com/)
+    - [PythonShell](https://www.python.org/shell/)
+
+* Jupyter notebooks:
+    - https://jupyter.org/try-jupyter/ (runs locally in the browser)
+    - https://colab.research.google.com (Google login required)
+
+
+.red[We will setup Jupyter notebook for class exercises on Nova]
+
+]
+---
+
+
+
+
+.left-column[
+### Overview
+### Installation
+### Interactive Python console
+### Variables
+
+]
+
+.right-column[
+
+## Variables
+
+
+```terminal
+birth_year = 1980
+current_year = 2023
+age = current_year - birth_year
+print(age)
+```
+
+* Variable names are usually lowercase, with words separated by underscores. They should be descriptive and meaningful.
+* Variable names cannot start with a number or contain spaces.
+* Variable names are case-sensitive.
+* Variables can be assigned to different types of data (integers, floats, strings, lists, dictionaries, etc.) and can be reassigned to different values.
+
+```terminal
+name = "John"
+name = "Jane"
+age = 25
+age = 30
+age = age -5
+```
+]
+
+---
+
+.left-column[
+### Overview
+### Installation
+### Interactive Python console
+### Variables
+### Data types
+]
+
+.right-column[
+
+## Python data types
+
+* Python has several basic data types including:
+    - `int` (integer)
+    - `float` (floating point number)
+    - `str` (string)
+    - `bool` (boolean)
+    - `None` (null value)
+
+* Python also has several composite data types including:
+    - `list` (ordered, mutable collection)
+    - `tuple` (ordered, immutable collection)
+    - `dict` (unordered, mutable collection of key-value pairs)
+    - `set` (unordered, mutable collection of unique elements)
+
+]
+
+---
+
+.left-column[
+### Overview
+### Installation
+### Interactive Python console
+### Variables
+### Data types
+]
+
+.right-column[
+
+<img src="https://github.com/EEOB-BioData/BCB546_Spring2024/assets/4835524/7a475e69-13bb-4f9e-99c1-dbf7f3a3149b"
+    alt="image" width="600" height="auto">
+
+]
+---
+
+.left-column[
+### Overview
+### Installation
+### Interactive Python console
+### Variables
+### Data types
+]
+
+.right-column[
+
+## Basic data types
+
+```python
+# integers
+number = 42
+# floating point numbers
+pi_value = 3.1415
+# strings
+text = "Go Cyclones"
+# boolean
+is_student = True
+# None
+nothing = None
+```
+
+* Integers and floating point numbers can be used in mathematical operations such as addition, subtraction, multiplication, and division.
+* Strings can be used for text and is enclosed in single or double quotes.
+* Booleans are used for logical operations and can be `True` or `False`.
+* None is used to represent the absence of a value.
+
+]
+---
+.left-column[
+### Overview
+### Installation
+### Interactive Python console
+### Variables
+### Data types
+]
+
+.right-column[
+
+## Strings
+
+* manipulated using string methods and operators.
+* concatenate using the `+` operator.
+* repeat using the `*` operator.
+* indexed and sliced using square brackets `[]`.
+* formatted using the `format()` method or f-strings (formatted string literals).
+* to escape special characters, use the backslash `\`, for tab `\t`, newline `\n`, etc.
+
+```python
+first_name = "John"
+last_name = "Doe"
+full_name = first_name + " " + last_name
+print(full_name)
+```
+
+```python
+greeting = "Hello, world!"
+print(greeting[0])
+print(greeting[7:12])
+```
+
+]
+---
+.left-column[
+### Overview
+### Installation
+### Interactive Python console
+### Variables
+### Data types
+
+]
+
+.right-column[
+
+## String formatting
+
+```python
+name = "John"
+age = 25
+print("My name is {} and I am {} years old.".format(name, age))
+print(f"My name is {name} and I am {age} years old.")
+```
+
+```python
+print("This is line1\nand this is line2. A\tB here we have a tab!.")
+print("backslash \\ and words with \"quotes\" can also be printed.")
+```
+]
+---
+.left-column[
+### Overview
+### Installation
+### Interactive Python console
+### Variables
+### Data types
+]
+
+.right-column[
+
+## Boolean and none
+
+* Booleans are used for logical operations and can be `True` or `False` (note the case).
+* None is used to represent the absence of a value.
+
+```python
+is_student = True
+is_teacher = False
+nothing = None
+```
+]
+
+---
+
+.left-column[
+### Overview
+### Installation
+### Interactive Python console
+### Variables
+### Data types
+
+]
+
+.right-column[
+
+## Lists
+
+* Lists are ordered, mutable collections of elements.
+* Lists can contain elements of different types.
+* Lists are indexed and sliced using square brackets `[]`.
+* Lists can be nested and can contain other lists.
+
+```python
+fruits = ["apple", "banana", "cherry"]
+primes = [2, 3, 5, 7, 11, 13]
+products = [
+{"name": "apple", "price": 1.00},
+{"name": "banana", "price": 0.50},
+{"name": "cherry", "price": 2.00}
+]
+print(fruits[1]) # second element
+print(fruits[1:3]) # slice
+print(fruits[-1]) # last element
+fruits[1] = "orange" # change element
+print(fruits)
+```
+]
+---
+.left-column[
+### Overview
+### Installation
+### Interactive Python console
+### Variables
+### Data types
+
+]
+
+.right-column[
+## Tuples
+
+* Tuples are ordered, immutable collections of elements.
+* Tuples can contain elements of different types.
+* Tuples are indexed and sliced using square brackets `[]`.
+* Tuples can be nested and can contain other tuples.
+
+```python
+fruits = ("apple", "banana", "cherry")
+print(fruits[1])
+print(fruits[1:3])
+```
+]
+---
+.left-column[
+### Overview
+### Installation
+### Interactive Python console
+### Variables
+### Data types
+
+]
+
+.right-column[
+## Dictionaries
+
+* Dictionaries are unordered, mutable collections of key-value pairs.
+* Dictionaries can contain elements of different types.
+* Dictionaries are indexed using keys.
+* Dictionaries can be nested and can contain other dictionaries.
+
+```python
+person = {
+"name": "John",
+"age": 25,
+"is_student": True
+}
+print(person["name"]) # John
+print(person["age"]) # 25
+print(person["is_student"]) # True
+person["age"] = 30 
+print(person) # {'name': 'John', 'age': 30, 'is_student': True}
+```
+
+Adding items to a dictionary:
+
+```python
+person["city"] = "Ames"
+print(person) # {'name': 'John', 'age': 30, 'is_student': True, 'city': 'Ames'}
+```
+]
+
+---
+
+.left-column[
+### Overview
+### Installation
+### Interactive Python console
+### Variables
+### Data types
+]
+
+.right-column[
+
+## Dictionaries
+
+You can iterate over the keys and values of a dictionary using the `items()` method.
+
+```python
+numbers2 = {1: 'one', 2: 'two', 3: 'three', 4: 'four'}
+for key, value in numbers2.items():
+    print(key, "->", value)
+```
+or:
+```python
+for key in numbers2:
+    print(key, "->", numbers2[key])
+```
+
+output:
+
+```terminal
+1 -> one
+2 -> two
+3 -> three
+4 -> four
+```
+]
+
+---
+
+.left-column[
+### Overview
+### Installation
+### Interactive Python console
+### Variables
+### Data types
+
+]
+
+.right-column[
+## Sets
+
+* Sets are unordered, mutable collections of unique elements.
+* Sets can contain elements of different types.
+* Sets are indexed using keys.
+* Sets can be nested and can contain other sets.
+
+```python
+fruits = {"apple", "banana", "cherry"}
+print(fruits)
+fruits.add("orange")
+print(fruits)
+```
+]
+
+---
+
+.left-column[
+### Overview
+### Installation
+### Interactive Python console
+### Variables
+### Data types
+### Language Semantics
+]
+
+.right-column[
+
+## Assigning Elements of a List or Tuple to New Variables
+
+Variable unpacking is a convenient way to assign multiple variables at once.
+
+```python
+my_list = ['Cyclones','Go','!']
+v1, v2, v3 = my_list
+print(v2, v1, v3) # output: Go Cyclones !
+```
+
+Also works for tuples
+
+```python
+my_tup = ('U','I','S')
+c, a, b = my_tup
+print(a, b, c) # output: I S U
+```
+
+
+]
+
+
+---
+.left-column[
+### Overview
+### Installation
+### Interactive Python console
+### Variables
+### Data types
+### Language Semantics
+]
+
+.right-column[
+
+## Function and object method calls
+
+
+Functions are called using parentheses and passing arguments.
+
+```terminal
+result = f(x, y, z)
+g()
+```
+
+Methods are called using the dot notation.
+
+```python
+obj.some_method(x, y, z)
+```
+
+]
+
+---
+
+.left-column[
+### Overview
+### Installation
+### Interactive Python console
+### Variables
+### Data types
+### Language Semantics
+]
+
+.right-column[
+
+## Variables and argument passing
+
+Assigning variable in python creates a reference to the object. Consider a list `a`:
+
+```python
+a = [1, 2, 3]
+```
+
+If we assign `a` to another variable `b`, both `a` and `b` will refer to the same object.
+
+```python
+b = a
+```
+
+If we modify the object through one of the references, the change will be reflected in both.
+
+```python
+a.append(4)
+print(b) # outputs: [1, 2, 3, 4]
+```
+But what happens in the function stays in the function.
+
+```python
+def append_element(some_list, element):
+    some_list.append(element)
+```
+
+]
+
+---
+.left-column[
+### Overview
+### Installation
+### Interactive Python console
+### Variables
+### Data types
+### Language Semantics
+]
+
+.right-column[
+
+## Dynamic references, strong types
+
+Python is not statically typed. The type information is stored in the object itself.
+
+```python
+a = 5
+type(a) # output: <class 'int'>
+a = 'foo'
+type(a) # output: <class 'str'>
+```
+
+Python is strongly typed. This means that every object has a specific type (or class), and implicit conversions will occur only in certain obvious circumstances.
+
+```python
+'5' + 5 # TypeError
+a = 4.5
+b = 2
+print('a is {0}, b is {1}'.format(type(a), type(b)))
+# output: a is <class 'float'>, b is <class 'int'>
+a / b
+# output: 2.25
+```
+Though `b` is an integer, it is implicitly converted to a float in the division. 
+
+]
+
+---
+.left-column[
+### Overview
+### Installation
+### Interactive Python console
+### Variables
+### Data types
+### Language Semantics
+]
+
+.right-column[
+
+## Dynamic references, strong types
+
+You can check the type of an object using the `type` function and check if an object is an instance of a particular type using the `isinstance` function.
+
+```python
+a = 5
+isinstance(a, int) # output: True
+type(a) # output: <class 'int'>
+```
+
+## Attributes and methods
+
+Objects in Python typically have both attributes (other Python objects stored "inside" the object) and methods (functions associated with an object that can have access to the object's internal data).
+
+
+]
+---
+.left-column[
+### Overview
+### Installation
+### Interactive Python console
+### Variables
+### Data types
+### Language Semantics
+]
+
+.right-column[
+
+## Type conversions
+
+* Python has built-in functions to convert between data types.
+* to know the type of a variable, use the `type()` function.
+
+```python
+x = 5
+type(x)
+```
+
+* To convert use: `int()`, `float()`, `str()`, `bool()`, `list()`, `tuple()`, `dict()`, `set()`
+
+```python
+x = 5
+y = 3.14
+z = "10"
+print(float(x))
+print(int(y))
+print(int(z))
+print(bool(0))
+print(bool(1))
+print(str(5))
+```
+]
+
+---
+
+.left-column[
+### Overview
+### Installation
+### Interactive Python console
+### Variables
+### Data types
+### Language Semantics
+### Operators
+]
+
+.right-column[
+## Mathematical Operators
+
+
+
+| Operator | Operation                         | Example   | Results  |
+|----------|-----------------------------------|-----------|--------------------|
+| `**`     | Exponent                          | `2 ** 3`  | `8`                |
+| `%`      | Modulus/remainder                 | `22 % 8`  | `6`                |
+| `//`     | Integer division/floored quotient | `22 // 8` | `2`                |
+| `/`      | Division                          | `22 / 8`  | `2.75`             |
+| `*`      | Multiplication                    | `3 * 5`   | `15`               |
+| `-`      | Subtraction                       | `5 - 2`   | `3`                |
+| `+`      | Addition                          | `2 + 2`   | `4`                |
+
+]
+---
+
+.left-column[
+### Overview
+### Installation
+### Interactive Python console
+### Variables
+### Data types
+### Language Semantics
+### Operators
+### Functions
+]
+
+.right-column[
+
+## functions
+
+* Functions are reusable blocks of code that perform a specific task.
+* Predefined functions are called built-in functions.
+* Functions can take arguments and return values.
+* examples of predefined functions include:
+    * `print()` (to print output)
+    * `type()` (to find the type of a variable)
+    * `len()` (to find the length of a list)
+    * `max()` (to find the maximum value)
+    * `min()` (to find the minimum value)
+    * `sum()` (to sum a list of numbers)
+    * `range()` (to generate a sequence of numbers)
+    * `input()` (to get user input)
+    * `help()` (to get help on a function)
+* You can also define your own functions using the `def` keyword.
+
+]
+
+---
+
+.left-column[
+### Overview
+### Installation
+### Interactive Python console
+### Variables
+### Data types
+### Language Semantics
+### Operators
+### Functions
+]
+
+.right-column[
+
+## functions
+
+
+<img src="https://github.com/EEOB-BioData/EEOB-BCB-546/assets/4835524/413b878f-449a-4607-b3bf-0215351a7116" alt="image"
+        width="640" height="auto">
+
+
+
+]
+---
+## functions
+
+.cols[
+
+.thirty[
+
+```
+WORKDIR
+│
+└── fibo.py
+```
+
+```python
+# Fibonacci numbers module
+# 1. print fibonacci series up to n
+def fib(n):
+    a, b = 0, 1
+    while a < n:
+        print(a, end=' ')
+        a, b = b, a+b
+    print()
+# 2. return fibonacci series up to n
+def fib2(n):
+    result = []
+    a, b = 0, 1
+    while a < n:
+        result.append(a)
+        a, b = b, a+b
+    return result
+```
+
+]
+
+<p style="background-color:white;color:white;">White</p>
+
+.thirty[
+```python
+# loading the module
+import fibo
+# running functions from the loaded module
+fibo.fib(1000)
+fibo.fib1(50)
+# you can also assign a name 
+fib = fibo.fib
+fib(500)
+```
+
+
+```python
+# import all names that a module
+from fibo import *
+# running functions from the loaded module
+fib(1000)
+fib1(500)
+```
+
+```python
+# alias the module
+import fibo as fib
+# running functions from the loaded module
+fib.fib(1000)
+fib.fib1(50)
+```
+
+```python
+# alias to anything you want!
+from fibo import fib as fibonacci
+# running functions from the loaded module
+fibonacci(1000)
+```
+
+]
+]
+
+---
+.left-column[
+### Overview
+### Installation
+### Interactive Python console
+### Variables
+### Data types
+### Language Semantics
+### Operators
+### Functions
+### Methods
+]
+
+.right-column[
+
+## Methods
+
+* Methods are functions that belong to an object.
+* Methods are called using the dot notation.
+* Methods can take arguments and return values.
+* Some examples for methods include:
+    * `upper()` (to convert a string to uppercase)
+    * `lower()` (to convert a string to lowercase)
+    * `strip()` (to remove leading and trailing whitespace)
+    * `replace()` (to replace a substring with another substring)
+    * `split()` (to split a string into a list of substrings)
+    * `join()` (to join a list of strings into a single string)
+    * `append()` (to add an element to a list)
+    * `remove()` (to remove an element from a list)
+    * `pop()` (to remove and return an element from a list)
+    * `sort()` (to sort a list)
+    * `reverse()` (to reverse a list)
+
+]
+---
+
+
+.left-column[
+### Overview
+### Installation
+### Interactive Python console
+### Variables
+### Data types
+### Language Semantics
+### Operators
+### Functions
+### Methods
+]
+
+.right-column[
+
+## Methods
+
+
+```python
+name = "John  "
+print(name.upper())
+print(name.lower())
+print(name.strip())
+print(name.replace("John", "Jane"))
+print(name.split())
+```
+
+```python
+fruits = ["apple", "banana", "cherry"]
+fruits.append("orange")
+fruits.remove("banana")
+print(fruits)
+```
+]
+---
+
+
+.left-column[
+### Overview
+### Installation
+### Interactive Python console
+### Variables
+### Data types
+### Language Semantics
+### Operators
+### Functions
+### Methods
+### Help/Errors
+]
+
+.right-column[
+
+## Help and documentation
+
+* Python has built-in help and documentation.
+* To get help on a function/module/method/keyword/datatype, use the `help()` with that object.
+
+```python
+help(print)
+help(list)
+help(list.append)
+help("for")
+help(int)
+```
+]
+---
+
+.left-column[
+### Overview
+### Installation
+### Interactive Python console
+### Variables
+### Data types
+### Language Semantics
+### Operators
+### Functions
+### Methods
+### Help/Errors
+]
+
+.right-column[
+
+## Common Errors
+
+* `SyntaxError`: invalid syntax
+* `NameError`: name 'x' is not defined
+* `TypeError`: unsupported operand type(s) for +: 'int' and 'str'
+* `ValueError`: invalid literal for int() with base 10: 'abc'
+* `ZeroDivisionError`: division by zero
+* `IndexError`: list index out of range
+* `KeyError`: 'name'
+* `AttributeError`: 'list' object has no attribute 'appendx'
+* `IndentationError`: unexpected indent
+* `TabError`: inconsistent use of tabs and spaces in indentation
+* `FileNotFoundError`: [Errno 2] No such file or directory: 'file.txt'
+* `ModuleNotFoundError`: No module named 'module'
+* `ImportError`: cannot import name 'x' from 'y'
+]
+
+---
+name: last-page
+template: inverse
+## That's all folks (for now)!
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+    <script>
+        var hljs = remark.highlighter.engine;
+    </script>
+    <script src="https://joshbode.github.io/remark/terminal.language.js"></script>
+    <script>
+        var slideshow = remark.create({
+            highlightStyle: 'monokai',
+            highlightLanguage: 'remark',
+            highlightLines: true
+        });
+        // extract the embedded styling from ansi spans
+        var highlighted = document.querySelectorAll("code.terminal span.hljs-ansi");
+        Array.prototype.forEach.call(highlighted, function (next) {
+            next.insertAdjacentHTML("beforebegin", next.textContent);
+            next.parentNode.removeChild(next);
+        });
+    </script>
+    </body>
+    
+    </html>
+
+

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!--change keywords, description-->
+    <meta name="keywords" content="python,basics,introduction,jupyter,notebook" />
+    <meta name="description" content="Introduction to Python" />
+    <link href="https://github.com/EEOB-BioData/BCB546_Spring2024/assets/4835524/69467d59-5524-47b6-b377-6b819e32ac56"
+        rel="icon" type="image/png" />
+    <!--change title-->
+    <title>Python Introduction (Part 1 & 2)</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Fira+Mono&display=swap);
+        @import url(https://fonts.googleapis.com/css2?family=Fira+Sans);
+        @import url(https://fonts.googleapis.com/css?family=Droid+Serif);
+        @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+        @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+        body {
+            font-family: 'Fira Sans';
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Yanone Kaffeesatz';
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+
+        .remark-slide-content h1 {
+            font-size: 3em;
+        }
+
+        .remark-slide-content h2 {
+            font-size: 2em;
+        }
+
+        .remark-slide-content h3 {
+            font-size: 1.25em;
+        }
+
+        .footnote {
+            position: absolute;
+            bottom: 2em;
+        }
+
+        li p {
+            line-height: 1.25em;
+        }
+
+        .red {
+            color: #fa0000;
+        }
+        .gray {
+            color: #777;
+        }        
+
+        .large {
+            font-size: 2em;
+        }
+
+        a,
+        a>code {
+            color: rgb(249, 38, 114);
+            text-decoration: none;
+        }
+
+        code {
+            background: #e7e8e2;
+            border-radius: 5px;
+        }
+
+        .remark-code,
+        .remark-inline-code {
+            font-family: 'Fira Code';
+            font-weight: normal;
+            font-size: 13px;
+
+        }
+
+        .unix-cli,
+        .unix-cli-code {
+            font-family: 'Fira Code';
+            font-weight: normal;
+            font-size: 13px;
+            color: lime;
+            background-color: #373832;
+        }
+
+        .remark-code-line-highlighted {
+            background-color: #373832;
+        }
+
+        .pull-left {
+            float: left;
+            width: 47%;
+        }
+
+        .pull-right {
+            float: right;
+            width: 47%;
+        }
+
+        .pull-right~p {
+            clear: both;
+        }
+
+        #slideshow .slide .content code {
+            font-size: 0.8em;
+        }
+
+        #slideshow .slide .content pre code {
+            font-size: 0.9em;
+            padding: 15px;
+        }
+
+        .inverse {
+            background: #272822;
+            color: #777872;
+            text-shadow: 0 0 20px #333;
+        }
+
+        .inverse h1,
+        .inverse h2 {
+            color: #f3f3f3;
+            line-height: 0.8em;
+        }
+
+        /* Slide-specific styling */
+        #slide-inverse .footnote {
+            bottom: 12px;
+            left: 20px;
+        }
+
+        #slide-how .slides {
+            font-size: 0.9em;
+            position: absolute;
+            top: 151px;
+            right: 140px;
+        }
+
+        #slide-how .slides h3 {
+            margin-top: 0.2em;
+        }
+
+        #slide-how .slides .first,
+        #slide-how .slides .second {
+            padding: 1px 20px;
+            height: 90px;
+            width: 120px;
+            -moz-box-shadow: 0 0 10px #777;
+            -webkit-box-shadow: 0 0 10px #777;
+            box-shadow: 0 0 10px #777;
+        }
+
+        #slide-how .slides .first {
+            background: #fff;
+            position: absolute;
+            top: 20%;
+            left: 20%;
+            z-index: 1;
+        }
+
+        #slide-how .slides .second {
+            position: relative;
+            background: #fff;
+            z-index: 0;
+        }
+
+        /* Two-column layout */
+        .left-column {
+            color: #777;
+            width: 20%;
+            height: 92%;
+            float: left;
+        }
+
+        .left-columnB {
+            color: #000;
+            width: 20%;
+            height: 92%;
+            float: left;
+        }
+
+        .left-column h2:last-of-type,
+        .left-column h3:last-child {
+            color: #000;
+        }
+
+        .right-column {
+            width: 75%;
+            float: right;
+            padding-top: 1em;
+        }
+
+        .cols {
+            display: flex;
+        }
+
+        .fifty {
+            flex: 50%;
+        }
+        .sixty {
+            flex: 60%;
+        }
+        .forty {
+            flex: 40%;
+        }
+        .seventy {
+            flex: 70%;
+        }
+
+        .thirty {
+            flex: 30%;
+        }
+
+        .eighty {
+            flex: 80%;
+        }
+
+        .twenty {
+            flex: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <textarea id="source">
+name: inverse
+layout: true
+class: center, middle, inverse
+
+---
+# Jupyter Notebook Tips
+
+
+---
+layout: false
+
+# Jupyter Notebook Tips
+
+## 1. Tab is your friend
+## 2. Magic commands are magical
+## 3. Master the keyboard shortcuts
+## 4. Help is closer than you think
+## 5. Other important tips
+
+---
+# Tab is your friend
+
+
+
+.cols[
+
+.seventy[
+- Tab completion is a powerful feature in Jupyter Notebook
+- Complete variable names, functions, and methods
+- Explore the structure of objects
+- Discover methods and attributes of objects
+
+]
+
+.thirty[
+<img src="https://i.imgflip.com/8kdvb3.jpg"
+    alt="image" width="300" height="auto">
+]
+]
+<img src="https://github.com/EEOB-BioData/EEOB-BCB-546/assets/4835524/93c6d10b-ca47-47bc-a291-df352a5acd80"
+    alt="image" width="750" height="auto">
+
+
+---
+# Magic commands are magical
+
+
+
+.cols[
+
+.seventy[
+* Magic commands in Jupyter Notebook are special commands prefixed with either:
+  -  `%` for line magics
+  - `%%` for cell magics.
+
+* They provide convenient shortcuts and additional functionality for interacting with the notebook environment and executing code.
+
+
+]
+.thirty[
+<img src="https://i.imgflip.com/8kgzhi.jpg" alt="image" width="300" height="auto">
+]
+]
+
+
+<img src="https://github.com/EEOB-BioData/EEOB-BCB-546/assets/4835524/3b27f17c-40bb-4cb2-b523-4b644e265cd6"
+    alt="image" width="750" height="auto">
+    
+---
+# Master the keyboard shortcuts
+
+Here are my favorite keyboard shortcuts in Jupyter Notebook (you can find more in the `Help` menu, press `H` to see all shortcuts):
+
+1. `Ctrl + Enter` and `Alt + Enter`: execute the current cell without/with moving to next cell.
+
+2. `Esc + A` / `Esc + B`:  add new cells `A`bove or `B`elow. You can change the block type by pressing `M` for Markdown or `Y` for code.
+
+4. `Esc + D, D` (pressing `D` twice): Deleting cells swiftly.
+
+5. `Ctrl + /`: Commenting and uncommenting selected lines.
+
+Did you know, you can also edit the shortcuts the way you like?
+
+
+---
+# Getting help is easier than you think
+
+1. add `?` or `??` after a function or method to get its documentation.
+2. You can access "docstrings" by pressing `Shift + Tab` twice.
+3. Standard help for python are also available in Jupyter Notebook like `help()` or `dir()`.
+
+<img src="https://github.com/EEOB-BioData/EEOB-BCB-546/assets/4835524/3554ee0b-b23d-4bf7-9b5b-0bb596a57acc"
+    alt="image" width="600" height="auto">
+---
+# Other important tips
+
+Jupyter Notebook has a lot of features that can make your life easier. Here are some of them:
+
+1. Markdown: You can use markdown to format your text, add images, links, and more. All markdown formatting is supported and are rendered as HTML.
+2. Exporting: You can export your notebook as an HTML, PDF, or even a slide show. you can also export it as a Python script.
+3. Shell commands: You can run shell commands in Jupyter Notebook by prefixing the command with `!`.
+4. Widgets: Jupyter Notebook supports interactive widgets that can be used to create interactive visualizations and dashboards.
+5. Extensions: You can install extensions to add additional functionality to Jupyter Notebook.
+
+
+
+---
+
+name: last-page
+template: inverse
+## That's all folks (for now)!
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+    <script>
+        var hljs = remark.highlighter.engine;
+    </script>
+    <script src="https://joshbode.github.io/remark/terminal.language.js"></script>
+    <script>
+        var slideshow = remark.create({
+            highlightStyle: 'monokai',
+            highlightLanguage: 'remark',
+            highlightLines: true
+        });
+        // extract the embedded styling from ansi spans
+        var highlighted = document.querySelectorAll("code.terminal span.hljs-ansi");
+        Array.prototype.forEach.call(highlighted, function (next) {
+            next.insertAdjacentHTML("beforebegin", next.textContent);
+            next.parentNode.removeChild(next);
+        });
+    </script>
+    </body>
+    
+    </html>
+
+
