@@ -29,9 +29,10 @@ You will also need to access the files associated with the course textbook _Bioi
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move
 the previous week to the end and label it with the appropriate number -->
 
-<u>March 27-29</u>
-* Mar 27: Introduction to python (part 2): [[website]](https://eeob-biodata.github.io/BCB546X-python), [[slides]](slides/lecture_22-and-27Mar-AS_slides.html), Jupyter Tips and Tricks [[slides]](slides/lecture_27Mar-AS_juptyer-tips.html)
-* Mar 29: Pandas Dataframes [[website]](https://eeob-biodata.github.io/BCB546X-python/03-starting-with-data/), [[slides]](slides/lecture_29Mar-AS_slides.html), [[in-class exercise]](https://github.com/EEOB-BioData/BCB546_Spring2024/blob/main/course-files/python/01-introduction-to-pandas.md)
+<u> April 3-5</u>
+* Apr 5: Pandas (part 2) [[website]](https://eeob-biodata.github.io/BCB546X-python/04-more-dataframes/), in-class [[exercise 1]](https://github.com/EEOB-BioData/BCB546_Spring2024/blob/main/course-files/python/01-introduction-to-pandas.md), [[exercise 2]](https://github.com/EEOB-BioData/BCB546_Spring2024/blob/main/course-files/python/02-pandas-for-manipulating-gff3.md)
+* Apr 7: Data Visualization with Seaborn [[website]](https://eeob-biodata.github.io/BCB546X-python/05-seaborn-viz/)
+
 
 ### Previous Weeks
 
@@ -74,6 +75,12 @@ the previous week to the end and label it with the appropriate number -->
 
 * Mar 20: Data Management Plans and LaTeX [[slides]](slides/DMP_slides.pdf)
 * Mar 22: Introduction to python: [[website]](https://eeob-biodata.github.io/BCB546X-python)[[slides]](slides/lecture_22-and-27Mar-AS_slides.html), Setting up Jupyter on Nova, [[slides]](slides/lecture_22Mar-AS_setup.html)
+
+
+<u>March 27-29</u>
+* Mar 27: Introduction to python (part 2): [[website]](https://eeob-biodata.github.io/BCB546X-python), [[slides]](slides/lecture_22-and-27Mar-AS_slides.html), Jupyter Tips and Tricks [[slides]](slides/lecture_27Mar-AS_juptyer-tips.html)
+* Mar 29: Pandas Dataframes [[website]](https://eeob-biodata.github.io/BCB546X-python/03-starting-with-data/), [[slides]](slides/lecture_29Mar-AS_slides.html), in-class [[exercise 1]](https://github.com/EEOB-BioData/BCB546_Spring2024/blob/main/course-files/python/01-introduction-to-pandas.md)
+
 
 <!--
 
