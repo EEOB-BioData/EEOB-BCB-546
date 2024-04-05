@@ -31,7 +31,7 @@ the previous week to the end and label it with the appropriate number -->
 
 <u> April 3-5</u>
 * Apr 5: Pandas (part 2) [[website]](https://eeob-biodata.github.io/BCB546X-python/04-more-dataframes/), in-class [[exercise 1]](https://github.com/EEOB-BioData/BCB546_Spring2024/blob/main/course-files/python/01-introduction-to-pandas.md), [[exercise 2]](https://github.com/EEOB-BioData/BCB546_Spring2024/blob/main/course-files/python/02-pandas-for-manipulating-gff3.md)
-* Apr 7: Data Visualization with Seaborn [[website]](https://eeob-biodata.github.io/BCB546X-python/05-seaborn-viz/)
+* Apr 7: Data Visualization with Seaborn [[website]](https://eeob-biodata.github.io/BCB546X-python/05-seaborn-viz/), [[slides]](slides/lecture_5Apr-AS_slides.html), in-class [[exercise 1]](https://github.com/EEOB-BioData/BCB546_Spring2024/blob/main/course-files/python/03-introduction-to-seaborn.md).
 
 
 ### Previous Weeks

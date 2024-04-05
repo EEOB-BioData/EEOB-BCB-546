@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!--change keywords, description-->
+    <meta name="keywords" content="matplotlib,  data visualization, pandas" />
+    <meta name="description" content="Python for Data analysis (part4)" />
+    <link href="https://github.com/EEOB-BioData/BCB546_Spring2024/assets/4835524/69467d59-5524-47b6-b377-6b819e32ac56"
+        rel="icon" type="image/png" />
+    <!--change title-->
+    <title>Data Visualization (Lecture 4)</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Fira+Mono&display=swap);
+        @import url(https://fonts.googleapis.com/css2?family=Fira+Sans);
+        @import url(https://fonts.googleapis.com/css?family=Droid+Serif);
+        @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+        @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+        body {
+            font-family: 'Fira Sans';
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Yanone Kaffeesatz';
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+        .white {
+            color: white;
+        }
+
+        .remark-slide-content h1 {
+            font-size: 3em;
+        }
+
+        .remark-slide-content h2 {
+            font-size: 2em;
+        }
+
+        .remark-slide-content h3 {
+            font-size: 1.25em;
+        }
+
+        .footnote {
+            position: absolute;
+            bottom: 2em;
+        }
+
+        li p {
+            line-height: 1.25em;
+        }
+
+        .red {
+            color: #fa0000;
+        }
+
+        .gray {
+            color: #777;
+        }
+
+        .large {
+            font-size: 2em;
+        }
+        .small {
+            font-size: 1em;
+        }
+
+        a,
+        a>code {
+            color: rgb(249, 38, 114);
+            text-decoration: none;
+        }
+
+        code {
+            background: #e7e8e2;
+            border-radius: 5px;
+        }
+
+        .remark-code,
+        .remark-inline-code {
+            font-family: 'Fira Code';
+            font-weight: normal;
+            font-size: 13px;
+
+        }
+
+        .unix-cli,
+        .unix-cli-code {
+            font-family: 'Fira Code';
+            font-weight: normal;
+            font-size: 13px;
+            color: lime;
+            background-color: #373832;
+        }
+
+        .remark-code-line-highlighted {
+            background-color: #373832;
+        }
+
+        .pull-left {
+            float: left;
+            width: 47%;
+        }
+
+        .pull-right {
+            float: right;
+            width: 47%;
+        }
+
+        .pull-right~p {
+            clear: both;
+        }
+
+        #slideshow .slide .content code {
+            font-size: 0.8em;
+        }
+
+        #slideshow .slide .content pre code {
+            font-size: 0.9em;
+            padding: 15px;
+        }
+
+        .inverse {
+            background: #272822;
+            color: #777872;
+            text-shadow: 0 0 20px #333;
+        }
+
+        .inverse h1,
+        .inverse h2 {
+            color: #f3f3f3;
+            line-height: 0.8em;
+        }
+
+        /* Slide-specific styling */
+        #slide-inverse .footnote {
+            bottom: 12px;
+            left: 20px;
+        }
+
+        #slide-how .slides {
+            font-size: 0.9em;
+            position: absolute;
+            top: 151px;
+            right: 140px;
+        }
+
+        #slide-how .slides h3 {
+            margin-top: 0.2em;
+        }
+
+        #slide-how .slides .first,
+        #slide-how .slides .second {
+            padding: 1px 20px;
+            height: 90px;
+            width: 120px;
+            -moz-box-shadow: 0 0 10px #777;
+            -webkit-box-shadow: 0 0 10px #777;
+            box-shadow: 0 0 10px #777;
+        }
+
+        #slide-how .slides .first {
+            background: #fff;
+            position: absolute;
+            top: 20%;
+            left: 20%;
+            z-index: 1;
+        }
+
+        #slide-how .slides .second {
+            position: relative;
+            background: #fff;
+            z-index: 0;
+        }
+
+        /* Two-column layout */
+        .left-column {
+            color: #777;
+            width: 20%;
+            height: 92%;
+            float: left;
+        }
+
+        .left-columnB {
+            color: #000;
+            width: 20%;
+            height: 92%;
+            float: left;
+        }
+
+        .left-column h2:last-of-type,
+        .left-column h3:last-child {
+            color: #000;
+        }
+
+        .right-column {
+            width: 75%;
+            float: right;
+            padding-top: 1em;
+        }
+
+        .cols {
+            display: flex;
+        }
+
+        .fifty {
+            flex: 50%;
+        }
+
+        .sixty {
+            flex: 60%;
+        }
+
+        .forty {
+            flex: 40%;
+        }
+
+        .seventy {
+            flex: 70%;
+        }
+
+        .thirty {
+            flex: 30%;
+        }
+
+        .eighty {
+            flex: 80%;
+        }
+
+        .twenty {
+            flex: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <textarea id="source">
+name: inverse
+layout: true
+class: center, middle, inverse
+
+---
+# Python for Data visualization
+## Lecture 4
+
+
+---
+layout: false
+
+## Plotting and Visualization
+
+* Visualization is a key component of data analysis, allows you to explore data and communicate results
+* Matplotlib is the most popular Python library for creating static, animated, and interactive visualizations in Python
+* Pandas is built on top of Matplotlib and provides a high-level interface for plotting
+* Seaborn is a Python data visualization library based on Matplotlib and provide same functionality as Matplotlib but with more attractive and informative statistical graphics
+
+
+---
+## Matplotlib primer
+
+Matplotlib is a plotting library for the Python and its numerical mathematics extension, NumPy
+
+```python
+import matplotlib.pyplot as plt
+```
+The `pyplot` module provides a MATLAB-like interface for making plots
+
+a simple plot example:
+
+```python
+mydata = range(1, 10) # create a list of numbers from 1 to 9
+plt.plot(mydata) # plot the data
+```
+
+.cols[
+.sixty[
+
+<img src="https://github.com/EEOB-BioData/BCB546_Spring2024/assets/4835524/7639c971-697c-4751-a50e-85817c509ec7"
+    alt="image" width="300" height="auto">
+]
+.fourty[
+.small[though pandas's built-in plotting functions will deal with many of the mundane details of making plots,
+Matplotlib goes beyond, for advanced plotting with its powerful and flexible functions.]
+]
+]
+
+---
+
+## Basic plotting with Matplotlib
+
+### Line plot
+
+.cols[
+.sixty[
+
+```python
+import matplotlib.pyplot as plt
+```
+
+```python
+x = [1, 2, 3, 4, 5]
+y = [2, 4, 6, 8, 10]
+
+plt.plot(x, y)
+plt.xlabel('X-axis')
+plt.ylabel('Y-axis')
+plt.title('Simple Line Plot')
+plt.show()
+```
+]
+.white[text] 
+.fourty[
+<img src="https://github.com/EEOB-BioData/BCB546_Spring2024/assets/4835524/a95011ae-1c06-4f4c-8dd9-9b9c2d54fcca" alt="image" width="400" height="auto">
+]
+]
+---
+## Basic plotting with Matplotlib
+
+### Scatter plot
+
+.cols[
+.sixty[
+```python
+import matplotlib.pyplot as plt
+```
+
+```python
+x = [1, 2, 3, 4, 5]
+y = [2, 4, 6, 8, 10]
+
+plt.scatter(x, y, color='red', marker='o')
+plt.xlabel('X-axis')
+plt.ylabel('Y-axis')
+plt.title('Scatter Plot')
+plt.show()
+```
+]
+.white[text]
+.fourty[
+<img src="https://github.com/EEOB-BioData/BCB546_Spring2024/assets/4835524/d837540e-a7b3-418e-9dc6-420379e2859f"
+    alt="image" width="400" height="auto">
+]
+]
+---
+## Basic plotting with Matplotlib
+
+### Bar plot
+
+.cols[
+.sixty[
+```python
+import matplotlib.pyplot as plt
+```
+
+```python
+x = ['A', 'B', 'C', 'D', 'E']
+y = [10, 20, 15, 25, 30]
+
+plt.bar(x, y, color='green')
+plt.xlabel('Categories')
+plt.ylabel('Values')
+plt.title('Bar Plot')
+plt.show()
+```
+]
+.white[text]
+.fourty[
+<img src="https://github.com/EEOB-BioData/BCB546_Spring2024/assets/4835524/5cfe9848-6b0a-4983-8437-ca5b9418baee"
+    alt="image" width="400" height="auto">
+]
+]
+---
+## Basic plotting with Matplotlib
+
+### Histogram 
+
+.cols[
+.sixty[
+
+```python
+import matplotlib.pyplot as plt
+import random
+```
+
+```python
+data = random.sample(range(1, 5000), 500)
+plt.hist(data, bins=30)
+plt.xlabel('Values')
+plt.ylabel('Frequency')
+plt.title('Histogram')
+plt.show()
+```
+]
+.white[text]
+.fourty[
+<img src="https://github.com/EEOB-BioData/BCB546_Spring2024/assets/4835524/13b97b80-0392-4f8a-8422-963d9dbc2dc7"
+    alt="image" width="400" height="auto">
+]
+]
+---
+## Basic plotting with Matplotlib
+
+### Pie chart
+
+.cols[
+.sixty[
+```python
+import matplotlib.pyplot as plt
+```
+
+```python
+sizes = [15, 30, 45, 10]
+labels = ['A', 'B', 'C', 'D']
+plt.pie(sizes,
+        labels=labels,
+        autopct='%1.1f%%', 
+        startangle=140)
+plt.axis('equal') 
+plt.title('Pie Chart')
+plt.show()
+```
+]
+.white[text]
+.fourty[
+<img src="https://github.com/EEOB-BioData/BCB546_Spring2024/assets/4835524/28b5c031-7dee-4e04-a4f4-239b670afe64"
+    alt="image" width="400" height="auto">
+]
+]
+---
+
+## And so many more!
+
+See [plot types](https://matplotlib.org/stable/plot_types/index.html) in Matplotlib documentation
+
+.cols[
+.fifty[
+| Plot Command | Plot Name |
+|-----------------------------|---------------------------|
+| `plt.plot()` | Line Plot |
+| `plt.scatter()` | Scatter Plot |
+| `plt.bar()` | Bar Plot |
+| `plt.barh()` | Horizontal Bar Plot |
+| `plt.hist()` | Histogram |
+| `plt.boxplot()` | Box Plot |
+| `plt.violinplot()` | Violin Plot |
+| `plt.pie()` | Pie Chart |
+| `plt.polar()` | Polar Plot |
+| `plt.contour()` | Contour Plot |
+| `plt.contourf()` | Filled Contour Plot |
+| `plt.imshow()` | Image Plot |
+| `plt.hexbin()` | Hexbin Plot |
+| `plt.stem()` | Stem Plot |
+]
+.fifty[
+| Plot Command | Plot Name |
+|-----------------------------|---------------------------|
+| `plt.quiver()` | Quiver Plot |
+| `plt.streamplot()` | Streamplot |
+| `plt.errorbar()` | Errorbar Plot |
+| `plt.fill_between()` | Fill Between Plot |
+| `plt.step()` | Step Plot |
+| `plt.scatter3D()` | 3D Scatter Plot |
+| `plt.plot3D()` | 3D Line Plot |
+| `plt.bar3d()` | 3D Bar Plot |
+| `plt.contour3D()` | 3D Contour Plot |
+| `plt.triplot()` | Triangular Plot |
+| `plt.tricontour()` | Triangular Contour Plot |
+| `plt.tricontourf()` | Filled Triangular Contour |
+| `plt.spy()` | Spy Plot |
+| `plt.broken_barh()` | Broken Bar Plot |
+| `plt.matshow()` | Matrix Plot |
+]
+]
+
+PS: run `help(plt.command)` to see more details about each plot command
+---
+
+
+
+## Figures and subplots
+
+plots in Matplotlib reside within a `Figure` object. You can create a new figure with `plt.figure()`, and modify its properties
+
+.cols[
+.sixty[
+```python
+fig = plt.figure(figsize=(6, 4),
+                 facecolor='lightskyblue',
+                 layout='constrained'
+                )
+fig.suptitle('A nice Matplotlib Figure')
+ax = fig.add_subplot()
+ax.set_title('Axes',
+             loc='left', 
+             fontstyle='oblique',
+             fontsize='medium'
+            )
+```
+]
+.white[text]
+.fourty[
+<img src="https://github.com/EEOB-BioData/BCB546_Spring2024/assets/4835524/e5c8d757-fc9c-45c8-a2d9-0d2987d59319"
+    alt="image" width="400" height="auto">
+]
+]
+
+PS: run `help(plt.figure)` to see all the available options
+---
+
+## Figures and subplots
+
+To add subplots to a figure, you can use `add_subplot()`
+
+so, for an empty matplotlib figure with three subplots:
+
+.cols[
+.sixty[
+
+```python
+fig = plt.figure()
+ax1 = fig.add_subplot(2, 2, 1)
+ax2 = fig.add_subplot(2, 2, 2)
+ax3 = fig.add_subplot(2, 2, 3)
+```
+]
+.fourty[
+<img src="https://github.com/EEOB-BioData/BCB546_Spring2024/assets/4835524/3285c2f0-ea66-47a7-8cf5-6b8834ca1260" alt="image" width="400" height="auto">
+]
+]
+
+like `subplot` there is `subplots` to create multiple subplots at once:
+
+```python
+fig, axs = plt.subplots(2, 2, layout='constrained')
+```
+---
+
+## Testing subplots
+
+Let's first create 4 simple datasets:
+
+```python
+mydata1 = random.sample(range(1, 50), 10) # 10 random numbers between 1-50
+mydata2 = random.sample(range(1, 5000), 500) # 500 random numbers between 1-5000
+mydata3 = range(30) # numbers 0 to 29, ordered
+# same as mydata3 but multiplied with random numbers 0 to 1 range
+mydata4 = []
+for num in mydata3:
+    mydata4.append(num * random.random())
+```
+
+And then plot them in the subplots:
+
+.cols[
+.sixty[
+
+```python
+fig = plt.figure()
+ax1 = fig.add_subplot(2, 2, 1)
+ax2 = fig.add_subplot(2, 2, 2)
+ax3 = fig.add_subplot(2, 2, 3)
+ax1.plot(mydata1, linestyle="dashed")
+ax2.hist(mydata2, bins = 50, alpha=0.5)
+ax3.scatter(mydata3, mydata4)
+```
+]
+.fourty[
+<img src="https://github.com/EEOB-BioData/BCB546_Spring2024/assets/4835524/e7a12979-f28d-4119-9fb4-22e5a322d3ee"
+    alt="image" width="400" height="auto">
+]
+]
+
+---
+
+## Matplotlib Pros and Cons
+
+.cols[
+.fifty[
+
+### Cons
+
+* Steep Learning Curve
+* Verbose Syntax
+* Limited High-Level Plotting
+* Default limited aesthetics
+* Limited statistical plotting
+]
+
+.fifty[
+
+### Pros
+
+* Highly customizable
+* Extensive documentation
+* Active community
+* Wide range of plot types
+* Integration with Pandas
+]
+]
+
+---
+
+## Seaborn
+
+
+### What is Seaborn?
+
+* Seaborn is a Python data visualization library based on Matplotlib.
+* It provides a high-level interface for drawing attractive statistical graphics.
+* Seaborn is built on top of Matplotlib and integrates closely with Pandas data structures.
+
+### Key Features of Seaborn
+
+* Statistical Visualization: Seaborn simplifies the process of creating statistical plots such as histograms, box plots,
+and scatter plots.
+
+* Integration with Pandas: Seaborn seamlessly works with Pandas DataFrames, making it easy to visualize data directly from
+data structures.
+
+* Beautiful Aesthetics: Seaborn comes with beautiful default styles and color palettes, enhancing the visual appeal of
+plots.
+
+---
+
+## Documentation
+
+
+Great documentation is available for both Matplotlib and Seaborn. Seaborn particularly has a very detailed and well-organized documentation.
+
+* [Matplotlib Documentation](https://matplotlib.org/stable/contents.html)
+* [Seaborn Documentation](https://seaborn.pydata.org/)
+
+<center><img src="https://github.com/EEOB-BioData/BCB546_Spring2024/assets/4835524/75e58e52-4129-46b9-9bd4-108522218eca" alt="image" width="450" height="auto"></center>
+
+
+---
+
+## Seaborn getting Started
+
+To use Seaborn, you need to install it first:
+
+```python
+conda install seaborn
+```
+ or
+```python
+pip install seaborn
+```
+
+Then, you can import it in your Python script:
+
+```python
+import seaborn as sns
+```
+
+---
+
+## Test datasets
+
+Seaborn comes with built-in datasets that you can use to test the library. To check the available datasets, you can use:
+
+```python
+sns.get_dataset_names()
+```
+
+To load a dataset, you can use:
+
+```python
+df = sns.load_dataset('iris')
+```
+
+<img src="https://github.com/EEOB-BioData/BCB546_Spring2024/assets/4835524/8b9cfb4b-5b4b-461b-aa28-ce525b919f95" alt="image" width="400" height="auto">
+
+---
+
+## Seaborn plotting
+
+Example scatter plot with Seaborn:
+
+```python
+df = sns.load_dataset('iris')
+sns.scatterplot(x='sepal_length', y='sepal_width', data=df)
+```
+
+<img src="https://github.com/EEOB-BioData/BCB546_Spring2024/assets/4835524/e291ed28-f0f6-4018-96cd-7733dd0bcab2" alt="image" width="600" height="auto">
+
+---
+
+
+## Seaborn plotting
+
+Example box plot with Seaborn:
+
+```python
+df = sns.load_dataset('iris')
+sns.boxplot(x='species', y='sepal_length', data=df)
+```
+
+<img src="https://github.com/EEOB-BioData/BCB546_Spring2024/assets/4835524/1964ab43-c0e1-43d7-9c86-3def6bb037b4" alt="image" width="600" height="auto">
+
+---
+
+## Seaborn plotting
+
+Example pair plot with Seaborn:
+.cols[
+.sixty[
+```python
+df = sns.load_dataset('iris')
+sns.pairplot(df, hue='species')
+```
+]
+.fourty[
+<img src="https://github.com/EEOB-BioData/BCB546_Spring2024/assets/4835524/9fac17f9-15bb-494a-b788-dc0dc5010c07" alt="image" width="500" height="auto">
+]
+]
+
+---
+
+## Seaborn Various Plots
+
+
+.cols[
+.fifty[
+### Relational Plots
+
+|  |  |
+|--------------------------------|-----------------------|
+| Scatter Plot | `sns.scatterplot()` |
+| Line Plot | `sns.lineplot()` |
+| Joint Plot | `sns.jointplot()` |
+| Pair Plot | `sns.pairplot()` |
+| Joint Kernel Density Estimate | `sns.jointplot(kind='kde')` |
+
+
+### Categorical Plots
+
+|  |  |
+|--------------------------------|-----------------------|
+| Bar Plot | `sns.barplot()` |
+| Count Plot | `sns.countplot()` |
+| Point Plot | `sns.pointplot()` |
+| Box Plot | `sns.boxplot()` |
+| Violin Plot | `sns.violinplot()` |
+| Swarm Plot | `sns.swarmplot()` |
+| Categorical Scatter Plot | `sns.catplot(kind='strip')` |
+
+]
+
+.fifty[
+### Distribution Plots 
+
+|  |  |
+|--------------------------------|-----------------------|
+| Histogram | `sns.histplot(kind='hist')` |
+| Kernel Density Estimate (KDE) | `sns.kdeplot()` |
+| Rug Plot | `sns.rugplot()` |
+
+### Matrix Plots
+
+|  |  |
+|--------------------------------|-----------------------|
+| Heatmap | `sns.heatmap()` |
+| Clustermap | `sns.clustermap()` |
+
+
+### Regression Plots
+
+|  |  |
+|--------------------------------|-----------------------|
+| Linear Regression Plot | `sns.regplot()` |
+| Residual Plot | `sns.residplot()` |
+| Lowess Smoothing Plot | `sns.lmplot()` |
+
+
+]
+]
+---
+## Seaborn Various Plots
+
+
+### Time Series Plots
+
+|  |  |
+|--------------------------------|-----------------------|
+| Time Series Plot | `sns.lineplot()` |
+| Time Series Heatmap | `sns.heatmap()` |
+
+
+### Multi-Plot Grids
+
+|  |  |
+|--------------------------------|-----------------------|
+| FacetGrid | `sns.FacetGrid()` |
+| PairGrid | `sns.PairGrid()` |
+| JointGrid | `sns.JointGrid()` |
+
+
+### Color Palettes
+
+|  |  |
+|--------------------------------|-----------------------|
+| Color Palette | `sns.color_palette()` |
+| Color Brewer Palettes | `sns.color_palette('colorbrewer')` |
+| Cubehelix Palettes | `sns.color_palette('cubehelix')` |
+| Xkcd Palettes | `sns.color_palette('xkcd')` |
+
+
+
+---
+## Seaborn Various Plots
+
+
+### Plot Aesthetics
+
+|  |  |
+|--------------------------------|-----------------------|
+| Set Theme | `sns.set_theme()` |
+| Set Context | `sns.set_context()` |
+| Set Style | `sns.set_style()` |
+| Set Color Codes | `sns.set_color_codes()` |
+| Set Palette | `sns.set_palette()` |
+| Set Axis Labels | `sns.set_axis_labels()` |
+| Set Title | `sns.set_title()` |
+| Set Legend | `sns.set_legend()` |
+| Set Ticks | `sns.set_ticks()` |
+| Set Grid | `sns.set_grid()` |
+| Set Spines | `sns.set_spines()` |
+| Set Background | `sns.set_background()` |
+
+
+PS: run `help(sns.command)` to see more details about each plot command
+
+
+
+
+---
+
+name: last-page
+template: inverse
+## That's all folks (for now)!
+
+</textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>
+    var hljs = remark.highlighter.engine;
+</script>
+<script src="https://joshbode.github.io/remark/terminal.language.js"></script>
+<script>
+    var slideshow = remark.create({
+        highlightStyle: 'monokai',
+        highlightLanguage: 'remark',
+        highlightLines: true
+    });
+    // extract the embedded styling from ansi spans
+    var highlighted = document.querySelectorAll("code.terminal span.hljs-ansi");
+    Array.prototype.forEach.call(highlighted, function (next) {
+        next.insertAdjacentHTML("beforebegin", next.textContent);
+        next.parentNode.removeChild(next);
+    });
+</script>
+</body>
+
+</html>
