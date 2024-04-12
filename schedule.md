@@ -31,7 +31,7 @@ the previous week to the end and label it with the appropriate number -->
 
 <u> April 10-13</u>
 * Apr 10: Data Visualization with Seaborn (part 2) [[website]](https://eeob-biodata.github.io/BCB546X-python/05-seaborn-viz), in-class exercise, plotting [[DESeq2]](https://github.com/EEOB-BioData/BCB546_Spring2024/blob/main/course-files/python/04A-seaborn-deseq-plotting.ipynb), [[GFF3]](https://github.com/EEOB-BioData/BCB546_Spring2024/blob/main/course-files/python/04B-seaborn-gff3-plotting.ipynb), and [[TSV]](https://github.com/EEOB-BioData/BCB546_Spring2024/blob/main/course-files/python/04C-seaborn-tsv-plotting.ipynb) datasets.
-* Apr 13: Introduction to Biopython [[website]](https://eeob-biodata.github.io/BCB546X-python/06-biopython/), [[slides]]() (coming soon).
+* Apr 13: Introduction to Biopython [[website]](https://eeob-biodata.github.io/BCB546X-python/06-biopython/), [[in-class]](https://github.com/EEOB-BioData/BCB546_Spring2024/blob/main/course-files/python/05-biopython-hands-on.ipynb).
 
 
 ### Previous Weeks
