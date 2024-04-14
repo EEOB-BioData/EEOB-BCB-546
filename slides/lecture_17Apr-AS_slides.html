@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!--change keywords, description-->
+    <meta name="keywords" content="biopython,  Cheatsheet, python" />
+    <meta name="description" content="Biopython Cheatsheet" />
+    <link href="https://github.com/EEOB-BioData/BCB546_Spring2024/assets/4835524/69467d59-5524-47b6-b377-6b819e32ac56"
+        rel="icon" type="image/png" />
+    <!--change title-->
+    <title>Biopython Cheatsheet (Lecture 6)</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Fira+Mono&display=swap);
+        @import url(https://fonts.googleapis.com/css2?family=Fira+Sans);
+        @import url(https://fonts.googleapis.com/css?family=Droid+Serif);
+        @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+        @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+        body {
+            font-family: 'Fira Sans';
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Yanone Kaffeesatz';
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+        .white {
+            color: white;
+        }
+
+        .remark-slide-content h1 {
+            font-size: 3em;
+        }
+
+        .remark-slide-content h2 {
+            font-size: 2em;
+        }
+
+        .remark-slide-content h3 {
+            font-size: 1.25em;
+        }
+
+        .footnote {
+            position: absolute;
+            bottom: 2em;
+        }
+
+        li p {
+            line-height: 1.25em;
+        }
+
+        .red {
+            color: #fa0000;
+        }
+
+        .gray {
+            color: #777;
+        }
+
+        .large {
+            font-size: 2em;
+        }
+        .small {
+            font-size: 1em;
+        }
+
+        a,
+        a>code {
+            color: rgb(249, 38, 114);
+            text-decoration: none;
+        }
+
+        code {
+            background: #e7e8e2;
+            border-radius: 5px;
+        }
+
+        .remark-code,
+        .remark-inline-code {
+            font-family: 'Fira Code';
+            font-weight: normal;
+            font-size: 13px;
+
+        }
+
+        .unix-cli,
+        .unix-cli-code {
+            font-family: 'Fira Code';
+            font-weight: normal;
+            font-size: 13px;
+            color: lime;
+            background-color: #373832;
+        }
+
+        .remark-code-line-highlighted {
+            background-color: #373832;
+        }
+
+        .pull-left {
+            float: left;
+            width: 47%;
+        }
+
+        .pull-right {
+            float: right;
+            width: 47%;
+        }
+
+        .pull-right~p {
+            clear: both;
+        }
+
+        #slideshow .slide .content code {
+            font-size: 0.8em;
+        }
+
+        #slideshow .slide .content pre code {
+            font-size: 0.9em;
+            padding: 15px;
+        }
+
+        .inverse {
+            background: #272822;
+            color: #777872;
+            text-shadow: 0 0 20px #333;
+        }
+
+        .inverse h1,
+        .inverse h2 {
+            color: #f3f3f3;
+            line-height: 0.8em;
+        }
+
+        /* Slide-specific styling */
+        #slide-inverse .footnote {
+            bottom: 12px;
+            left: 20px;
+        }
+
+        #slide-how .slides {
+            font-size: 0.9em;
+            position: absolute;
+            top: 151px;
+            right: 140px;
+        }
+
+        #slide-how .slides h3 {
+            margin-top: 0.2em;
+        }
+
+        #slide-how .slides .first,
+        #slide-how .slides .second {
+            padding: 1px 20px;
+            height: 90px;
+            width: 120px;
+            -moz-box-shadow: 0 0 10px #777;
+            -webkit-box-shadow: 0 0 10px #777;
+            box-shadow: 0 0 10px #777;
+        }
+
+        #slide-how .slides .first {
+            background: #fff;
+            position: absolute;
+            top: 20%;
+            left: 20%;
+            z-index: 1;
+        }
+
+        #slide-how .slides .second {
+            position: relative;
+            background: #fff;
+            z-index: 0;
+        }
+
+        /* Two-column layout */
+        .left-column {
+            color: #777;
+            width: 20%;
+            height: 92%;
+            float: left;
+        }
+
+        .left-columnB {
+            color: #000;
+            width: 20%;
+            height: 92%;
+            float: left;
+        }
+
+        .left-column h2:last-of-type,
+        .left-column h3:last-child {
+            color: #000;
+        }
+
+        .right-column {
+            width: 75%;
+            float: right;
+            padding-top: 1em;
+        }
+
+        .cols {
+            display: flex;
+        }
+
+        .fifty {
+            flex: 50%;
+        }
+
+        .sixty {
+            flex: 60%;
+        }
+
+        .forty {
+            flex: 40%;
+        }
+
+        .seventy {
+            flex: 70%;
+        }
+
+        .thirty {
+            flex: 30%;
+        }
+
+        .eighty {
+            flex: 80%;
+        }
+
+        .twenty {
+            flex: 20%;
+        }
+    </style>
+</head>
+<body>
+<textarea id="source">
+name: inverse
+layout: true
+class: center, middle, inverse
+
+---
+# Biopython Cheatsheet
+## Lecture 6
+---
+layout: false
+
+## Sequence objects:
+
+```python
+from Bio.Seq import Seq
+my_seq = Seq("AGTACACTGGT")
+```
+
+### some methods available for `my_seq` object:
+
+```python
+my_seq.complement() # returns the complement of the sequence
+my_seq.reverse() # returns the reverse of the sequence
+my_seq.translate() # returns the translated sequence
+my_seq.find() # returns the index of the first occurrence of the subsequence
+my_seq.count() # returns the number of occurrences of the subsequence
+```
+
+Other methods include:
+
+`back_transcribe`, `complement_rna`, `count_overlap`, `defined`, 
+`defined_ranges`, `endswith`, `index`, `islower`, `isupper`, `join`,
+`lower`, `lstrip`, `removeprefix`, `removesuffix`, `replace`,
+`reverse_complement`, `reverse_complement_rna`, `rfind`, `rindex`,
+`rsplit`, `rstrip`, `search`, `split`, `startswith`, `strip`, 
+`transcribe`, `upper`
+---
+
+## Sequence objects:
+
+Each method may have additional arguments. For example, `translate()` method can take `table` and `to_stop` arguments. 
+
+On Jupyter notebook, you can use `?` to get more information about a method:
+
+
+```python
+my_seq.translate?
+```
+
+This will open a help window with more information about the method.
+
+```terminal
+Signature:
+my_seq.translate(
+table='Standard',
+stop_symbol='*',
+to_stop=False,
+cds=False,
+gap='-',
+)
+Docstring:
+Turn a nucleotide sequence into a protein sequence by creating a new sequence object.
+
+This method will translate DNA or RNA sequences. It should not
+be used on protein sequences as any result will be biologically
+meaningless.
+
+Arguments:
+```
+
+---
+
+## Bio.Data subpackage:
+
+The `Bio.Data` subpackage contains various data files used by Biopython. For example, the `CodonTable` module contains information about the standard genetic code and other genetic codes.
+
+```python
+from Bio.Data import CodonTable
+dir(CodonTable) # list available methods
+```
+
+And you can access the standard genetic code using:
+
+```python
+print(sorted(CodonTable.unambiguous_dna_by_name.keys()))
+```
+
+This will return a list of available genetic codes. 
+
+```terminal
+['Alternative Flatworm Mitochondrial', 'Alternative Yeast Nuclear', 'Archaeal', 'Ascidian
+Mitochondrial', 'Bacterial', 'Balanophoraceae Plastid', 'Blastocrithidia Nuclear', 'Blepharisma
+Macronuclear', 'Candidate Division SR1', 'Cephalodiscidae Mitochondrial', 'Chlorophycean 
+Mitochondrial', 'Ciliate Nuclear', 'Coelenterate Mitochondrial', 'Condylostoma Nuclear',
+'Dasycladacean Nuclear', 'Echinoderm Mitochondrial', 'Euplotid Nuclear', 'Flatworm 
+Mitochondrial', 'Gracilibacteria', 'Hexamita Nuclear', 'Invertebrate Mitochondrial',
+'Karyorelict Nuclear', 'Mesodinium Nuclear',  'Mold Mitochondrial', 'Mycoplasma', 'Pachysolen 
+tannophilus Nuclear', 'Peritrich Nuclear', 'Plant Plastid', 'Protozoan Mitochondrial', 
+'Pterobranchia Mitochondrial', 'SGC0', 'SGC1', 'SGC2', 'SGC3', 'SGC4', 'SGC5', 'SGC8', 'SGC9',
+'Scenedesmus obliquus Mitochondrial', 'Spiroplasma', 'Standard', 'Thraustochytrium 
+Mitochondrial', 'Trematode Mitochondrial', 'Vertebrate Mitochondrial', 'Yeast Mitochondrial']
+```
+
+---
+## Bio.Data subpackage:
+
+```python
+print(CodonTable.unambiguous_dna_by_name['Standard'])
+```
+
+This will return the standard genetic code:
+
+```terminal
+Table 1 Standard, SGC0
+
+  |  T      |  C      |  A      |  G      |
+--+---------+---------+---------+---------+--
+T | TTT F   | TCT S   | TAT Y   | TGT C   | T
+T | TTC F   | TCC S   | TAC Y   | TGC C   | C
+T | TTA L   | TCA S   | TAA Stop| TGA Stop| A
+T | TTG L(s)| TCG S   | TAG Stop| TGG W   | G
+--+---------+---------+---------+---------+--
+C | CTT L   | CCT P   | CAT H   | CGT R   | T
+C | CTC L   | CCC P   | CAC H   | CGC R   | C
+C | CTA L   | CCA P   | CAA Q   | CGA R   | A
+C | CTG L(s)| CCG P   | CAG Q   | CGG R   | G
+--+---------+---------+---------+---------+--
+A | ATT I   | ACT T   | AAT N   | AGT S   | T
+A | ATC I   | ACC T   | AAC N   | AGC S   | C
+A | ATA I   | ACA T   | AAA K   | AGA R   | A
+A | ATG M(s)| ACG T   | AAG K   | AGG R   | G
+--+---------+---------+---------+---------+--
+G | GTT V   | GCT A   | GAT D   | GGT G   | T
+G | GTC V   | GCC A   | GAC D   | GGC G   | C
+G | GTA V   | GCA A   | GAA E   | GGA G   | A
+G | GTG V   | GCG A   | GAG E   | GGG G   | G
+--+---------+---------+---------+---------+--
+```
+
+
+---
+
+
+## SeqRecord objects:
+.cols[
+
+.fifty[
+### Single sequence file
+
+```python
+from Bio import SeqIO
+
+# Read single fasta sequence
+record = SeqIO.read("input.fasta", "fasta")
+
+# Access sequence information
+print("ID:", record.id)
+print("Description:", record.description)
+print("Sequence:", record.seq)
+```
+]
+
+.white[text]
+
+.fifty[
+### Multiple sequence file
+
+```python
+from Bio import SeqIO
+
+# Parse multiple fasta sequences
+records = SeqIO.parse("inputs.fasta", "fasta")
+
+# Iterate over each sequence
+for record in records:
+    # Access sequence information
+    print("ID:", record.id)
+    print("Description:", record.description)
+    print("Sequence:", record.seq)
+    print("--------------")
+```
+]]
+
+`SeqIO` supports reading multiple sequence/file formats, including `fasta`, `genbank`, `embl`, `abi`, `fastq`, `fastq-sanger`, `fastq-solexa`, `fastq-illumina`, etc.
+See details here: [Biopython SeqIO](https://biopython.org/wiki/SeqIO). This allows you to convert between different file formats.
+
+```python
+mito_record = SeqIO.read("NC_006581.gbk", "genbank")
+print(mito_record.format("fasta"))
+```
+
+You can also write sequences to files using `SeqIO.write()` method
+
+
+---
+## All sub-packages
+
+Biopython is a large package with many subpackages. Here are the list of subpackages available in Biopython:
+
+
+| Subpackage              | Description                                                                                               |
+|-------------------------|-----------------------------------------------------------------------------------------------------------|
+| `Bio.Affy`                | Functions for working with Affymetrix GeneChip data                                                        |
+| `Bio.Align`               | Classes and functions for sequence alignment                                                               |
+| `Bio.AlignIO`             | Input/output functionality for sequence alignments                                                         |
+| `Bio.Application`         | Wrapper classes for command line applications                                                              |
+| `Bio.Blast`               | Tools for working with BLAST sequence similarity search results                                             |
+| `Bio.CAPS`                | Tools for analyzing cleaved amplified polymorphic sequence (CAPS) data                                      |
+| `Bio.Cluster`             | Functions for hierarchical clustering and cluster analysis                                                  |
+| `Bio.Compass`             | Tools for protein fold recognition and structure prediction                                                 |
+| `Bio.Data`                | Data packages containing various biological data                                                           |
+| `Bio.Emboss`              | Interface to the EMBOSS suite of bioinformatics tools                                                       |
+| `Bio.Entrez`              | Access to NCBI Entrez utilities for searching and retrieving biological data                                |
+| `Bio.ExPASy`              | Tools for accessing data from the ExPASy bioinformatics resource                                            |
+
+
+---
+
+## All sub-packages
+
+| Subpackage              | Description                                                                                               |
+|-------------------------|-----------------------------------------------------------------------------------------------------------|
+| `Bio.GenBank`             | Tools for parsing GenBank files and working with GenBank records                                            |
+| `Bio.Geo`                 | Tools for accessing and working with NCBI GEO (Gene Expression Omnibus) data                                |
+| `Bio.Graphics`            | Classes and functions for generating graphics related to biological data                                    |
+| `Bio.HMM`                 | Tools for working with hidden Markov models (HMMs)                                                          |
+| `Bio.KEGG`                | Tools for accessing and working with data from the KEGG (Kyoto Encyclopedia of Genes and Genomes) database |
+| `Bio.Medline`             | Tools for parsing and working with MEDLINE data                                                             |
+| `Bio.NMR`                 | Tools for working with Nuclear Magnetic Resonance (NMR) data                                                |
+| `Bio.Nexus`               | Tools for reading and writing Nexus file format for phylogenetic data                                        |
+| `Bio.PDB`                 | Tools for working with Protein Data Bank (PDB) files and protein structures                                  |
+| `Bio.Pathway`             | Tools for accessing and working with biological pathways                                                    |
+| `Bio.Phylo`               | Tools for working with phylogenetic trees and tree data                                                     |
+
+---
+
+## All sub-packages
+
+|Subpackage               |Description                                                                                               |
+|-------------------------|-----------------------------------------------------------------------------------------------------------|
+| `Bio.PopGen`              | Tools for population genetics analysis                                                                      |
+| `Bio.Restriction`         | Tools for working with restriction enzymes and digestion of DNA sequences                                    |
+| `Bio.SCOP`                | Tools for accessing and working with SCOP (Structural Classification of Proteins) data                       |
+| `Bio.SVDSuperimposer`     | Tools for superimposing coordinate sets using singular value decomposition                                   |
+| `Bio.SearchIO`            | Tools for parsing and working with sequence search results                                                   |
+| `Bio.SeqIO`               | Input/output functionality for biological sequence data                                                     |
+| `Bio.SeqUtils`            | Utility functions for working with biological sequences                                                      |
+
+---
+
+## All sub-packages
+
+
+|Subpackage |Description |
+|-------------------------|-----------------------------------------------------------------------------------------------------------|
+| `Bio.Sequencing`          | Tools for working with sequence data from high-throughput sequencing experiments                             |
+| `Bio.SwissProt`           | Tools for working with data from the Swiss-Prot protein sequence database                                    |
+| `Bio.TogoWS`              | Tools for accessing TogoWS web services for biological data                                                  |
+| `Bio.UniGene`             | Tools for working with UniGene data (a database of transcript sequences)                                     |
+| `Bio.UniProt`             | Tools for working with data from the UniProt protein sequence database                                       |
+| `Bio.codonalign`          | Tools for aligning coding DNA sequences                                                                     |
+| `Bio.motifs`              | Tools for working with sequence motifs                                                                       |
+| `Bio.phenotype`           | Tools for working with phenotype data                                                                       |
+
+
+Each of these sub-packages contains classes and functions for working with specific types of biological data (submodules)
+See more details here: [Biopython subpackages](https://biopython.org/docs/latest/api/Bio.html)
+---
+
+## Importing subpackages
+
+
+To import a subpackage, you can use:
+
+```python
+from Bio import Sub-package
+```
+
+eg:
+```python
+from Bio import SeqIO
+from Bio import AlignIO
+```
+
+You can also import specific sub-module using:
+
+```python
+from Bio.Sub-package import Sub-module
+```
+
+eg:
+```python
+from Bio.Seq import Seq
+from Bio.SeqRecord import SeqRecord
+from Bio.Data import CodonTable
+```
+
+---
+name: last-page
+template: inverse
+## That's all folks (for now)!
+
+</textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>
+    var hljs = remark.highlighter.engine;
+</script>
+<script src="https://joshbode.github.io/remark/terminal.language.js"></script>
+<script>
+    var slideshow = remark.create({
+        highlightStyle: 'monokai',
+        highlightLanguage: 'remark',
+        highlightLines: true
+    });
+    // extract the embedded styling from ansi spans
+    var highlighted = document.querySelectorAll("code.terminal span.hljs-ansi");
+    Array.prototype.forEach.call(highlighted, function (next) {
+        next.insertAdjacentHTML("beforebegin", next.textContent);
+        next.parentNode.removeChild(next);
+    });
+</script>
+</body>
+
+</html>

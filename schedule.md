@@ -31,7 +31,7 @@ the previous week to the end and label it with the appropriate number -->
 
 <u> April 17-19</u>
 
-* Apr 17: [More Python](https://eeob-biodata.github.io/BCB546X-python/07-additional-exercises/)
+* Apr 17: Biopython cheatsheet [[slides]](slides/lecture_17Apr-AS_biopython.html), in-class [[exercise 1]](https://github.com/EEOB-BioData/BCB546_Spring2024/blob/main/course-files/python/) _coming soon_
 * Apr 19: VB, Chapters 10-11: Sequencing & Alignment Data [[slides](slides/lecture_14Nov-MBH.html)]
 
 
@@ -80,11 +80,11 @@ the previous week to the end and label it with the appropriate number -->
 
 <u>March 27-29</u>
 * Mar 27: Introduction to python (part 2): [[website]](https://eeob-biodata.github.io/BCB546X-python), [[slides]](slides/lecture_22-and-27Mar-AS_slides.html), Jupyter Tips and Tricks [[slides]](slides/lecture_27Mar-AS_juptyer-tips.html)
-* Mar 29: Pandas Dataframes [[website]](https://eeob-biodata.github.io/BCB546X-python/03-starting-with-data/), [[slides]](slides/lecture_29Mar-AS_slides.html), in-class [[exercise 1]](https://github.com/EEOB-BioData/BCB546_Spring2024/blob/main/course-files/python/01-introduction-to-pandas.md)
+* Mar 29: Pandas Dataframes [[website]](https://eeob-biodata.github.io/BCB546X-python/03-starting-with-data/), [[slides]](slides/lecture_29Mar-AS_slides.html), in-class [[exercise 1]](https://github.com/EEOB-BioData/BCB546_Spring2024/blob/main/course-files/python/01-introduction-to-pandas.ipynb)
 
 <u> April 3-5</u>
-* Apr 5: Pandas (part 2) [[website]](https://eeob-biodata.github.io/BCB546X-python/04-more-dataframes/), in-class [[exercise 1]](https://github.com/EEOB-BioData/BCB546_Spring2024/blob/main/course-files/python/01-introduction-to-pandas.md), [[exercise 2]](https://github.com/EEOB-BioData/BCB546_Spring2024/blob/main/course-files/python/02-pandas-for-manipulating-gff3.md)
-* Apr 7: Data Visualization with Seaborn [[website]](https://eeob-biodata.github.io/BCB546X-python/05-seaborn-viz/), [[slides]](slides/lecture_5Apr-AS_slides.html), in-class [[exercise 1]](https://github.com/EEOB-BioData/BCB546_Spring2024/blob/main/course-files/python/03-introduction-to-seaborn.md).
+* Apr 5: Pandas (part 2) [[website]](https://eeob-biodata.github.io/BCB546X-python/04-more-dataframes/), in-class [[exercise 1]](https://github.com/EEOB-BioData/BCB546_Spring2024/blob/main/course-files/python/01-introduction-to-pandas.ipynb), [[exercise 2]](https://github.com/EEOB-BioData/BCB546_Spring2024/blob/main/course-files/python/02-pandas-for-manipulating-gff3.ipynb)
+* Apr 7: Data Visualization with Seaborn [[website]](https://eeob-biodata.github.io/BCB546X-python/05-seaborn-viz/), [[slides]](slides/lecture_5Apr-AS_slides.html), in-class [[exercise 1]](https://github.com/EEOB-BioData/BCB546_Spring2024/blob/main/course-files/python/03-introduction-to-seaborn.ipynb).
 
 
 <u> April 10-13</u>
