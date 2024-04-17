@@ -31,7 +31,7 @@ the previous week to the end and label it with the appropriate number -->
 
 <u> April 17-19</u>
 
-* Apr 17: Biopython cheatsheet [[slides]](slides/lecture_17Apr-AS_biopython.html), in-class [[exercise 1]](https://github.com/EEOB-BioData/BCB546_Spring2024/blob/main/course-files/python/06-slurm-script-generator.ipynb) 
+* Apr 17: Biopython cheatsheet [[slides]](slides/lecture_17Apr-AS_slides.html), in-class [[exercise 1]](https://github.com/EEOB-BioData/BCB546_Spring2024/blob/main/course-files/python/06-slurm-script-generator.ipynb) 
 * Apr 19: VB, Chapters 10-11: Sequencing & Alignment Data [[slides](slides/lecture_14Nov-MBH.html)]
 
 
