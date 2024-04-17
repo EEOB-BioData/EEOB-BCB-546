@@ -376,6 +376,31 @@ G | GTG V   | GCG A   | GAG E   | GGG G   | G
 
 
 ---
+## Bio.Data subpackage:
+
+Example translation:
+
+```python
+from Bio.Data import CodonTable
+mito_table = CodonTable.unambiguous_dna_by_name["Vertebrate Mitochondrial"]
+codon = "ATG"
+mito_table.forward_table[codon]
+```
+```terminal
+'M'
+```
+
+Similarly:
+
+```python
+mito_table.back_table['M']
+```
+```terminal
+['ATG']
+```
+
+
+---
 
 
 ## SeqRecord objects:
