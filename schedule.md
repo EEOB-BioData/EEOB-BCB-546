@@ -29,11 +29,10 @@ You will also need to access the files associated with the course textbook _Bioi
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move
 the previous week to the end and label it with the appropriate number -->
 
-<u> April 17-19</u>
+<u> April 24-26</u>
 
-* Apr 17: Biopython cheatsheet [[slides]](slides/lecture_17Apr-AS_slides.html), in-class [[exercise 1]](https://github.com/EEOB-BioData/BCB546_Spring2024/blob/main/course-files/python/06-slurm-script-generator.ipynb) 
-* Apr 19: VB, Chapters 10-11: Sequencing & Alignment Data [[slides](slides/lecture_14Nov-MBH.html)]
-
+* Apr 24: VB, Chapter 12: Bioinformatics shell scripting, writing pipelines, and parallelizing tasks [[tutorial](https://data-skills.github.io/unix-and-bash/03-bash-scripts/index.html)]
+* Apr 26: VB, Chapter 12: Bioinformatics shell scripting, writing pipelines, and parallelizing tasks [[tutorial](https://data-skills.github.io/unix-and-bash/03-bash-scripts/index.html)
 
 ### Previous Weeks
 
@@ -72,6 +71,14 @@ the previous week to the end and label it with the appropriate number -->
 * Feb 28: R Data Transformation [[website](https://eeob-biodata.github.io/EEOB546-R/)]
 * Mar 1: R Data Visualization [[website](https://eeob-biodata.github.io/EEOB546-R/)]
 
+<u>March 6-8</u>
+
+* Mar 6: R Data Visualization [[website](https://eeob-biodata.github.io/EEOB546-R/)]
+* Mar 8: R Frunctions and Scripts [[website](https://eeob-biodata.github.io/EEOB546-R/)]
+
+<u>March 13-15</u>
+* Spring Break
+
 <u>March 20-22</u>
 
 * Mar 20: Data Management Plans and LaTeX [[slides]](slides/DMP_slides.pdf)
@@ -91,6 +98,10 @@ the previous week to the end and label it with the appropriate number -->
 * Apr 10: Data Visualization with Seaborn (part 2) [[website]](https://eeob-biodata.github.io/BCB546X-python/05-seaborn-viz), in-class exercise, plotting [[DESeq2]](https://github.com/EEOB-BioData/BCB546_Spring2024/blob/main/course-files/python/04A-seaborn-deseq-plotting.ipynb), [[GFF3]](https://github.com/EEOB-BioData/BCB546_Spring2024/blob/main/course-files/python/04B-seaborn-gff3-plotting.ipynb), and [[TSV]](https://github.com/EEOB-BioData/BCB546_Spring2024/blob/main/course-files/python/04C-seaborn-tsv-plotting.ipynb) datasets.
 * Apr 13: Introduction to Biopython [[website]](https://eeob-biodata.github.io/BCB546X-python/06-biopython/), [[in-class]](https://github.com/EEOB-BioData/BCB546_Spring2024/blob/main/course-files/python/05-biopython-hands-on.ipynb).
 
+<u> April 17-19</u>
+
+* Apr 17: Biopython cheatsheet [[slides]](slides/lecture_17Apr-AS_slides.html), in-class [[exercise 1]](https://github.com/EEOB-BioData/BCB546_Spring2024/blob/main/course-files/python/06-slurm-script-generator.ipynb) 
+* Apr 19: VB, Chapters 10-11: Sequencing & Alignment Data [[slides](slides/lecture_14Nov-MBH.html)]
 
 <!--
 
