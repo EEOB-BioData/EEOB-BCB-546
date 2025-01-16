@@ -117,3 +117,15 @@ It is typically good to give the site a new look for each semester. This can be 
 * `_sass/milligram.scss` button background color `#006878`
 * `_sass/variables.scss` navigation background color `#AAD4E6`
 * `assets/css/docs.scss` link color `#006878`
+
+#### Spring 2024 Green Theme
+
+* `_sass/milligram.scss` button background color `#047900`
+* `_sass/variables.scss` navigation background color `#C9E0C4`
+* `assets/css/docs.scss` link color `#047900`
+
+#### Spring 2025 Purple Theme
+
+* `_sass/milligram.scss` button background color `#633A8E`
+* `_sass/variables.scss` navigation background color `#BBACC1`
+* `assets/css/docs.scss` link color `#633A8E`
