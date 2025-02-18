@@ -29,10 +29,10 @@ You will also need to access the files associated with the course textbook _Bioi
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move
 the previous week to the end and label it with the appropriate number -->
 
-<u>February 12-14</u>
+<u>February 19-21</u>
 
-* Feb 12: Chapter 7: Advanced Unix [[slides](slides/lecture_4-Feb-MBH.html)]; High Performance Computing at ISU [[slides](slides/lecture_8Feb2023-MBH.html)]
-* Feb 14: VB, Chapters 10-11: Sequencing & Alignment Data [[slides](slides/lecture_14Nov-MBH.html)]
+* Feb 19: VB, Chapters 10-11: Sequencing & Alignment Data [[slides](slides/lecture_14Nov-MBH.html)]; VB, Chapter 4, 5: Intro to Version Control using Git [[slides](slides/lecture_9Feb-and-14Feb-AS.html)]
+* Feb 21: Intro to R [[website](https://eeob-biodata.github.io/EEOB546-R/)]
 
 ### Previous Weeks
 
@@ -50,6 +50,11 @@ the previous week to the end and label it with the appropriate number -->
 
 * Feb 5: VB, Chapter 7: Advanced Unix [[slides](slides/lecture_4-Feb-MBH.html)]
 * Feb 7: VB, Chapter 7: Advanced Unix [[slides](slides/lecture_4-Feb-MBH.html)]
+
+<u>February 12-14</u>
+
+* Feb 12: Chapter 7: Advanced Unix [[slides](slides/lecture_4-Feb-MBH.html)]; High Performance Computing at ISU [[slides](slides/lecture_8Feb2023-MBH.html)]
+* Feb 14: VB, Chapters 10-11: Sequencing & Alignment Data [[slides](slides/lecture_14Nov-MBH.html)]
 
 <!--
 
