@@ -31,8 +31,8 @@ the previous week to the end and label it with the appropriate number -->
 
 <u>February 26-28</u>
 
-* Feb 21: R Data Structures [[website](https://eeob-biodata.github.io/EEOB546-R/)]
-* Feb 23: R Data Subsetting and Transformation [[website](https://eeob-biodata.github.io/EEOB546-R/)
+* Feb 26: R Data Structures [[website](https://eeob-biodata.github.io/EEOB546-R/)]
+* Feb 28: R Data Subsetting and Transformation [[website](https://eeob-biodata.github.io/EEOB546-R/)
 
 ### Previous Weeks
 
