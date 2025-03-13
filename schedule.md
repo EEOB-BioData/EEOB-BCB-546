@@ -30,8 +30,8 @@ You will also need to access the files associated with the course textbook _Bioi
 the previous week to the end and label it with the appropriate number -->
 <u>March 12-14</u>
 
-* Mar 6: R Data Visualization [[website](https://eeob-biodata.github.io/EEOB546-R/)]
-* Mar 8: R Frunctions and Scripts [[website](https://eeob-biodata.github.io/EEOB546-R/)]
+* Mar 12: R Data Visualization [[website](https://eeob-biodata.github.io/EEOB546-R/)]
+* Mar 14: R Frunctions and Scripts [[website](https://eeob-biodata.github.io/EEOB546-R/)]
 
 <u>March 19-21</u>
 * Spring Break
