@@ -28,11 +28,10 @@ You will also need to access the files associated with the course textbook _Bioi
 ### Current Week
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move
 the previous week to the end and label it with the appropriate number -->
-<u>March 26-28</u>
+<u> April 30 - May 2</u>
 
-* Mar 26: VB, Chapters 10-11: Sequencing & Alignment Data [[slides](slides/lecture_14Nov-MBH.html)]; Data Management Plans and LaTeX [[slides]](slides/DMP_slides.pdf)
-* Mar 28:
-
+* Apr 30: VB, Chapter 12: Bioinformatics shell scripting, writing pipelines, and parallelizing tasks [[tutorial](https://data-skills.github.io/unix-and-bash/03-bash-scripts/index.html)]
+* May 2: VB, Chapter 12: Bioinformatics shell scripting, writing pipelines, and parallelizing tasks [[tutorial](https://data-skills.github.io/unix-and-bash/03-bash-scripts/index.html)
 
 
 ### Previous Weeks
@@ -80,6 +79,10 @@ the previous week to the end and label it with the appropriate number -->
 <u>March 19-21</u>
 * Spring Break
 
+<u>March 26-28</u>
+
+* Mar 26: VB, Chapters 10-11: Sequencing & Alignment Data [[slides](slides/lecture_14Nov-MBH.html)]; Data Management Plans and LaTeX [[slides]](slides/DMP_slides.pdf)
+* Mar 28:
 
 <!--
 
