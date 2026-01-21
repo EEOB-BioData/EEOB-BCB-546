@@ -6,7 +6,7 @@ icon: <i class='fa fa-book'></i>
 navigation: 5
 ---
 
-# EEOB/BCB 546 Reading Material
+# EEOB/BCB 5460 Reading Material
 
 ## Course Textbook
 
