@@ -1,6 +1,6 @@
 ---
 layout: page
-title: EEOB/BCB 546 at ISU
+title: EEOB/BCB 5460 at ISU
 sidebar: Home
 navigation: 1
 icon: <i class='fa fa-home'></i>
@@ -8,16 +8,16 @@ icon: <i class='fa fa-home'></i>
 
 # Computational Skills For Biological Data
 
-## EEOB/BCB 546 at Iowa State University
+## EEOB/BCB 5460 at Iowa State University
 
 With the advent of big data across a number of sub-disciplines within biology, there is an increasing need for biologists to be comfortable and
 competent with command-line data processing and analysis. This course will develop basic skills necessary for biologists working with big data sets.
 Topics will include UNIX commands, scripting in R and Python, version control using Git and GitHub, use of high performance computing clusters, and writing effective data-management plans. These topics
 will be taught using a combination of lectures and computational exercises.
 
-<a href="https://github.com/EEOB-BioData/BCB546_Spring2025/blob/main/documents/syllabus_s2025.md"><button type="button" class="btn btn-primary">Course Syllabus</button></a>
+<a href="https://github.com/EEOB-BioData/BCB5460_Spring2026/blob/main/documents/syllabus_s2026.md"><button type="button" class="btn btn-primary">Course Syllabus</button></a>
 
-### Spring 2025 Time and Location
+### Spring 2026 Time and Location
 
 Wednesday and Friday, 1:10-2:30 PM, Bessey Hall 0030 
 <!-- VIRTUAL <a href="https://canvas.iastate.edu/courses/79905/pages/zoom-sessions"><i class="fas fa-video"></i></a><br>All Zoom links will be posted on <a href="https://canvas.iastate.edu/courses/79905/pages/zoom-sessions">Canvas</a> -->

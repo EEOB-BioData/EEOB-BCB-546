@@ -1,22 +1,22 @@
 ---
 layout: page
-title: EEOB/BCB 546 - Schedule
+title: EEOB/BCB 5460 - Schedule
 sidebar: Schedule
 navigation: 2
 icon: <i class='fa fa-calendar'></i>
 ---
 
-# Spring 2025 EEOB/BCB 546 Schedule
+# Spring 2026 EEOB/BCB 5460 Schedule
 
 We will update this page before every class with the slides and links to in-class materials. To view the planned schedule of course activities, view the class calendar using the button below.
 
-<a href="https://docs.google.com/spreadsheets/d/1uTrA6o7Xk-6TK-KvEIHFRm6SYvOr5pon3GSvmNsvOUw/edit?usp=sharing"><button type="button" class="btn btn-primary">Class Calendar</button></a>
+<a href="https://docs.google.com/spreadsheets/d/1dlJyk07rNC--L6VrhIefbLCJ65Ytw96SOwukjhgI5cY/edit?usp=sharing"><button type="button" class="btn btn-primary">Class Calendar</button></a>
 
 ## Accessing Data and Class Files
 
 All of the files used for in-class activities and assignments are published online in a public GitHub repository. It is expected that you will pull any new changes to this repository at the beginning of class. This will enable you to access new data files and scripts needed for in-class activities.
 
-The Spring 2025 repository can be found at: [https://github.com/EEOB-BioData/BCB546_Spring2025](https://github.com/EEOB-BioData/BCB546_Spring2025).
+The Spring 2026 repository can be found at: [https://github.com/EEOB-BioData/BCB5460_Spring2026](https://github.com/EEOB-BioData/BCB5460_Spring2026).
 
 You will also need to access the files associated with the course textbook _Bioinformatics Data Skills_ by Vince Buffalo. This repository can be found here: [https://github.com/vsbuffalo/bds-files](https://github.com/vsbuffalo/bds-files).
 
@@ -28,14 +28,16 @@ You will also need to access the files associated with the course textbook _Bioi
 ### Current Week
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move
 the previous week to the end and label it with the appropriate number -->
-<u>March 26-28</u>
 
-* Mar 26: VB, Chapters 10-11: Sequencing & Alignment Data [[slides](slides/lecture_14Nov-MBH.html)]; Data Management Plans and LaTeX [[slides]](slides/DMP_slides.pdf)
-* Mar 28:
+<u>January 21-23</u>
 
+* Jan 21: Introduction to the Course [[slides](slides/Week1_Lecture1.pdf)] [[UNIX_exercise](slides/Unix_Exercise_1.pdf)]
+* Jan 23: VB, Chapter 3: Getting started with Unix [[slides](slides/lecture_21Jan-MBH.html)]
 
 
 ### Previous Weeks
+
+<!--
 
 <u>January 22-24</u>
 
@@ -80,9 +82,10 @@ the previous week to the end and label it with the appropriate number -->
 <u>March 19-21</u>
 * Spring Break
 
+<u>March 26-28</u>
 
-<!--
-
+* Mar 26: VB, Chapters 10-11: Sequencing & Alignment Data [[slides](slides/lecture_14Nov-MBH.html)]; Data Management Plans and LaTeX [[slides]](slides/DMP_slides.pdf)
+* Mar 28:
 
 <u>February 7-9</u>
 
