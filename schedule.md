@@ -87,39 +87,6 @@ the previous week to the end and label it with the appropriate number -->
 * Mar 26: VB, Chapters 10-11: Sequencing & Alignment Data [[slides](slides/lecture_14Nov-MBH.html)]; Data Management Plans and LaTeX [[slides]](slides/DMP_slides.pdf)
 * Mar 28:
 
-<u>February 7-9</u>
-
-* Feb 7: Chapter 7: Advanced Unix [[slides](slides/lecture_4-Feb-MBH.html)]; High Performance Computing at ISU [[slides](slides/lecture_8Feb2023-MBH.html)]
-* Feb 9: VB, Chapter 4, 5: Intro to Version Control using Git [[slides](slides/lecture_9Feb-and-14Feb-AS.html)]
-
-<u>February 14-16</u>
-
-* Feb 14: More on Git [[slides](slides/lecture_9Feb-and-14Feb-AS.html)]
-* Feb 16: Intro to R [[website](https://eeob-biodata.github.io/EEOB546-R/)]
-
-<u>February 21-23</u>
-
-* Feb 21: R Data Structures [[website](https://eeob-biodata.github.io/EEOB546-R/)]
-* Feb 23: R Data Subsetting and Transformation [[website](https://eeob-biodata.github.io/EEOB546-R/)]
-
-<u>February 28 - March 1</u>
-
-* Feb 28: R Data Transformation [[website](https://eeob-biodata.github.io/EEOB546-R/)]
-* Mar 1: R Data Visualization [[website](https://eeob-biodata.github.io/EEOB546-R/)]
-
-<u>March 6-8</u>
-
-* Mar 6: R Data Visualization [[website](https://eeob-biodata.github.io/EEOB546-R/)]
-* Mar 8: R Frunctions and Scripts [[website](https://eeob-biodata.github.io/EEOB546-R/)]
-
-<u>March 13-15</u>
-* Spring Break
-
-<u>March 20-22</u>
-
-* Mar 20: Data Management Plans and LaTeX [[slides]](slides/DMP_slides.pdf)
-* Mar 22: Introduction to python: [[website]](https://eeob-biodata.github.io/BCB546X-python)[[slides]](slides/lecture_22-and-27Mar-AS_slides.html), Setting up Jupyter on Nova, [[slides]](slides/lecture_22Mar-AS_setup.html)
-
 
 <u>March 27-29</u>
 * Mar 27: Introduction to python (part 2): [[website]](https://eeob-biodata.github.io/BCB546X-python), [[slides]](slides/lecture_22-and-27Mar-AS_slides.html), Jupyter Tips and Tricks [[slides]](slides/lecture_27Mar-AS_juptyer-tips.html)
@@ -142,33 +109,7 @@ the previous week to the end and label it with the appropriate number -->
 <u> April 24-26</u>
 
 * Apr 24: VB, Chapter 12: Bioinformatics shell scripting, writing pipelines, and parallelizing tasks [[tutorial](https://data-skills.github.io/unix-and-bash/03-bash-scripts/index.html)]
-* Apr 26: VB, Chapter 12: Bioinformatics shell scripting, writing pipelines, and parallelizing tasks [[tutorial](https://data-skills.github.io/unix-and-bash/03-bash-scripts/index.html)-->
-
-<!--
-
-<u>February 8-10</u>
-
-* Feb 8: High Performance Computing at ISU [[slides](slides/lecture_8Feb2023-MBH.html)]
-* Feb 10: Introduction to Git [[slides](slides/lecture_10Feb-WTD.html)]
-
-<u>February 15-17</u>
-
-* Feb 15: More on Git with Wade [[slides](slides/lecture_15Feb-WTD.html)]
-* Feb 17: Intro to R [[website](https://eeob-biodata.github.io/EEOB546-R/)]
-
-
-<u>March 8-10</u>
-
-* Mar 8: R Data Visualization [[website](https://eeob-biodata.github.io/EEOB546-R/)]
-* Mar 10: R Frunctions and Scripts [[website](https://eeob-biodata.github.io/EEOB546-R/)]
-
-<u>March 15-17</u>
-* Spring Break
-
-<u>March 22-24</u>
-
-* Mar 22: Data management plans and LaTeX [[slides]](slides/DMP_slides.pdf)
-* Mar 24: [Intro to python](https://eeob-biodata.github.io/BCB546X-python/01-intro/)
+* Apr 26: VB, Chapter 12: Bioinformatics shell scripting, writing pipelines, and parallelizing tasks [[tutorial](https://data-skills.github.io/unix-and-bash/03-bash-scripts/index.html)
 
 <u>March 29-31</u>
 * Mar 29: [Python data structures](https://eeob-biodata.github.io/BCB546X-python/02-datatypes/)
