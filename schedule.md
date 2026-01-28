@@ -29,13 +29,18 @@ You will also need to access the files associated with the course textbook _Bioi
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move
 the previous week to the end and label it with the appropriate number -->
 
+<u>January 28-30</u>
+
+* Jan 28: VB, Chapter 3: Getting started with Unix [[slides](slides/lecture_21Jan-MBH.html)]
+* Jan 30: VB, Chapter 7: Advanced Unix [[slides](slides/lecture_4-Feb-MBH.html)]
+
+
+### Previous Weeks
+
 <u>January 21-23</u>
 
 * Jan 21: Introduction to the Course [[slides](slides/Week1_Lecture1.pdf)] [[UNIX_exercise](slides/Unix_Exercise_1.pdf)]
 * Jan 23: VB, Chapter 3: Getting started with Unix [[slides](slides/lecture_21Jan-MBH.html)]
-
-
-### Previous Weeks
 
 <!--
 
