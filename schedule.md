@@ -32,8 +32,7 @@ the previous week to the end and label it with the appropriate number -->
 <u>February 18-20</u>
 
 * Feb 18: VB, Chapter 4, 5: Intro to Version Control using Git [[slides](slides/lecture_9Feb-and-14Feb-AS.html)]; VB, Chapters 10-11: Sequencing & Alignment Data [[slides](slides/lecture_14Nov-MBH.html)]
-
-* Feb 21: Intro to R [[website](https://eeob-biodata.github.io/EEOB546-R/)]
+* Feb 20: Intro to R [[website](https://eeob-biodata.github.io/EEOB546-R/)]
 
 ### Previous Weeks
 
