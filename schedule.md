@@ -29,10 +29,10 @@ You will also need to access the files associated with the course textbook _Bioi
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move
 the previous week to the end and label it with the appropriate number -->
 
-<u>February 18-20</u>
+<u>February 25-27</u>
 
-* Feb 18: VB, Chapter 4, 5: Intro to Version Control using Git [[slides](slides/lecture_9Feb-and-14Feb-AS.html)]; VB, Chapters 10-11: Sequencing & Alignment Data [[slides](slides/lecture_14Nov-MBH.html)]
-* Feb 20: Intro to R [[website](https://eeob-biodata.github.io/EEOB546-R/)]
+* Feb 25: R Data Structures [[website](https://eeob-biodata.github.io/EEOB546-R/)]
+* Feb 27: R Data Subsetting and Transformation [[website](https://eeob-biodata.github.io/EEOB546-R/)
 
 ### Previous Weeks
 
@@ -55,6 +55,11 @@ the previous week to the end and label it with the appropriate number -->
 
 * Feb 11: Chapter 7: Advanced Unix [[slides](slides/lecture_4-Feb-MBH.html)]; High Performance Computing at ISU [[slides](slides/lecture_8Feb2023-MBH.html)]
 * Feb 13: VB, Chapter 4, 5: Intro to Version Control using Git [[slides](slides/lecture_9Feb-and-14Feb-AS.html)]
+
+<u>February 18-20</u>
+
+* Feb 18: VB, Chapter 4, 5: Intro to Version Control using Git [[slides](slides/lecture_9Feb-and-14Feb-AS.html)]; VB, Chapters 10-11: Sequencing & Alignment Data [[slides](slides/lecture_14Nov-MBH.html)]
+* Feb 20: Intro to R [[website](https://eeob-biodata.github.io/EEOB546-R/)]
 
 <!--
 
