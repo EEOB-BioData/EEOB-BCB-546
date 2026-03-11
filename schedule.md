@@ -29,10 +29,10 @@ You will also need to access the files associated with the course textbook _Bioi
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move
 the previous week to the end and label it with the appropriate number -->
 
-<u>March 4-6</u>
+<u>March 11-13</u>
 
-* Mar 4: R Data Transformation [[website](https://eeob-biodata.github.io/EEOB546-R/)]
-* Mar 6: R Data Visualization [[website](https://eeob-biodata.github.io/EEOB546-R/)]
+* Mar 11: R Data Visualization [[website](https://eeob-biodata.github.io/EEOB546-R/)]
+* Mar 13: R Frunctions and Scripts [[website](https://eeob-biodata.github.io/EEOB546-R/)]
 
 ### Previous Weeks
 
@@ -65,6 +65,11 @@ the previous week to the end and label it with the appropriate number -->
 
 * Feb 25: R Data Structures [[website](https://eeob-biodata.github.io/EEOB546-R/)]
 * Feb 27: R Data Subsetting and Transformation [[website](https://eeob-biodata.github.io/EEOB546-R/)
+
+<u>March 4-6</u>
+
+* Mar 4: R Data Transformation [[website](https://eeob-biodata.github.io/EEOB546-R/)]
+* Mar 6: R Data Visualization [[website](https://eeob-biodata.github.io/EEOB546-R/)]
 
 <!--
 
