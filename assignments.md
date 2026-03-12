@@ -20,7 +20,7 @@ All of the material required for grading must be submitted on the [course Canvas
 
 ### Assignment #2: R
 
-* The R Assignment is available through the course GitHub repository in the [`R_Assignment`](https://github.com/EEOB-BioData/BCB546_Spring2026/tree/main/assignments/R_Assignment) folder (in the `assignments` folder).
+* The R Assignment is available through the course GitHub repository in the [`R_Assignment`](https://github.com/EEOB-BioData/BCB5460_Spring2026/tree/main/assignments/R_Assignment) folder (in the `assignments` folder).
 * Read the assignment document for the submission process.
 
 <!--
