@@ -29,9 +29,9 @@ You will also need to access the files associated with the course textbook _Bioi
 <!-- I think it'd be good to have the current week on top, so when starting a new week, please move
 the previous week to the end and label it with the appropriate number -->
 
-<u>March 25-27</u>
+* Apr 29: VB, Chapter 12: Bioinformatics shell scripting, writing pipelines, and parallelizing tasks [[tutorial](https://data-skills.github.io/unix-and-bash/03-bash-scripts/index.html)]
+* May 1: VB, Chapter 12: Bioinformatics shell scripting, writing pipelines, and parallelizing tasks [[tutorial](https://data-skills.github.io/unix-and-bash/03-bash-scripts/index.html)
 
-* Mar 27: Data Management Plans and LaTeX [[slides]](slides/DMP_slides.pdf)
 
 ### Previous Weeks
 
@@ -74,6 +74,10 @@ the previous week to the end and label it with the appropriate number -->
 
 * Mar 11: R Data Visualization [[website](https://eeob-biodata.github.io/EEOB546-R/)]
 * Mar 13: R Frunctions and Scripts [[website](https://eeob-biodata.github.io/EEOB546-R/)]
+
+* <u>March 25-27</u>
+
+* Mar 27: Data Management Plans and LaTeX [[slides]](slides/DMP_slides.pdf)
 
 <!--
 
@@ -169,6 +173,5 @@ the previous week to the end and label it with the appropriate number -->
 
 <u> April 26-28</u>
 
-* Apr 26: VB, Chapter 12: Bioinformatics shell scripting, writing pipelines, and parallelizing tasks [[tutorial](https://data-skills.github.io/unix-and-bash/03-bash-scripts/index.html)]
-* Apr 28: VB, Chapter 12: Bioinformatics shell scripting, writing pipelines, and parallelizing tasks [[tutorial](https://data-skills.github.io/unix-and-bash/03-bash-scripts/index.html)
+
 -->
